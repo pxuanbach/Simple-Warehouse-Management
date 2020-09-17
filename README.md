@@ -14,8 +14,9 @@
   - Kiểm tra hàng có sẵn cho đơn đặt hàng.
   - Báo cáo tồn kho mỗi tháng.
 ## Objectives
-- Giúp quản lý kho một cách hợp lý, thông minh.
-- Giúp 
+- Kiểm soát việc vận chuyển và lưu trữ hàng hóa một cách có hiệu quả nhất.
+- Quản lý theo thời gian thực, nắm bắt kịp thời số lượng hàng hóa và tự động hóa dữ liệu kho.
+- Quản lý hàng hoá tồn đọng, phân bổ và điều phối hàng hoá, bổ sung, đóng gói vào chuỗi cung ứng đều có thể được tối ưu hóa.
 ## Authors
 - Phạm Xuân Bách - 19521233.
 - Nguyễn Đức Chí Đạt - 19521334.
