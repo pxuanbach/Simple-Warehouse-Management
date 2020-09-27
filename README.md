@@ -11,9 +11,9 @@
 - Winform C#.
 ## Mô tả
 Đây là một chương trình quản lý kho hàng đơn giản.
-- Users: 
+- Người dùng hướng tới: 
   - Người quản lý kho hàng.
-- List of features: 
+- Danh sách tính năng: 
   - Thêm, xóa, sửa hàng hóa.
   - Thêm, xóa, sửa đơn đặt hàng.
   - Tìm kiếm mặt hàng cụ thể.
