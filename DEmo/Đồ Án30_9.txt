@@ -1,0 +1,30 @@
+Kho > Hàng hóa:
+	- Mã hàng.
+	- Tên hang.
+	- Đơn vị.
+	- Số lượng.
+	- Đơn giá.
+	- Ngày sản xuất.
+	- Hạn sử dụng.( Check hạn sử dụng biểu thị bằng màu ).
+	- In danh sách hàng hóa.
+Đơn hàng( Người mua/ bán ) :
+	- Mã đơn hàng.
+	- Ngày mua/bán.
+	- Đối tác( Người mua / bán ).
+	- Nhiều ** Hàng hóa. ( Đa hình).
+	- Tổng tiền.
+	## Kiểm tra số lượng hàng hóa còn lại().
+	- Xuất hóa đơn(In nếu cần).
+Nhập hàng.
+	- Add hàng hóa.
+Báo cáo.
+	- Thống kê số lượng xuất.
+	- Cảnh báo về số lượng hàng tồn kho.
+	- In doanh thu.
+	- Top 10 hàng bán chạy.
+	- So sánh với tháng trước ( tăng/ giảm ...%).
+Save( Open) ????
+		
+
+
+	
