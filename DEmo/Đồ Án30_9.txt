@@ -1,6 +1,7 @@
 Kho > Hàng hóa:
-	- Mã hàng.
-	- Tên hang.
+     
+	- Mã hàng.     
+	- Tên hàng.
 	- Đơn vị.
 	- Số lượng.
 	- Đơn giá.
@@ -13,6 +14,7 @@ Kho > Hàng hóa:
 	- Đối tác( Người mua / bán ).
 	- Nhiều ** Hàng hóa. ( Đa hình).
 	- Tổng tiền.
+	- Nhân Viên Bán Hàng
 	## Kiểm tra số lượng hàng hóa còn lại().
 	- Xuất hóa đơn(In nếu cần).
 Nhập hàng.
