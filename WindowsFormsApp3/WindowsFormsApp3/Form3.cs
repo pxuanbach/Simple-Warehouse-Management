@@ -74,5 +74,10 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
