@@ -91,7 +91,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.No;
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Location = new System.Drawing.Point(39, 238);
+            this.button1.Location = new System.Drawing.Point(40, 238);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(416, 53);
@@ -175,7 +175,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(485, 421);
+            this.ClientSize = new System.Drawing.Size(491, 421);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.User);
             this.Controls.Add(this.Admin);

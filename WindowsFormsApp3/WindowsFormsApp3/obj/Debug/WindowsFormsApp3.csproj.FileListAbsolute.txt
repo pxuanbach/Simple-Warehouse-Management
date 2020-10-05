@@ -37,3 +37,16 @@ C:\Users\ADMIN\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\Win
 C:\Users\ADMIN\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 C:\Users\ADMIN\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojAssemblyReference.cache
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FLogin.resources
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FSignUp.resources
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form3.resources
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FPersonal.resources
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\AN515-54\Documents\GitHub\Simple-Warehouse-Management\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
