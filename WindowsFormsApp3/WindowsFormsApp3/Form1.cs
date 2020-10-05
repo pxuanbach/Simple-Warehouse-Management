@@ -15,6 +15,15 @@ namespace WindowsFormsApp3
         public FLogin()
         {
             InitializeComponent();
+            textBox1.ForeColor = Color.LightGray;
+            textBox1.Text = "Please Enter ID";
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+
+            textBox2.ForeColor = Color.LightGray;
+            textBox2.Text = "Please Enter Password";
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -58,6 +67,54 @@ namespace WindowsFormsApp3
         {
 
         }
-    }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                textBox1.Text = "Please Enter ID";
+                textBox1.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Please Enter ID")
+            {
+                textBox1.Text = "";
+                textBox1.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "Please Enter Password")
+            {
+                textBox2.Text = "";
+                textBox2.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "")
+            {
+                textBox2.Text = "Please Enter Password";
+                textBox2.ForeColor = Color.Gray;
+            }
+        }
+    }
 }
+
+    
+
+
