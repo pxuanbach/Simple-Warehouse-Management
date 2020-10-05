@@ -48,6 +48,16 @@ namespace WindowsFormsApp3
         {
             Application.Exit();
         }
+
+        private void User_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
