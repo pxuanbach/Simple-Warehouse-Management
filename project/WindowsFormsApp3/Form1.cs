@@ -26,6 +26,7 @@ namespace WindowsFormsApp3
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
             this.textBox2.PasswordChar =  '\u25CF';
         }
+        private string MyCode { get; set; }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -48,10 +49,29 @@ namespace WindowsFormsApp3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();
-            this.Hide();
-            f3.ShowDialog();
-            this.Show();
+            bool kt = true, kt2 = true;
+            ListAccount a = new ListAccount();
+            kt = a.Check_user(textBox1.Text);
+            if (kt == false)
+            {
+                MessageBox.Show("Your account not exited, Please created your accout ");
+            }
+            else
+            {
+
+                kt2 = a.Check_Pass(textBox2.Text);
+                if (kt2 == false)
+                {
+                    MessageBox.Show("Your password incorrect ");
+                }
+                else
+                {
+                    Form3 f3 = new Form3();
+                    //f3.MyProperty = textBox1.Text( User ID) ;
+                    f3.ShowDialog();
+                    this.Hide();
+                }
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -17,7 +17,9 @@ namespace WindowsFormsApp3
             InitializeComponent();
 
         }
+        private string MyCode { get; set; }
 
+        private string MyUser { get; set; }
         private void thôngTinToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
