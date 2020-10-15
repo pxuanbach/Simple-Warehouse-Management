@@ -112,15 +112,35 @@ namespace WindowsFormsApp3
 
                 //Mo ket noi
                 connection.Open();
-                //Chuan bi cau lenh query viet bang SQL
-               
-
-                String sqlQuery = "insert into USERACCOUNT values ('"+ textBox3.Text + "','"+ textBox4.Text + "')";
-                //Tao mot Sqlcommand de thuc hien cau lenh truy van da chuan bi voi ket noi hien tai
+                //Tạo hàm chech_user 
+                bool Check_User = false;
+                //Chuan bi cau lenh query viet bang SQL  
+                String sqlQuery = "select USERACCOUNT.USERNAME, USERACCOUNT.PASSWORD from USERACCOUNT where USERNAME = '" + textBox3.Text + "'";
                 SqlCommand command = new SqlCommand(sqlQuery, connection);
+
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.HasRows)
+                {
+                    if (reader.Read() == false) break;
+                    Check_User = true;
+                }
+                if (Check_User == true)
+                {
+                    MessageBox.Show("Your account was created ");
+                }
+                else
+                {
+                    // insert vào bảng USERACCOUNT 
+                    sqlQuery = "insert into USERACCOUNT values ('" + textBox3.Text + "','" + textBox4.Text + "')";
+                    command = new SqlCommand(sqlQuery, connection);
+                    command.ExecuteReader();
+                    // insert vào bảng STOCK
+                    // Chờ code của bảng STOCK hoàn thiện 
+
+                }
                 
-                //Thuc hien cau truy van
-                command.ExecuteNonQuery();
+                
+                
             }
             catch (Exception )
             {
