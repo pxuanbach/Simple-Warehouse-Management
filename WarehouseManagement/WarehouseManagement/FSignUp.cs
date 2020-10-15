@@ -8,7 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WarehouseManagement;
+
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp3
 {
@@ -29,10 +30,11 @@ namespace WindowsFormsApp3
             this.textBox5.PasswordChar = '\u25CF';
         }
 
-        string constring = @"LAPTOP - MSFEGU0S\SQLEXPRESS01;Initial Catalog = WarehouseManagement; User ID = sa";
+        String connString = @"Server=LAPTOP-MSFEGU0S\SQLEXPRESS01;Database=WarehouseManagement;User Id=sa;Password=19521334;";
 
+        //ket noi csdl bang Sqlconnection 
         SqlConnection connection = new SqlConnection(connString);
-        connection.Open(); 
+       
         private void Form2_Load(object sender, EventArgs e)
         {
            
