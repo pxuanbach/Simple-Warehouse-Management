@@ -146,9 +146,9 @@
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.welPage);
             this.panel2.Controls.Add(this.AccPage);
+            this.panel2.Controls.Add(this.OrderPage);
             this.panel2.Controls.Add(this.HelpPage);
             this.panel2.Controls.Add(this.StaPage);
-            this.panel2.Controls.Add(this.OrderPage);
             this.panel2.Controls.Add(this.StPage);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
@@ -169,12 +169,14 @@
             // 
             // HelpPage
             // 
-            this.HelpPage.BackColor = System.Drawing.Color.White;
+            this.HelpPage.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.HelpPage, "HelpPage");
             this.HelpPage.Name = "HelpPage";
+            this.HelpPage.Load += new System.EventHandler(this.HelpPage_Load);
             // 
             // StaPage
             // 
+            this.StaPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             resources.ApplyResources(this.StaPage, "StaPage");
             this.StaPage.Name = "StaPage";
             // 
@@ -186,6 +188,7 @@
             // 
             // StPage
             // 
+            this.StPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             resources.ApplyResources(this.StPage, "StPage");
             this.StPage.Name = "StPage";
             // 

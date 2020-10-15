@@ -154,5 +154,10 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void HelpPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
