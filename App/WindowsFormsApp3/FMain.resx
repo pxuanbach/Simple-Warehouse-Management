@@ -161,6 +161,15 @@
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 33</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;panel4.Name" xml:space="preserve">
     <value>panel4</value>
   </data>
@@ -541,7 +550,7 @@ Team,Inc </value>
     <value>0, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 447</value>
+    <value>153, 448</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -557,27 +566,6 @@ Team,Inc </value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>12, 33</value>
-  </data>
-  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>PanelLeft</value>
-  </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="welPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -601,7 +589,7 @@ Team,Inc </value>
     <value>0</value>
   </data>
   <data name="AccPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 3</value>
+    <value>0, 0</value>
   </data>
   <data name="AccPage.Size" type="System.Drawing.Size, System.Drawing">
     <value>744, 446</value>
@@ -620,6 +608,27 @@ Team,Inc </value>
   </data>
   <data name="&gt;&gt;AccPage.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="StaPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="StaPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>744, 444</value>
+  </data>
+  <data name="StaPage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;StaPage.Name" xml:space="preserve">
+    <value>StaPage</value>
+  </data>
+  <data name="&gt;&gt;StaPage.Type" xml:space="preserve">
+    <value>WindowsFormsApp3.StatisticsUser, WindowsFormsApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;StaPage.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;StaPage.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="OrderPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -640,7 +649,7 @@ Team,Inc </value>
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;OrderPage.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="HelpPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -661,27 +670,6 @@ Team,Inc </value>
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;HelpPage.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="StaPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>474, 119</value>
-  </data>
-  <data name="StaPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>744, 444</value>
-  </data>
-  <data name="StaPage.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;StaPage.Name" xml:space="preserve">
-    <value>StaPage</value>
-  </data>
-  <data name="&gt;&gt;StaPage.Type" xml:space="preserve">
-    <value>WindowsFormsApp3.StatisticsUser, WindowsFormsApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;StaPage.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;StaPage.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="StPage.Location" type="System.Drawing.Point, System.Drawing">
@@ -736,7 +724,7 @@ Team,Inc </value>
     <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>901, 447</value>
+    <value>901, 448</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

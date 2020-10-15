@@ -159,5 +159,10 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void welPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

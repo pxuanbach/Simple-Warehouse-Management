@@ -42,9 +42,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.welPage = new WindowsFormsApp3.UserWelcome();
             this.AccPage = new WindowsFormsApp3.AccountUser();
+            this.OrderPage = new WindowsFormsApp3.OderUser();
             this.HelpPage = new WindowsFormsApp3.HelpUser();
             this.StaPage = new WindowsFormsApp3.StatisticsUser();
-            this.OrderPage = new WindowsFormsApp3.OderUser();
             this.StPage = new WindowsFormsApp3.StockUser();
             this.timeDate1 = new WindowsFormsApp3.TimeDate();
             this.panel1.SuspendLayout();
@@ -146,9 +146,9 @@
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.welPage);
             this.panel2.Controls.Add(this.AccPage);
+            this.panel2.Controls.Add(this.StaPage);
             this.panel2.Controls.Add(this.OrderPage);
             this.panel2.Controls.Add(this.HelpPage);
-            this.panel2.Controls.Add(this.StaPage);
             this.panel2.Controls.Add(this.StPage);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
@@ -159,6 +159,7 @@
             this.welPage.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.welPage, "welPage");
             this.welPage.Name = "welPage";
+            this.welPage.Load += new System.EventHandler(this.welPage_Load);
             // 
             // AccPage
             // 
@@ -166,6 +167,12 @@
             resources.ApplyResources(this.AccPage, "AccPage");
             this.AccPage.Name = "AccPage";
             this.AccPage.Load += new System.EventHandler(this.AccPage_Load_1);
+            // 
+            // OrderPage
+            // 
+            this.OrderPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            resources.ApplyResources(this.OrderPage, "OrderPage");
+            this.OrderPage.Name = "OrderPage";
             // 
             // HelpPage
             // 
@@ -179,12 +186,6 @@
             this.StaPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             resources.ApplyResources(this.StaPage, "StaPage");
             this.StaPage.Name = "StaPage";
-            // 
-            // OrderPage
-            // 
-            this.OrderPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            resources.ApplyResources(this.OrderPage, "OrderPage");
-            this.OrderPage.Name = "OrderPage";
             // 
             // StPage
             // 
