@@ -48,7 +48,7 @@ namespace WindowsFormsApp3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();
+            FMain f3 = new FMain();
             this.Hide();
             f3.ShowDialog();
             this.Show();

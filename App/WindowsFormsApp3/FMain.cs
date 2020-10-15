@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp3
 {
-    public partial class Form3 : Form
+    public partial class FMain : Form
     {
-        public Form3()
+        public FMain()
         {
             InitializeComponent();
 
