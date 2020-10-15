@@ -52,6 +52,12 @@
     <Compile Include="FLogin.Designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMain.Designer.cs">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="FSignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,8 +72,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stock User.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Stock User.Designer.cs">
+      <DependentUpon>Stock User.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FSignUp.resx">
       <DependentUpon>FSignUp.cs</DependentUpon>
@@ -85,6 +100,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Stock User.resx">
+      <DependentUpon>Stock User.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

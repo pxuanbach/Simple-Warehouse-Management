@@ -89,3 +89,4 @@ C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.StockForm.resources
