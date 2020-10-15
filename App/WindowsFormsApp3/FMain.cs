@@ -41,5 +41,15 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void stockForm1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtOder_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
