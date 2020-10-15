@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using System.Data.SqlClient;
+
 
 namespace WindowsFormsApp3
 {
@@ -30,11 +30,12 @@ namespace WindowsFormsApp3
             this.textBox5.PasswordChar = '\u25CF';
         }
 
-        String connString = @"Server=LAPTOP-MSFEGU0S\SQLEXPRESS01;Database=WarehouseManagement;User Id=sa;Password=19521334;";
-
+        public static String connString = @"Server=LAPTOP-MSFEGU0S\SQLEXPRESS01;Database=WarehouseManagement;User Id=sa;Password=19521334;";
+        
         //ket noi csdl bang Sqlconnection 
-        SqlConnection connection = new SqlConnection(connString);
-       
+
+        
+
         private void Form2_Load(object sender, EventArgs e)
         {
            
@@ -103,17 +104,38 @@ namespace WindowsFormsApp3
 
             // Có hàm kiểm tra use name là Check_User kiểm tra xem user có tồn tại hay không
 
-            ListAccount kt = new ListAccount(); // Có thể thay thế class List Account sau khi thêm sql vào.
+            
 
-            if (kt.Check_user(textBox6.Text) == true) 
+            SqlConnection connection = new SqlConnection(connString);
+            try
             {
-                MessageBox.Show("Your user name was used ");
+
+                //Mo ket noi
+                connection.Open();
+                //Chuan bi cau lenh query viet bang SQL
+               
+
+                String sqlQuery = "insert into USERACCOUNT values ('"+ textBox3.Text + "','"+ textBox4.Text + "')";
+                //Tao mot Sqlcommand de thuc hien cau lenh truy van da chuan bi voi ket noi hien tai
+                SqlCommand command = new SqlCommand(sqlQuery, connection);
+                
+                //Thuc hien cau truy van
+                command.ExecuteNonQuery();
+            }
+            catch (Exception )
+            {
+                //xu ly khi ket noi co van de
+                MessageBox.Show("Ket noi xay ra loi hoac doc du lieu bi loi");
+            }
+            finally
+            {
+                //Dong ket noi sau khi thao tac ket thuc
+                connection.Close();
             }
 
-            if ( kt.Check_License(textBox6.Text) == false) // Có hàm kiểm tra license là Check_License
-            {
-                MessageBox.Show("Your lincese is incorrect");
-            }
+            
+
+
 
             this.Close(); // Xóa form sau khi add dữ liệu vào
 
