@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WarehouseManagement;
 
 namespace WindowsFormsApp3
 {
@@ -21,7 +22,7 @@ namespace WindowsFormsApp3
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
 
             textBox2.ForeColor = Color.LightGray;
-            textBox2.Text = "Please Enter Address";
+            textBox2.Text = "Please Enter Pass";
             this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
             this.textBox2.PasswordChar = '\u25CF';
@@ -108,7 +109,7 @@ namespace WindowsFormsApp3
 
         private void textBox2_Enter(object sender, EventArgs e)
         {
-            if (textBox2.Text == "Please Enter Address")
+            if (textBox2.Text == "Please Enter Pass")
             {
                 textBox2.Text = "";
                 textBox2.ForeColor = Color.Black;
@@ -119,7 +120,7 @@ namespace WindowsFormsApp3
         {
             if (textBox2.Text == "")
             {
-                textBox2.Text = "Please Enter Address";
+                textBox2.Text = "Please Enter Pass";
                 textBox2.ForeColor = Color.Gray;
             }
         }
