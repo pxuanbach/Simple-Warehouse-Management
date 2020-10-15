@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,10 @@ namespace WindowsFormsApp3
             this.textBox5.PasswordChar = '\u25CF';
         }
 
+        string constring = @"LAPTOP - MSFEGU0S\SQLEXPRESS01;Initial Catalog = WarehouseManagement; User ID = sa";
+
+        SqlConnection connection = new SqlConnection(connString);
+        connection.Open(); 
         private void Form2_Load(object sender, EventArgs e)
         {
            
