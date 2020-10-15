@@ -83,7 +83,6 @@
             this.label4.Size = new System.Drawing.Size(69, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "Password";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -99,7 +98,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(185, 84);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(223, 22);
             this.textBox1.TabIndex = 5;
@@ -108,7 +107,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(185, 130);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(223, 22);
             this.textBox2.TabIndex = 6;
@@ -116,7 +115,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(185, 171);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(223, 22);
             this.textBox3.TabIndex = 7;
@@ -124,7 +123,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(185, 211);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(223, 22);
             this.textBox4.TabIndex = 8;
@@ -133,7 +132,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(185, 251);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(223, 22);
             this.textBox5.TabIndex = 9;
@@ -143,7 +142,7 @@
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DarkOrange;
             this.button1.Location = new System.Drawing.Point(469, 80);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(173, 58);
             this.button1.TabIndex = 10;
@@ -164,9 +163,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(71, 301);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 17);
+            this.label6.Size = new System.Drawing.Size(65, 17);
             this.label6.TabIndex = 11;
-            this.label6.Text = "CODE";
+            this.label6.Text = "LICENSE";
             this.label6.Click += new System.EventHandler(this.label6_Click_1);
             // 
             // FSignUp
@@ -188,7 +187,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FSignUp";
             this.Text = "Sign up account";
             this.Load += new System.EventHandler(this.Form2_Load);
