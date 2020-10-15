@@ -89,5 +89,13 @@ C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
-C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.StockForm.resources
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.OderUser.resources
+C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.AccountUser.resources
+C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.HelpUser.resources
+C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.StatisticsUser.resources
+C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\bin\Debug\en\WindowsFormsApp3.resources.dll
+C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FMain.en.resources
+C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\en\WindowsFormsApp3.resources.dll
+C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.TimeDate.resources
+C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.UserWelcome.resources
+C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.StockUser.resources

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountControl.Designer.cs">
+      <DependentUpon>AccountControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="FLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="FPersonal.Designer.cs">
       <DependentUpon>FPersonal.cs</DependentUpon>
     </Compile>
+    <Compile Include="HelpUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HelpUser.Designer.cs">
+      <DependentUpon>HelpUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrderUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -78,14 +90,38 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stock User.cs">
+    <Compile Include="StatisticsUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Stock User.Designer.cs">
-      <DependentUpon>Stock User.cs</DependentUpon>
+    <Compile Include="StatisticsUser.Designer.cs">
+      <DependentUpon>StatisticsUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="TimeDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimeDate.Designer.cs">
+      <DependentUpon>TimeDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockUser.Designer.cs">
+      <DependentUpon>StockUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserWelcome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserWelcome.Designer.cs">
+      <DependentUpon>UserWelcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountControl.resx">
+      <DependentUpon>AccountControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain.en.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
@@ -95,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FPersonal.resx">
       <DependentUpon>FPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpUser.resx">
+      <DependentUpon>HelpUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderUser.resx">
       <DependentUpon>OrderUser.cs</DependentUpon>
@@ -109,8 +148,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Stock User.resx">
-      <DependentUpon>Stock User.cs</DependentUpon>
+    <EmbeddedResource Include="StatisticsUser.resx">
+      <DependentUpon>StatisticsUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeDate.resx">
+      <DependentUpon>TimeDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockUser.resx">
+      <DependentUpon>StockUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserWelcome.resx">
+      <DependentUpon>UserWelcome.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
