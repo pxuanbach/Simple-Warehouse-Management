@@ -70,6 +70,12 @@
     <Compile Include="FPersonal.Designer.cs">
       <DependentUpon>FPersonal.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderUser.Designer.cs">
+      <DependentUpon>OrderUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stock User.cs">
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FPersonal.resx">
       <DependentUpon>FPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderUser.resx">
+      <DependentUpon>OrderUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

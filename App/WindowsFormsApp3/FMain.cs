@@ -51,5 +51,20 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void FMain_Load(object sender, EventArgs e)
+        {
+           // StockUser.Hide();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void stockForm1_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

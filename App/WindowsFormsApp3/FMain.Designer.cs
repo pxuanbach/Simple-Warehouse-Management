@@ -30,14 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rHelp = new System.Windows.Forms.Panel();
+            this.rAcc = new System.Windows.Forms.Panel();
+            this.rStatistics = new System.Windows.Forms.Panel();
+            this.rOder = new System.Windows.Forms.Panel();
+            this.rStock = new System.Windows.Forms.Panel();
+            this.Copyright = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.BtHelp = new System.Windows.Forms.Button();
             this.BtAcc = new System.Windows.Forms.Button();
-            this.Copyright = new System.Windows.Forms.Label();
             this.BtStatistics = new System.Windows.Forms.Button();
             this.BtOder = new System.Windows.Forms.Button();
             this.Stock = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.stockForm1 = new WindowsFormsApp3.StockForm();
+            this.StockUser = new WindowsFormsApp3.StockForm();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +51,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.rHelp);
+            this.panel1.Controls.Add(this.rAcc);
+            this.panel1.Controls.Add(this.rStatistics);
+            this.panel1.Controls.Add(this.rOder);
+            this.panel1.Controls.Add(this.rStock);
             this.panel1.Controls.Add(this.BtHelp);
             this.panel1.Controls.Add(this.BtAcc);
             this.panel1.Controls.Add(this.Copyright);
@@ -54,8 +65,77 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(153, 445);
+            this.panel1.Size = new System.Drawing.Size(153, 451);
             this.panel1.TabIndex = 2;
+            // 
+            // rHelp
+            // 
+            this.rHelp.BackColor = System.Drawing.Color.Goldenrod;
+            this.rHelp.Location = new System.Drawing.Point(-9, 253);
+            this.rHelp.Name = "rHelp";
+            this.rHelp.Size = new System.Drawing.Size(12, 52);
+            this.rHelp.TabIndex = 6;
+            // 
+            // rAcc
+            // 
+            this.rAcc.BackColor = System.Drawing.Color.Goldenrod;
+            this.rAcc.Location = new System.Drawing.Point(-9, 204);
+            this.rAcc.Name = "rAcc";
+            this.rAcc.Size = new System.Drawing.Size(12, 52);
+            this.rAcc.TabIndex = 5;
+            // 
+            // rStatistics
+            // 
+            this.rStatistics.BackColor = System.Drawing.Color.Goldenrod;
+            this.rStatistics.Location = new System.Drawing.Point(-9, 153);
+            this.rStatistics.Name = "rStatistics";
+            this.rStatistics.Size = new System.Drawing.Size(12, 52);
+            this.rStatistics.TabIndex = 4;
+            // 
+            // rOder
+            // 
+            this.rOder.BackColor = System.Drawing.Color.Goldenrod;
+            this.rOder.Location = new System.Drawing.Point(-9, 101);
+            this.rOder.Name = "rOder";
+            this.rOder.Size = new System.Drawing.Size(12, 54);
+            this.rOder.TabIndex = 2;
+            // 
+            // rStock
+            // 
+            this.rStock.BackColor = System.Drawing.Color.Goldenrod;
+            this.rStock.Location = new System.Drawing.Point(-9, 54);
+            this.rStock.Name = "rStock";
+            this.rStock.Size = new System.Drawing.Size(12, 49);
+            this.rStock.TabIndex = 1;
+            this.rStock.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // Copyright
+            // 
+            this.Copyright.AutoSize = true;
+            this.Copyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Copyright.Location = new System.Drawing.Point(3, 366);
+            this.Copyright.Name = "Copyright";
+            this.Copyright.Size = new System.Drawing.Size(141, 26);
+            this.Copyright.TabIndex = 6;
+            this.Copyright.Text = "Copyright © 2020-2021 UIT \r\nTeam,Inc ";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.StockUser);
+            this.panel2.Location = new System.Drawing.Point(153, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(747, 444);
+            this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel3.Location = new System.Drawing.Point(0, 356);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(154, 2);
+            this.panel3.TabIndex = 4;
             // 
             // BtHelp
             // 
@@ -87,16 +167,6 @@
             this.BtAcc.Text = "   Account";
             this.BtAcc.UseVisualStyleBackColor = true;
             // 
-            // Copyright
-            // 
-            this.Copyright.AutoSize = true;
-            this.Copyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Copyright.Location = new System.Drawing.Point(3, 379);
-            this.Copyright.Name = "Copyright";
-            this.Copyright.Size = new System.Drawing.Size(141, 26);
-            this.Copyright.TabIndex = 6;
-            this.Copyright.Text = "Copyright © 2020-2021 UIT \r\nTeam,Inc ";
-            // 
             // BtStatistics
             // 
             this.BtStatistics.FlatAppearance.BorderSize = 0;
@@ -125,7 +195,7 @@
             this.BtOder.Name = "BtOder";
             this.BtOder.Size = new System.Drawing.Size(153, 54);
             this.BtOder.TabIndex = 4;
-            this.BtOder.Text = "Oder";
+            this.BtOder.Text = "Order";
             this.BtOder.UseVisualStyleBackColor = true;
             this.BtOder.Click += new System.EventHandler(this.BtOder_Click);
             // 
@@ -146,33 +216,30 @@
             this.Stock.UseVisualStyleBackColor = false;
             this.Stock.Click += new System.EventHandler(this.Stock_Click);
             // 
-            // panel2
+            // StockUser
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.stockForm1);
-            this.panel2.Location = new System.Drawing.Point(150, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(747, 444);
-            this.panel2.TabIndex = 3;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // stockForm1
-            // 
-            this.stockForm1.Location = new System.Drawing.Point(3, 4);
-            this.stockForm1.Name = "stockForm1";
-            this.stockForm1.Size = new System.Drawing.Size(744, 444);
-            this.stockForm1.TabIndex = 0;
+            this.StockUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.StockUser.Location = new System.Drawing.Point(1, 0);
+            this.StockUser.Name = "StockUser";
+            this.StockUser.Size = new System.Drawing.Size(744, 444);
+            this.StockUser.TabIndex = 0;
+            this.StockUser.Load += new System.EventHandler(this.stockForm1_Load_1);
             // 
             // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(900, 445);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(903, 451);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "FMain";
             this.Text = "Stock Manager";
+            this.TransparencyKey = System.Drawing.Color.White;
+            this.Load += new System.EventHandler(this.FMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -187,8 +254,14 @@
         private System.Windows.Forms.Button BtOder;
         private System.Windows.Forms.Label Copyright;
         private System.Windows.Forms.Button BtHelp;
-        private System.Windows.Forms.Button BtAcc;
         private System.Windows.Forms.Panel panel2;
-        private StockForm stockForm1;
+        private StockForm StockUser;
+        private System.Windows.Forms.Panel rStock;
+        private System.Windows.Forms.Panel rHelp;
+        private System.Windows.Forms.Panel rAcc;
+        private System.Windows.Forms.Panel rStatistics;
+        private System.Windows.Forms.Panel rOder;
+        private System.Windows.Forms.Button BtAcc;
+        private System.Windows.Forms.Panel panel3;
     }
 }

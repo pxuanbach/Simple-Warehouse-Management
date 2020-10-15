@@ -33,12 +33,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btEdit = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.BtDel = new System.Windows.Forms.Button();
             this.BtAdd = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -47,7 +47,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 91);
+            this.dataGridView1.Location = new System.Drawing.Point(-3, 18);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(747, 233);
             this.dataGridView1.TabIndex = 0;
@@ -55,11 +55,11 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel1.BackColor = System.Drawing.Color.Goldenrod;
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 253);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(747, 49);
             this.panel1.TabIndex = 5;
@@ -87,23 +87,6 @@
             this.textBox1.Size = new System.Drawing.Size(388, 20);
             this.textBox1.TabIndex = 10;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.button4.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.icon_41_512;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::WindowsFormsApp3.Properties.Resources.statistics;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(628, 11);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 23);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Search";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel2
             // 
@@ -177,6 +160,23 @@
             this.BtAdd.UseMnemonic = false;
             this.BtAdd.UseVisualStyleBackColor = true;
             this.BtAdd.Click += new System.EventHandler(this.BtAdd_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.button4.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.icon_41_512;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Image = global::WindowsFormsApp3.Properties.Resources.statistics;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(628, 11);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(94, 23);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Search";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // StockForm
             // 
