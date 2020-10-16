@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10D8877F-37EE-4EFC-AD3E-B2BD67EE569E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp3</RootNamespace>
+    <AssemblyName>WindowsFormsApp3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountControl.Designer.cs">
+      <DependentUpon>AccountControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMain.Designer.cs">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSignUp.Designer.cs">
+      <DependentUpon>FSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPersonal.Designer.cs">
+      <DependentUpon>FPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HelpUser.Designer.cs">
+      <DependentUpon>HelpUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderUser.Designer.cs">
+      <DependentUpon>OrderUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatisticsUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatisticsUser.Designer.cs">
+      <DependentUpon>StatisticsUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimeDate.Designer.cs">
+      <DependentUpon>TimeDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockUser.Designer.cs">
+      <DependentUpon>StockUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserWelcome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserWelcome.Designer.cs">
+      <DependentUpon>UserWelcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountControl.resx">
+      <DependentUpon>AccountControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain.en.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSignUp.resx">
+      <DependentUpon>FSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPersonal.resx">
+      <DependentUpon>FPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpUser.resx">
+      <DependentUpon>HelpUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderUser.resx">
+      <DependentUpon>OrderUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StatisticsUser.resx">
+      <DependentUpon>StatisticsUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeDate.resx">
+      <DependentUpon>TimeDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockUser.resx">
+      <DependentUpon>StockUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserWelcome.resx">
+      <DependentUpon>UserWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-41-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\statistics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\ER0AQagU8AAUjHM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\log-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\personal-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\character.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
