@@ -30,10 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.PanelVertical = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.timeDate1 = new WindowsFormsApp3.TimeDate();
             this.panel3 = new System.Windows.Forms.Panel();
             this.PanelLeft = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.BtHelp = new System.Windows.Forms.Button();
             this.BtAcc = new System.Windows.Forms.Button();
             this.Copyright = new System.Windows.Forms.Label();
@@ -41,21 +44,16 @@
             this.BtOder = new System.Windows.Forms.Button();
             this.BtStock = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.welPage = new WindowsFormsApp3.UserWelcome();
             this.AccPage = new WindowsFormsApp3.AccountUser();
             this.StaPage = new WindowsFormsApp3.StatisticsUser();
             this.OrderPage = new WindowsFormsApp3.OderUser();
             this.HelpPage = new WindowsFormsApp3.HelpUser();
             this.StPage = new WindowsFormsApp3.StockUser();
-            this.PanelVertical = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.PanelLeft.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,6 +77,33 @@
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.DimGray;
+            this.panel7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            // 
+            // PanelVertical
+            // 
+            this.PanelVertical.BackColor = System.Drawing.Color.DimGray;
+            this.PanelVertical.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            resources.ApplyResources(this.PanelVertical, "PanelVertical");
+            this.PanelVertical.Name = "PanelVertical";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            // 
             // timeDate1
             // 
             resources.ApplyResources(this.timeDate1, "timeDate1");
@@ -93,17 +118,10 @@
             // 
             // PanelLeft
             // 
-            this.PanelLeft.BackColor = System.Drawing.Color.Gold;
-            this.PanelLeft.Controls.Add(this.panel4);
+            this.PanelLeft.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             resources.ApplyResources(this.PanelLeft, "PanelLeft");
             this.PanelLeft.Name = "PanelLeft";
             this.PanelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Gold;
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
             // 
             // BtHelp
             // 
@@ -128,7 +146,7 @@
             // Copyright
             // 
             resources.ApplyResources(this.Copyright, "Copyright");
-            this.Copyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Copyright.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Copyright.Name = "Copyright";
             this.Copyright.Click += new System.EventHandler(this.Copyright_Click);
             // 
@@ -177,6 +195,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.DimGray;
+            this.panel10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            resources.ApplyResources(this.panel10, "panel10");
+            this.panel10.Name = "panel10";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.Name = "panel9";
+            // 
             // welPage
             // 
             this.welPage.BackColor = System.Drawing.SystemColors.Control;
@@ -216,50 +247,11 @@
             resources.ApplyResources(this.StPage, "StPage");
             this.StPage.Name = "StPage";
             // 
-            // PanelVertical
-            // 
-            this.PanelVertical.BackColor = System.Drawing.Color.DimGray;
-            this.PanelVertical.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            resources.ApplyResources(this.PanelVertical, "PanelVertical");
-            this.PanelVertical.Name = "PanelVertical";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.panel6, "panel6");
-            this.panel6.Name = "panel6";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.DimGray;
-            this.panel7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            resources.ApplyResources(this.panel7, "panel7");
-            this.panel7.Name = "panel7";
-            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.panel9, "panel9");
-            this.panel9.Name = "panel9";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.DimGray;
-            this.panel10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            resources.ApplyResources(this.panel10, "panel10");
-            this.panel10.Name = "panel10";
             // 
             // FMain
             // 
@@ -276,7 +268,6 @@
             this.Load += new System.EventHandler(this.FMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.PanelLeft.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -299,7 +290,6 @@
         private StockUser StPage;
         private AccountUser AccPage;
         private System.Windows.Forms.Button BtStock;
-        private System.Windows.Forms.Panel panel4;
         private TimeDate timeDate1;
         private UserWelcome welPage;
         private System.Windows.Forms.Panel PanelVertical;

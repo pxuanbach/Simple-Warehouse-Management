@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.AccessControl;
 
 namespace WindowsFormsApp3
 {
@@ -23,6 +24,22 @@ namespace WindowsFormsApp3
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+     
+        }
+
+
+        private void button4_Click(object sender, EventArgs e)
         {
 
         }
