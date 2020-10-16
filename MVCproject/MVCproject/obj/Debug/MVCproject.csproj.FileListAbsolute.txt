@@ -1,0 +1,10 @@
+C:\Users\AN515-54\Desktop\C#\MVCproject\MVCproject\obj\Debug\MVCproject.csprojAssemblyReference.cache
+C:\Users\AN515-54\Desktop\C#\MVCproject\MVCproject\obj\Debug\MVCproject.Properties.Resources.resources
+C:\Users\AN515-54\Desktop\C#\MVCproject\MVCproject\obj\Debug\MVCproject.csproj.GenerateResource.cache
+C:\Users\AN515-54\Desktop\C#\MVCproject\MVCproject\obj\Debug\MVCproject.csproj.CoreCompileInputs.cache
+C:\Users\AN515-54\Desktop\C#\MVCproject\MVCproject\bin\Debug\MVCproject.exe.config
+C:\Users\AN515-54\Desktop\C#\MVCproject\MVCproject\bin\Debug\MVCproject.exe
+C:\Users\AN515-54\Desktop\C#\MVCproject\MVCproject\bin\Debug\MVCproject.pdb
+C:\Users\AN515-54\Desktop\C#\MVCproject\MVCproject\obj\Debug\MVCproject.exe
+C:\Users\AN515-54\Desktop\C#\MVCproject\MVCproject\obj\Debug\MVCproject.pdb
+C:\Users\AN515-54\Desktop\C#\MVCproject\MVCproject\obj\Debug\MVCproject.View.HangHoa.resources
