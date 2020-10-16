@@ -46,29 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
-    <Compile Include="FLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FLogin.Designer.cs">
-      <DependentUpon>FLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FSignUp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FSignUp.Designer.cs">
-      <DependentUpon>FSignUp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ListAccount.cs" />
+    <Compile Include="Controller\Login_Controller.cs" />
+    <Compile Include="Model\Login_Model.cs" />
+    <Compile Include="Model\Process.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FLogin.resx">
+    <Compile Include="View\FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FLogin.designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FSignUp.resx">
+    </Compile>
+    <Compile Include="View\FSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FSignUp.designer.cs">
       <DependentUpon>FSignUp.cs</DependentUpon>
-    </EmbeddedResource>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -78,6 +72,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FSignUp.resx">
+      <DependentUpon>FSignUp.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -91,5 +91,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

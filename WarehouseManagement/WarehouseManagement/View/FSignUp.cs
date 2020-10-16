@@ -32,9 +32,10 @@ namespace WindowsFormsApp3
 
         public static String connString = @"Server=LAPTOP-MSFEGU0S\SQLEXPRESS01;Database=WarehouseManagement;User Id=sa;Password=19521334;";
         
+
         //ket noi csdl bang Sqlconnection 
 
-        
+
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -124,33 +125,39 @@ namespace WindowsFormsApp3
                     if (reader.Read() == false) break;
                     Check_User = true;
                 }
+                connection.Close();
                 if (Check_User == true)
                 {
                     MessageBox.Show("Your account was created ");
+                    
                 }
                 else
                 {
                     // insert vào bảng USERACCOUNT 
-                    sqlQuery = "insert into USERACCOUNT values ('" + textBox3.Text + "','" + textBox4.Text + "')";
-                    command = new SqlCommand(sqlQuery, connection);
-                    command.ExecuteReader();
+                    connection.Open();
+                    string sqlQuery1 = "insert into USERACCOUNT values ('" + textBox3.Text + "','" + textBox4.Text + "')";
+                    SqlCommand command1 = new SqlCommand(sqlQuery1, connection);
+                    command1.ExecuteReader();
+                    MessageBox.Show("Your account created successfully ");
+
                     // insert vào bảng STOCK
                     // Chờ code của bảng STOCK hoàn thiện 
-
+                    connection.Close();
                 }
                 
                 
                 
             }
-            catch (Exception )
+            catch (Exception a)
             {
+                MessageBox.Show(a.Message);
                 //xu ly khi ket noi co van de
-                MessageBox.Show("Ket noi xay ra loi hoac doc du lieu bi loi");
+                //MessageBox.Show("Ket noi xay ra loi hoac doc du lieu bi loi");
             }
             finally
             {
                 //Dong ket noi sau khi thao tac ket thuc
-                connection.Close();
+                
             }
 
             
