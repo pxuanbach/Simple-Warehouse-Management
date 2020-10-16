@@ -72,7 +72,7 @@ namespace WindowsFormsApp3
         {
             if (UserText.Text == "")
             {
-                UserText.Text = "Please Enter Name";
+                UserText.Text = "Enter Name";
                 UserText.ForeColor = Color.Gray;
             }
         }

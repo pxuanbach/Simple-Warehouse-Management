@@ -203,5 +203,29 @@
   <ItemGroup>
     <None Include="Icon\character.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconv2\passwordIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconv2\UserIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconv2\passIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconv2\usIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconv2\userIC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconv2\PassIC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\Logo.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

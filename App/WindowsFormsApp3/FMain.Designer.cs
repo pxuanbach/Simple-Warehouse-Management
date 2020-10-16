@@ -34,32 +34,35 @@
             this.PanelVertical = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.timeDate1 = new WindowsFormsApp3.TimeDate();
             this.panel3 = new System.Windows.Forms.Panel();
             this.PanelLeft = new System.Windows.Forms.Panel();
-            this.BtHelp = new System.Windows.Forms.Button();
-            this.BtAcc = new System.Windows.Forms.Button();
             this.Copyright = new System.Windows.Forms.Label();
-            this.BtSta = new System.Windows.Forms.Button();
-            this.BtOder = new System.Windows.Forms.Button();
-            this.BtStock = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.welPage = new WindowsFormsApp3.UserWelcome();
             this.AccPage = new WindowsFormsApp3.AccountUser();
             this.StaPage = new WindowsFormsApp3.StatisticsUser();
             this.OrderPage = new WindowsFormsApp3.OderUser();
             this.HelpPage = new WindowsFormsApp3.HelpUser();
             this.StPage = new WindowsFormsApp3.StockUser();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.timeDate1 = new WindowsFormsApp3.TimeDate();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtHelp = new System.Windows.Forms.Button();
+            this.BtAcc = new System.Windows.Forms.Button();
+            this.BtSta = new System.Windows.Forms.Button();
+            this.BtOder = new System.Windows.Forms.Button();
+            this.BtStock = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.PanelVertical);
             this.panel1.Controls.Add(this.panel6);
@@ -104,12 +107,6 @@
             resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
             // 
-            // timeDate1
-            // 
-            resources.ApplyResources(this.timeDate1, "timeDate1");
-            this.timeDate1.Name = "timeDate1";
-            this.timeDate1.Load += new System.EventHandler(this.timeDate1_Load);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.DimGray;
@@ -118,30 +115,10 @@
             // 
             // PanelLeft
             // 
-            this.PanelLeft.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.PanelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             resources.ApplyResources(this.PanelLeft, "PanelLeft");
             this.PanelLeft.Name = "PanelLeft";
             this.PanelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // BtHelp
-            // 
-            this.BtHelp.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtHelp.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtHelp, "BtHelp");
-            this.BtHelp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtHelp.Name = "BtHelp";
-            this.BtHelp.UseVisualStyleBackColor = false;
-            this.BtHelp.Click += new System.EventHandler(this.BtHelp_Click);
-            // 
-            // BtAcc
-            // 
-            this.BtAcc.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtAcc.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtAcc, "BtAcc");
-            this.BtAcc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtAcc.Name = "BtAcc";
-            this.BtAcc.UseVisualStyleBackColor = false;
-            this.BtAcc.Click += new System.EventHandler(this.BtAcc_Click);
             // 
             // Copyright
             // 
@@ -149,36 +126,6 @@
             this.Copyright.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Copyright.Name = "Copyright";
             this.Copyright.Click += new System.EventHandler(this.Copyright_Click);
-            // 
-            // BtSta
-            // 
-            this.BtSta.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtSta.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtSta, "BtSta");
-            this.BtSta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtSta.Name = "BtSta";
-            this.BtSta.UseVisualStyleBackColor = false;
-            this.BtSta.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // BtOder
-            // 
-            this.BtOder.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtOder.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtOder, "BtOder");
-            this.BtOder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtOder.Name = "BtOder";
-            this.BtOder.UseVisualStyleBackColor = false;
-            this.BtOder.Click += new System.EventHandler(this.BtOder_Click);
-            // 
-            // BtStock
-            // 
-            this.BtStock.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtStock.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtStock, "BtStock");
-            this.BtStock.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtStock.Name = "BtStock";
-            this.BtStock.UseVisualStyleBackColor = false;
-            this.BtStock.Click += new System.EventHandler(this.Stock_Click);
             // 
             // panel2
             // 
@@ -207,6 +154,12 @@
             this.panel9.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.panel9, "panel9");
             this.panel9.Name = "panel9";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Name = "panel8";
             // 
             // welPage
             // 
@@ -247,11 +200,71 @@
             resources.ApplyResources(this.StPage, "StPage");
             this.StPage.Name = "StPage";
             // 
-            // panel8
+            // timeDate1
             // 
-            this.panel8.BackColor = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.panel8, "panel8");
-            this.panel8.Name = "panel8";
+            resources.ApplyResources(this.timeDate1, "timeDate1");
+            this.timeDate1.Name = "timeDate1";
+            this.timeDate1.Load += new System.EventHandler(this.timeDate1_Load);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::WindowsFormsApp3.Properties.Resources.Logo1;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // BtHelp
+            // 
+            this.BtHelp.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtHelp.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtHelp, "BtHelp");
+            this.BtHelp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtHelp.Name = "BtHelp";
+            this.BtHelp.UseVisualStyleBackColor = false;
+            this.BtHelp.Click += new System.EventHandler(this.BtHelp_Click);
+            // 
+            // BtAcc
+            // 
+            this.BtAcc.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtAcc.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtAcc, "BtAcc");
+            this.BtAcc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtAcc.Name = "BtAcc";
+            this.BtAcc.UseVisualStyleBackColor = false;
+            this.BtAcc.Click += new System.EventHandler(this.BtAcc_Click);
+            // 
+            // BtSta
+            // 
+            this.BtSta.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtSta.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtSta, "BtSta");
+            this.BtSta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtSta.Name = "BtSta";
+            this.BtSta.UseVisualStyleBackColor = false;
+            this.BtSta.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // BtOder
+            // 
+            this.BtOder.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtOder.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtOder, "BtOder");
+            this.BtOder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtOder.Name = "BtOder";
+            this.BtOder.UseVisualStyleBackColor = false;
+            this.BtOder.Click += new System.EventHandler(this.BtOder_Click);
+            // 
+            // BtStock
+            // 
+            this.BtStock.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtStock.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtStock, "BtStock");
+            this.BtStock.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtStock.Name = "BtStock";
+            this.BtStock.UseVisualStyleBackColor = false;
+            this.BtStock.Click += new System.EventHandler(this.Stock_Click);
             // 
             // FMain
             // 
@@ -269,6 +282,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -299,5 +313,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

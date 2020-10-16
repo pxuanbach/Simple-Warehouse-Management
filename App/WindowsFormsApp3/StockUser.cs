@@ -35,11 +35,20 @@ namespace WindowsFormsApp3
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-     
         }
 
 
         private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StockUser_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtAdd_Click(object sender, EventArgs e)
         {
 
         }

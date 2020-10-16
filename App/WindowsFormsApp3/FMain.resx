@@ -117,14 +117,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 6</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 62</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 2</value>
   </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>3, 445</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panel7.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
@@ -138,7 +166,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="PanelVertical.Location" type="System.Drawing.Point, System.Drawing">
     <value>153, 2</value>
@@ -159,7 +187,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;PanelVertical.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 445</value>
@@ -180,7 +208,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 2</value>
@@ -201,7 +229,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="timeDate1.Location" type="System.Drawing.Point, System.Drawing">
     <value>-17, 346</value>
@@ -222,7 +250,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;timeDate1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 400</value>
@@ -243,10 +271,10 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="PanelLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 70</value>
+    <value>145, 81</value>
   </data>
   <data name="PanelLeft.Size" type="System.Drawing.Size, System.Drawing">
     <value>12, 33</value>
@@ -264,9 +292,8 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;PanelLeft.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BtHelp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -311,7 +338,7 @@
     <value>NoControl</value>
   </data>
   <data name="BtHelp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 231</value>
+    <value>9, 242</value>
   </data>
   <data name="BtHelp.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 33</value>
@@ -332,7 +359,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtHelp.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="BtAcc.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -365,7 +392,7 @@
     <value>NoControl</value>
   </data>
   <data name="BtAcc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 192</value>
+    <value>8, 203</value>
   </data>
   <data name="BtAcc.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 33</value>
@@ -386,7 +413,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtAcc.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="Copyright.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -417,7 +444,7 @@ Team,Inc </value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Copyright.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="BtSta.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -451,7 +478,7 @@ Team,Inc </value>
     <value>NoControl</value>
   </data>
   <data name="BtSta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 148</value>
+    <value>9, 159</value>
   </data>
   <data name="BtSta.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 33</value>
@@ -472,7 +499,7 @@ Team,Inc </value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtSta.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="BtOder.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -518,7 +545,7 @@ Team,Inc </value>
     <value>NoControl</value>
   </data>
   <data name="BtOder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 109</value>
+    <value>8, 120</value>
   </data>
   <data name="BtOder.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 33</value>
@@ -539,7 +566,7 @@ Team,Inc </value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtOder.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="BtStock.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -549,31 +576,31 @@ Team,Inc </value>
   </data>
   <data name="BtStock.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
   <data name="BtStock.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
@@ -583,7 +610,7 @@ Team,Inc </value>
     <value>NoControl</value>
   </data>
   <data name="BtStock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 70</value>
+    <value>6, 81</value>
   </data>
   <data name="BtStock.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 33</value>
@@ -604,7 +631,7 @@ Team,Inc </value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtStock.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
