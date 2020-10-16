@@ -118,13 +118,97 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>3, 456</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel7.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;panel7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PanelVertical.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 1</value>
+  </data>
+  <data name="PanelVertical.Size" type="System.Drawing.Size, System.Drawing">
+    <value>3, 445</value>
+  </data>
+  <data name="PanelVertical.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PanelVertical.Name" xml:space="preserve">
+    <value>PanelVertical</value>
+  </data>
+  <data name="&gt;&gt;PanelVertical.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelVertical.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;PanelVertical.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 445</value>
+  </data>
+  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 3</value>
+  </data>
+  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 2</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 3</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="timeDate1.Location" type="System.Drawing.Point, System.Drawing">
     <value>-17, 346</value>
   </data>
   <data name="timeDate1.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 50</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="timeDate1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
@@ -138,13 +222,13 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;timeDate1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 402</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 2</value>
+    <value>154, 3</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -159,16 +243,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>12, 33</value>
-  </data>
-  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;panel4.Name" xml:space="preserve">
     <value>panel4</value>
@@ -201,14 +276,14 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;PanelLeft.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BtHelp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="BtHelp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13pt, style=Bold</value>
+    <value>Arial, 12.75pt, style=Bold</value>
   </data>
   <data name="BtHelp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -269,13 +344,13 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtHelp.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="BtAcc.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="BtAcc.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13pt, style=Bold</value>
+    <value>Arial, 12.75pt, style=Bold</value>
   </data>
   <data name="BtAcc.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -323,7 +398,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtAcc.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="Copyright.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -354,13 +429,13 @@ Team,Inc </value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Copyright.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="BtSta.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="BtSta.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13pt, style=Bold</value>
+    <value>Arial, 12.75pt, style=Bold</value>
   </data>
   <data name="BtSta.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -409,13 +484,13 @@ Team,Inc </value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtSta.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="BtOder.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="BtOder.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13pt, style=Bold</value>
+    <value>Arial, 12.75pt, style=Bold</value>
   </data>
   <data name="BtOder.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -476,41 +551,24 @@ Team,Inc </value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtOder.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="BtStock.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="BtStock.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13pt, style=Bold</value>
+    <value>Arial, 12.75pt, style=Bold</value>
   </data>
   <data name="BtStock.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        P9x8XwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="BtStock.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
@@ -541,7 +599,7 @@ Team,Inc </value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtStock.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -550,7 +608,7 @@ Team,Inc </value>
     <value>0, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 448</value>
+    <value>157, 448</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -565,6 +623,144 @@ Team,Inc </value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 33</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>PanelLeft</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel10.Name" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;panel10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel10.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel9.Name" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;panel9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel9.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;welPage.Name" xml:space="preserve">
+    <value>welPage</value>
+  </data>
+  <data name="&gt;&gt;welPage.Type" xml:space="preserve">
+    <value>WindowsFormsApp3.UserWelcome, WindowsFormsApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;welPage.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;welPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;AccPage.Name" xml:space="preserve">
+    <value>AccPage</value>
+  </data>
+  <data name="&gt;&gt;AccPage.Type" xml:space="preserve">
+    <value>WindowsFormsApp3.AccountUser, WindowsFormsApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;AccPage.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;AccPage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;StaPage.Name" xml:space="preserve">
+    <value>StaPage</value>
+  </data>
+  <data name="&gt;&gt;StaPage.Type" xml:space="preserve">
+    <value>WindowsFormsApp3.StatisticsUser, WindowsFormsApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;StaPage.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;StaPage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;OrderPage.Name" xml:space="preserve">
+    <value>OrderPage</value>
+  </data>
+  <data name="&gt;&gt;OrderPage.Type" xml:space="preserve">
+    <value>WindowsFormsApp3.OderUser, WindowsFormsApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;OrderPage.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;OrderPage.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;HelpPage.Name" xml:space="preserve">
+    <value>HelpPage</value>
+  </data>
+  <data name="&gt;&gt;HelpPage.Type" xml:space="preserve">
+    <value>WindowsFormsApp3.HelpUser, WindowsFormsApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;HelpPage.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;HelpPage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;StPage.Name" xml:space="preserve">
+    <value>StPage</value>
+  </data>
+  <data name="&gt;&gt;StPage.Type" xml:space="preserve">
+    <value>WindowsFormsApp3.StockUser, WindowsFormsApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;StPage.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;StPage.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 3</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>747, 446</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="welPage.Location" type="System.Drawing.Point, System.Drawing">
@@ -586,7 +782,7 @@ Team,Inc </value>
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;welPage.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="AccPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -607,7 +803,7 @@ Team,Inc </value>
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;AccPage.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="StaPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -628,7 +824,7 @@ Team,Inc </value>
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;StaPage.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="OrderPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -649,7 +845,7 @@ Team,Inc </value>
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;OrderPage.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="HelpPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -670,7 +866,7 @@ Team,Inc </value>
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;HelpPage.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="StPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -691,27 +887,69 @@ Team,Inc </value>
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;StPage.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 2</value>
+  </data>
+  <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>744, 3</value>
+  </data>
+  <data name="panel8.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 0</value>
+  <data name="&gt;&gt;panel8.Name" xml:space="preserve">
+    <value>panel8</value>
   </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>747, 444</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel8.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panel8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 442</value>
+  </data>
+  <data name="panel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>744, 3</value>
+  </data>
+  <data name="panel9.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel9.Name" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;panel9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel9.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 1</value>
+  </data>
+  <data name="panel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>3, 455</value>
+  </data>
+  <data name="panel10.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel10.Name" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;panel10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel10.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel10.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -724,7 +962,7 @@ Team,Inc </value>
     <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>901, 448</value>
+    <value>902, 448</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

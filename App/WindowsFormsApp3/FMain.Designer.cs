@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.timeDate1 = new WindowsFormsApp3.TimeDate();
             this.panel3 = new System.Windows.Forms.Panel();
             this.PanelLeft = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -42,11 +43,17 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.welPage = new WindowsFormsApp3.UserWelcome();
             this.AccPage = new WindowsFormsApp3.AccountUser();
+            this.StaPage = new WindowsFormsApp3.StatisticsUser();
             this.OrderPage = new WindowsFormsApp3.OderUser();
             this.HelpPage = new WindowsFormsApp3.HelpUser();
-            this.StaPage = new WindowsFormsApp3.StatisticsUser();
             this.StPage = new WindowsFormsApp3.StockUser();
-            this.timeDate1 = new WindowsFormsApp3.TimeDate();
+            this.PanelVertical = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.PanelLeft.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -54,7 +61,11 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.PanelVertical);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.timeDate1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.PanelLeft);
@@ -68,9 +79,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // timeDate1
+            // 
+            resources.ApplyResources(this.timeDate1, "timeDate1");
+            this.timeDate1.Name = "timeDate1";
+            this.timeDate1.Load += new System.EventHandler(this.timeDate1_Load);
+            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(226)))), ((int)(((byte)(171)))));
+            this.panel3.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
@@ -90,53 +107,57 @@
             // 
             // BtHelp
             // 
+            this.BtHelp.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtHelp.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.BtHelp, "BtHelp");
-            this.BtHelp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtHelp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtHelp.Name = "BtHelp";
-            this.BtHelp.UseVisualStyleBackColor = true;
+            this.BtHelp.UseVisualStyleBackColor = false;
             this.BtHelp.Click += new System.EventHandler(this.BtHelp_Click);
             // 
             // BtAcc
             // 
+            this.BtAcc.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtAcc.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.BtAcc, "BtAcc");
-            this.BtAcc.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtAcc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtAcc.Name = "BtAcc";
-            this.BtAcc.UseVisualStyleBackColor = true;
+            this.BtAcc.UseVisualStyleBackColor = false;
             this.BtAcc.Click += new System.EventHandler(this.BtAcc_Click);
             // 
             // Copyright
             // 
             resources.ApplyResources(this.Copyright, "Copyright");
-            this.Copyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Copyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Copyright.Name = "Copyright";
             this.Copyright.Click += new System.EventHandler(this.Copyright_Click);
             // 
             // BtSta
             // 
+            this.BtSta.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtSta.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.BtSta, "BtSta");
-            this.BtSta.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtSta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtSta.Name = "BtSta";
-            this.BtSta.UseVisualStyleBackColor = true;
+            this.BtSta.UseVisualStyleBackColor = false;
             this.BtSta.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // BtOder
             // 
+            this.BtOder.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtOder.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.BtOder, "BtOder");
-            this.BtOder.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtOder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtOder.Name = "BtOder";
-            this.BtOder.UseVisualStyleBackColor = true;
+            this.BtOder.UseVisualStyleBackColor = false;
             this.BtOder.Click += new System.EventHandler(this.BtOder_Click);
             // 
             // BtStock
             // 
-            this.BtStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtStock.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtStock.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.BtStock, "BtStock");
-            this.BtStock.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtStock.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtStock.Name = "BtStock";
             this.BtStock.UseVisualStyleBackColor = false;
             this.BtStock.Click += new System.EventHandler(this.Stock_Click);
@@ -144,6 +165,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.panel10);
+            this.panel2.Controls.Add(this.panel9);
             this.panel2.Controls.Add(this.welPage);
             this.panel2.Controls.Add(this.AccPage);
             this.panel2.Controls.Add(this.StaPage);
@@ -163,47 +186,87 @@
             // 
             // AccPage
             // 
-            this.AccPage.BackColor = System.Drawing.Color.Goldenrod;
+            this.AccPage.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.AccPage, "AccPage");
             this.AccPage.Name = "AccPage";
             this.AccPage.Load += new System.EventHandler(this.AccPage_Load_1);
             // 
+            // StaPage
+            // 
+            this.StaPage.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.StaPage, "StaPage");
+            this.StaPage.Name = "StaPage";
+            // 
             // OrderPage
             // 
-            this.OrderPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OrderPage.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.OrderPage, "OrderPage");
             this.OrderPage.Name = "OrderPage";
             // 
             // HelpPage
             // 
-            this.HelpPage.BackColor = System.Drawing.Color.DimGray;
+            this.HelpPage.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.HelpPage, "HelpPage");
             this.HelpPage.Name = "HelpPage";
             this.HelpPage.Load += new System.EventHandler(this.HelpPage_Load);
             // 
-            // StaPage
-            // 
-            this.StaPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            resources.ApplyResources(this.StaPage, "StaPage");
-            this.StaPage.Name = "StaPage";
-            // 
             // StPage
             // 
-            this.StPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StPage.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.StPage, "StPage");
             this.StPage.Name = "StPage";
             // 
-            // timeDate1
+            // PanelVertical
             // 
-            resources.ApplyResources(this.timeDate1, "timeDate1");
-            this.timeDate1.Name = "timeDate1";
-            this.timeDate1.Load += new System.EventHandler(this.timeDate1_Load);
+            this.PanelVertical.BackColor = System.Drawing.Color.DimGray;
+            this.PanelVertical.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            resources.ApplyResources(this.PanelVertical, "PanelVertical");
+            this.PanelVertical.Name = "PanelVertical";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.DimGray;
+            this.panel7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Name = "panel8";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.Name = "panel9";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.DimGray;
+            this.panel10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            resources.ApplyResources(this.panel10, "panel10");
+            this.panel10.Name = "panel10";
             // 
             // FMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -239,5 +302,12 @@
         private System.Windows.Forms.Panel panel4;
         private TimeDate timeDate1;
         private UserWelcome welPage;
+        private System.Windows.Forms.Panel PanelVertical;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
     }
 }
