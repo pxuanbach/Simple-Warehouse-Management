@@ -63,7 +63,7 @@
             this.btEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEdit.Image = ((System.Drawing.Image)(resources.GetObject("btEdit.Image")));
             this.btEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btEdit.Location = new System.Drawing.Point(326, 381);
+            this.btEdit.Location = new System.Drawing.Point(326, 386);
             this.btEdit.Name = "btEdit";
             this.btEdit.Size = new System.Drawing.Size(90, 38);
             this.btEdit.TabIndex = 8;
@@ -78,7 +78,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(608, 381);
+            this.button3.Location = new System.Drawing.Point(608, 386);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(101, 38);
             this.button3.TabIndex = 7;
@@ -93,7 +93,7 @@
             this.BtDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtDel.Image = ((System.Drawing.Image)(resources.GetObject("BtDel.Image")));
             this.BtDel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtDel.Location = new System.Drawing.Point(453, 381);
+            this.BtDel.Location = new System.Drawing.Point(453, 386);
             this.BtDel.Name = "BtDel";
             this.BtDel.Size = new System.Drawing.Size(121, 38);
             this.BtDel.TabIndex = 6;
@@ -119,9 +119,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(317, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(317, 16);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(406, 372);
+            this.dataGridView1.Size = new System.Drawing.Size(406, 362);
             this.dataGridView1.TabIndex = 11;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -313,7 +313,7 @@
             this.GrAddOrder.Controls.Add(this.label5);
             this.GrAddOrder.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GrAddOrder.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.GrAddOrder.Location = new System.Drawing.Point(14, 3);
+            this.GrAddOrder.Location = new System.Drawing.Point(14, 8);
             this.GrAddOrder.Name = "GrAddOrder";
             this.GrAddOrder.Size = new System.Drawing.Size(297, 416);
             this.GrAddOrder.TabIndex = 30;
