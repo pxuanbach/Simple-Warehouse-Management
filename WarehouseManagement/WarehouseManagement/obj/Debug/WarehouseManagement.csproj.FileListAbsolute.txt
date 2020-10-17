@@ -1,4 +1,3 @@
-C:\Users\AN515-54\Desktop\C#\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.csprojAssemblyReference.cache
 C:\Users\AN515-54\Desktop\C#\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.Properties.Resources.resources
 C:\Users\AN515-54\Desktop\C#\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.GenerateResource.cache
 C:\Users\AN515-54\Desktop\C#\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.CoreCompileInputs.cache
@@ -12,3 +11,6 @@ C:\Users\AN515-54\Desktop\C#\WarehouseManagement\WarehouseManagement\obj\Debug\W
 C:\Users\AN515-54\Desktop\C#\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.UserWelcome.resources
 C:\Users\AN515-54\Desktop\C#\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.OderUser.resources
 C:\Users\AN515-54\Desktop\C#\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.StockPage.resources
+C:\Users\AN515-54\Desktop\C#\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.FMain.resources
+C:\Users\AN515-54\Desktop\C#\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.csprojAssemblyReference.cache
+C:\Users\AN515-54\Desktop\C#\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.AccountUser.resources

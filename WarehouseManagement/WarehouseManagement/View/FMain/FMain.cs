@@ -12,164 +12,73 @@ namespace WarehouseManagement
 {
     public partial class FMain : Form
     {
-        public object OrderUser { get; private set; }
-
         public FMain()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonSTOCK_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Stock_Click(object sender, EventArgs e)
-        {
-            welPage.Hide();
-            PanelLeft.Show();
-            PanelLeft.Height = BtStock.Height;
-            PanelLeft.Top = BtStock.Top;
-            StPage.Show();
+            //panelNhay.Height = buttonSTOCK.Height;
+            panelNhay.Top = buttonSTOCK.Top + 3;
+            StockPage.Show();
+            AccPage.Hide();
+            HelpUserPage.Hide();
             OrderPage.Hide();
-            StaPage.Hide();
-            AccPage.Hide();
-            HelpPage.Hide();
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            welPage.Hide();
-            PanelLeft.Show();
-            PanelLeft.Height = BtSta.Height;
-            PanelLeft.Top = BtSta.Top;
-            StPage.Hide();
-            OrderPage.Hide();
-            StaPage.Show();
-            AccPage.Hide();
-            HelpPage.Hide();
+            StatisticsPage.Hide();
+            UserPage.Hide();
 
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void panelDisplay_Paint(object sender, PaintEventArgs e)
         {
-
-        }
-
-        private void stockForm1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtOder_Click(object sender, EventArgs e)
-        {
-            welPage.Hide();
-            PanelLeft.Show();
-            PanelLeft.Height = BtOder.Height;
-            PanelLeft.Top = BtOder.Top;
-            StPage.Hide();
-            OrderPage.Show();
-            StaPage.Hide();
-            AccPage.Hide();
-            HelpPage.Hide();
-
+            
         }
 
         private void FMain_Load(object sender, EventArgs e)
         {
-            welPage.Show();
-            PanelLeft.Hide();
-            StPage.Hide();
-            OrderPage.Hide();
-            StaPage.Hide();
+            StockPage.Show();
             AccPage.Hide();
-            HelpPage.Hide();
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void stockForm1_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtAcc_Click(object sender, EventArgs e)
-        {
-            welPage.Hide();
-            PanelLeft.Show();
-            PanelLeft.Height = BtAcc.Height;
-            PanelLeft.Top = BtAcc.Top;
-            StPage.Hide();
+            HelpUserPage.Hide();
             OrderPage.Hide();
-            StaPage.Hide();
+            StatisticsPage.Hide();
+            UserPage.Hide();
+        }
+
+        private void buttonORDER_Click(object sender, EventArgs e)
+        {
+            //panelNhay.Height = buttonORDER.Height;
+            panelNhay.Top = buttonORDER.Top + 3;
+            StockPage.Hide();
+            AccPage.Hide();
+            HelpUserPage.Hide();
+            OrderPage.Show();
+            StatisticsPage.Hide();
+            UserPage.Hide();
+        }
+
+        private void buttonSTATISTICS_Click(object sender, EventArgs e)
+        {
+            //panelNhay.Height = buttonSTATISTICS.Height;
+            panelNhay.Top = buttonSTATISTICS.Top + 3;
+            StockPage.Hide();
+            AccPage.Hide();
+            HelpUserPage.Hide();
+            OrderPage.Hide();
+            StatisticsPage.Show();
+            UserPage.Hide();
+        }
+
+        private void buttonACCOUNT_Click(object sender, EventArgs e)
+        {
+            //panelNhay.Height = buttonACCOUNT.Height;
+            panelNhay.Top = buttonACCOUNT.Top + 3;
+            StockPage.Hide();
             AccPage.Show();
-            HelpPage.Hide();
-        }
-
-        private void BtHelp_Click(object sender, EventArgs e)
-        {
-            welPage.Hide();
-            PanelLeft.Show();
-            PanelLeft.Height = BtHelp.Height;
-            PanelLeft.Top = BtHelp.Top;
-            StPage.Hide();
+            HelpUserPage.Hide();
             OrderPage.Hide();
-            StaPage.Hide();
-            AccPage.Hide();
-            HelpPage.Show();
-        }
-
-        private void AccPage_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Copyright_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AccPage_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void timeDate1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void HelpPage_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void welPage_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
+            StatisticsPage.Hide();
+            UserPage.Hide();
         }
     }
 }

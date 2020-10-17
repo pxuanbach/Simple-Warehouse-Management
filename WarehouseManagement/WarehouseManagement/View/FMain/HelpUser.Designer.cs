@@ -43,7 +43,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(532, 100);
             this.label1.TabIndex = 0;
-            this.label1.Text = resources.GetString("");
+            this.label1.Text = "This is ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // linkLabel1
@@ -95,7 +95,6 @@
         }
 
         #endregion
-
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
