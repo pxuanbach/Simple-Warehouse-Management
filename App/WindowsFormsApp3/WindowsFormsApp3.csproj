@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,6 +58,12 @@
     </Compile>
     <Compile Include="FAddStock.Designer.cs">
       <DependentUpon>FAddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FChangePassword.Designer.cs">
+      <DependentUpon>FChangePassword.cs</DependentUpon>
     </Compile>
     <Compile Include="FLogin.cs">
       <SubType>Form</SubType>
@@ -119,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FAddStock.resx">
       <DependentUpon>FAddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FChangePassword.resx">
+      <DependentUpon>FChangePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
@@ -226,6 +236,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Icon\Logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconv2\Option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconv2\Username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconv2\phone-numbers-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconv2\user-profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconv2\keys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconv2\logout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

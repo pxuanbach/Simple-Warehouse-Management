@@ -45,5 +45,13 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            FChangePassword a = new FChangePassword();
+            this.Hide();
+            a.ShowDialog();
+            this.Show();
+        }
     }
 }

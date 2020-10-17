@@ -118,20 +118,56 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BtLogout.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BtLogout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.5pt</value>
+  </data>
+  <data name="BtLogout.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="BtLogout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtLogout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 292</value>
+  </data>
+  <data name="BtLogout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 26</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BtLogout.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="BtLogout.Text" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="&gt;&gt;BtLogout.Name" xml:space="preserve">
+    <value>BtLogout</value>
+  </data>
+  <data name="&gt;&gt;BtLogout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtLogout.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;BtLogout.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 6</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 62</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
@@ -145,7 +181,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 2</value>
@@ -166,7 +202,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="PanelVertical.Location" type="System.Drawing.Point, System.Drawing">
     <value>153, 2</value>
@@ -187,7 +223,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;PanelVertical.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 445</value>
@@ -208,7 +244,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 2</value>
@@ -229,7 +265,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="timeDate1.Location" type="System.Drawing.Point, System.Drawing">
     <value>-17, 346</value>
@@ -250,7 +286,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;timeDate1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 400</value>
@@ -271,7 +307,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="PanelLeft.Location" type="System.Drawing.Point, System.Drawing">
     <value>145, 81</value>
@@ -292,7 +328,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;PanelLeft.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="BtHelp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -359,7 +395,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtHelp.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="BtAcc.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -413,7 +449,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtAcc.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="Copyright.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -444,7 +480,7 @@ Team,Inc </value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Copyright.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="BtSta.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -499,7 +535,7 @@ Team,Inc </value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtSta.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="BtOder.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -566,7 +602,7 @@ Team,Inc </value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtOder.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="BtStock.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -631,7 +667,7 @@ Team,Inc </value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtStock.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -754,7 +790,7 @@ Team,Inc </value>
     <value>StaPage</value>
   </data>
   <data name="&gt;&gt;StaPage.Type" xml:space="preserve">
-    <value>WindowsFormsApp3.StatisticsUser, WindowsFormsApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>WindowsFormsApp3.StatisticsPage, WindowsFormsApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;StaPage.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -817,7 +853,7 @@ Team,Inc </value>
     <value>StPage</value>
   </data>
   <data name="&gt;&gt;StPage.Type" xml:space="preserve">
-    <value>WindowsFormsApp3.StockUser, WindowsFormsApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>WindowsFormsApp3.StockPage, WindowsFormsApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;StPage.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -3711,6 +3747,9 @@ Team,Inc </value>
         ktyxypL7scqS+7HKktyxypKao7uHMwAAAAAAAAAAAAAAAAAAAADwDwAAwAMAAIABAACAAQAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAgAEAAMADAADwDwAA
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Stock Manager</value>

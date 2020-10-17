@@ -56,7 +56,7 @@ namespace WindowsFormsApp3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+         
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

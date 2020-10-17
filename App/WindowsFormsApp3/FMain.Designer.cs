@@ -34,26 +34,27 @@
             this.PanelVertical = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.timeDate1 = new WindowsFormsApp3.TimeDate();
             this.panel3 = new System.Windows.Forms.Panel();
             this.PanelLeft = new System.Windows.Forms.Panel();
             this.Copyright = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.welPage = new WindowsFormsApp3.UserWelcome();
             this.AccPage = new WindowsFormsApp3.AccountUser();
             this.StaPage = new WindowsFormsApp3.StatisticsPage();
             this.OrderPage = new WindowsFormsApp3.OderUser();
             this.HelpPage = new WindowsFormsApp3.HelpUser();
             this.StPage = new WindowsFormsApp3.StockPage();
-            this.timeDate1 = new WindowsFormsApp3.TimeDate();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtHelp = new System.Windows.Forms.Button();
             this.BtAcc = new System.Windows.Forms.Button();
             this.BtSta = new System.Windows.Forms.Button();
             this.BtOder = new System.Windows.Forms.Button();
             this.BtStock = new System.Windows.Forms.Button();
+            this.BtLogout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,6 +63,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.BtLogout);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.PanelVertical);
@@ -106,6 +108,12 @@
             this.panel5.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
+            // 
+            // timeDate1
+            // 
+            resources.ApplyResources(this.timeDate1, "timeDate1");
+            this.timeDate1.Name = "timeDate1";
+            this.timeDate1.Load += new System.EventHandler(this.timeDate1_Load);
             // 
             // panel3
             // 
@@ -155,12 +163,6 @@
             resources.ApplyResources(this.panel9, "panel9");
             this.panel9.Name = "panel9";
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.panel8, "panel8");
-            this.panel8.Name = "panel8";
-            // 
             // welPage
             // 
             this.welPage.BackColor = System.Drawing.SystemColors.Control;
@@ -200,11 +202,11 @@
             resources.ApplyResources(this.StPage, "StPage");
             this.StPage.Name = "StPage";
             // 
-            // timeDate1
+            // panel8
             // 
-            resources.ApplyResources(this.timeDate1, "timeDate1");
-            this.timeDate1.Name = "timeDate1";
-            this.timeDate1.Load += new System.EventHandler(this.timeDate1_Load);
+            this.panel8.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Name = "panel8";
             // 
             // pictureBox1
             // 
@@ -266,6 +268,16 @@
             this.BtStock.UseVisualStyleBackColor = false;
             this.BtStock.Click += new System.EventHandler(this.Stock_Click);
             // 
+            // BtLogout
+            // 
+            this.BtLogout.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtLogout.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtLogout, "BtLogout");
+            this.BtLogout.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtLogout.Image = global::WindowsFormsApp3.Properties.Resources.logout;
+            this.BtLogout.Name = "BtLogout";
+            this.BtLogout.UseVisualStyleBackColor = false;
+            // 
             // FMain
             // 
             resources.ApplyResources(this, "$this");
@@ -314,5 +326,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button BtLogout;
     }
 }

@@ -122,3 +122,4 @@ C:\Users\AN515-54\Desktop\C#\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.StatisticsPage.resources
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.StockPage.resources
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FAddStock.resources
+C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\App\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.FChangePassword.resources

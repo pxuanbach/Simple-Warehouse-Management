@@ -84,7 +84,7 @@ namespace WindowsFormsApp3
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void TbName_Leave(object sender, EventArgs e)
@@ -196,12 +196,35 @@ namespace WindowsFormsApp3
             }
         }
 
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
 
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
 
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
 
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TbPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
          
 }
