@@ -11,9 +11,9 @@ using System.Security.AccessControl;
 
 namespace WindowsFormsApp3
 {
-    public partial class StockUser : UserControl
+    public partial class StockPage : UserControl
     {
-        public StockUser()
+        public StockPage()
         {
             InitializeComponent();
         }
@@ -50,6 +50,10 @@ namespace WindowsFormsApp3
 
         private void BtAdd_Click(object sender, EventArgs e)
         {
+            FAddStock f = new FAddStock();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
 
         }
     }

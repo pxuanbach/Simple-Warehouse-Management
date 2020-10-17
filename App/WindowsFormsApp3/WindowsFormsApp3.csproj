@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountControl.cs">
+    <Compile Include="AccountPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AccountControl.Designer.cs">
-      <DependentUpon>AccountControl.cs</DependentUpon>
+    <Compile Include="AccountPage.Designer.cs">
+      <DependentUpon>AccountPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAddStock.Designer.cs">
+      <DependentUpon>FAddStock.cs</DependentUpon>
     </Compile>
     <Compile Include="FLogin.cs">
       <SubType>Form</SubType>
@@ -70,31 +76,25 @@
     <Compile Include="FSignUp.Designer.cs">
       <DependentUpon>FSignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="FPersonal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FPersonal.Designer.cs">
-      <DependentUpon>FPersonal.cs</DependentUpon>
-    </Compile>
     <Compile Include="HelpUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="HelpUser.Designer.cs">
       <DependentUpon>HelpUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrderUser.cs">
+    <Compile Include="OrderPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="OrderUser.Designer.cs">
-      <DependentUpon>OrderUser.cs</DependentUpon>
+    <Compile Include="OrderPage.Designer.cs">
+      <DependentUpon>OrderPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StatisticsUser.cs">
+    <Compile Include="StatisticsPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="StatisticsUser.Designer.cs">
-      <DependentUpon>StatisticsUser.cs</DependentUpon>
+    <Compile Include="StatisticsPage.Designer.cs">
+      <DependentUpon>StatisticsPage.cs</DependentUpon>
     </Compile>
     <Compile Include="TimeDate.cs">
       <SubType>UserControl</SubType>
@@ -102,20 +102,23 @@
     <Compile Include="TimeDate.Designer.cs">
       <DependentUpon>TimeDate.cs</DependentUpon>
     </Compile>
-    <Compile Include="StockUser.cs">
+    <Compile Include="StockPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="StockUser.Designer.cs">
-      <DependentUpon>StockUser.cs</DependentUpon>
+    <Compile Include="StockPage.Designer.cs">
+      <DependentUpon>StockPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserWelcome.cs">
+    <Compile Include="UserPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserWelcome.Designer.cs">
-      <DependentUpon>UserWelcome.cs</DependentUpon>
+    <Compile Include="UserPage.Designer.cs">
+      <DependentUpon>UserPage.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AccountControl.resx">
-      <DependentUpon>AccountControl.cs</DependentUpon>
+    <EmbeddedResource Include="AccountPage.resx">
+      <DependentUpon>AccountPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAddStock.resx">
+      <DependentUpon>FAddStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
@@ -129,14 +132,11 @@
     <EmbeddedResource Include="FSignUp.resx">
       <DependentUpon>FSignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FPersonal.resx">
-      <DependentUpon>FPersonal.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="HelpUser.resx">
       <DependentUpon>HelpUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrderUser.resx">
-      <DependentUpon>OrderUser.cs</DependentUpon>
+    <EmbeddedResource Include="OrderPage.resx">
+      <DependentUpon>OrderPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -148,17 +148,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="StatisticsUser.resx">
-      <DependentUpon>StatisticsUser.cs</DependentUpon>
+    <EmbeddedResource Include="StatisticsPage.resx">
+      <DependentUpon>StatisticsPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TimeDate.resx">
       <DependentUpon>TimeDate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StockUser.resx">
-      <DependentUpon>StockUser.cs</DependentUpon>
+    <EmbeddedResource Include="StockPage.resx">
+      <DependentUpon>StockPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserWelcome.resx">
-      <DependentUpon>UserWelcome.cs</DependentUpon>
+    <EmbeddedResource Include="UserPage.resx">
+      <DependentUpon>UserPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

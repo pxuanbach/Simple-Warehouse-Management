@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp3
 {
-    partial class StatisticsUser
+    partial class StatisticsPage
     {
         /// <summary> 
         /// Required designer variable.

@@ -72,10 +72,10 @@ namespace WindowsFormsApp3
         {
             if (UserText.Text == "")
             {
-                UserText.Text = "Enter Name";
+                UserText.Text = "Please Enter Name";
                 UserText.ForeColor = Color.Gray;
             }
-        }
+         }
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
@@ -102,6 +102,11 @@ namespace WindowsFormsApp3
                 textBox2.Text = "Please Enter Address";
                 textBox2.ForeColor = Color.Gray;
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

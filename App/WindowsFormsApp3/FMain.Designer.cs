@@ -43,10 +43,10 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.welPage = new WindowsFormsApp3.UserWelcome();
             this.AccPage = new WindowsFormsApp3.AccountUser();
-            this.StaPage = new WindowsFormsApp3.StatisticsUser();
+            this.StaPage = new WindowsFormsApp3.StatisticsPage();
             this.OrderPage = new WindowsFormsApp3.OderUser();
             this.HelpPage = new WindowsFormsApp3.HelpUser();
-            this.StPage = new WindowsFormsApp3.StockUser();
+            this.StPage = new WindowsFormsApp3.StockPage();
             this.timeDate1 = new WindowsFormsApp3.TimeDate();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtHelp = new System.Windows.Forms.Button();
@@ -299,9 +299,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private HelpUser HelpPage;
-        private StatisticsUser StaPage;
+        private StatisticsPage StaPage;
         private OderUser OrderPage;
-        private StockUser StPage;
+        private StockPage StPage;
         private AccountUser AccPage;
         private System.Windows.Forms.Button BtStock;
         private TimeDate timeDate1;
