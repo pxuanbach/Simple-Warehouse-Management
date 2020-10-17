@@ -28,305 +28,244 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
+            this.panelLeft = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.PanelVertical = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.timeDate1 = new WarehouseManagement.TimeDate();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.PanelLeft = new System.Windows.Forms.Panel();
-            this.Copyright = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.welPage = new WarehouseManagement.UserWelcome();
-            this.AccPage = new WarehouseManagement.AccountUser();
-            this.StaPage = new WarehouseManagement.StatisticsPage();
-            this.OrderPage = new WarehouseManagement.OderUser();
-            this.HelpPage = new WarehouseManagement.HelpUser();
-            this.StPage = new WarehouseManagement.StockPage();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtHelp = new System.Windows.Forms.Button();
-            this.BtAcc = new System.Windows.Forms.Button();
-            this.BtSta = new System.Windows.Forms.Button();
-            this.BtOder = new System.Windows.Forms.Button();
-            this.BtStock = new System.Windows.Forms.Button();
-            this.BtLogout = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.buttonACCOUNT = new System.Windows.Forms.Button();
+            this.buttonSTATISTICS = new System.Windows.Forms.Button();
+            this.buttonORDER = new System.Windows.Forms.Button();
+            this.buttonSTOCK = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.panelDisplay = new System.Windows.Forms.Panel();           //cap phat bo nho cho user control
+            this.groupBox1 = new System.Windows.Forms.GroupBox();           //
+            this.AccPage = new WarehouseManagement.AccountUser();           //
+            this.HelpUserPage = new WarehouseManagement.HelpUser();         //
+            this.OrderPage = new WarehouseManagement.OderUser();            //
+            this.StatisticsPage = new WarehouseManagement.StatisticsPage(); //
+            this.StockPage = new WarehouseManagement.StockPage();           //
+            this.UserPage = new WarehouseManagement.UserWelcome();          //
+            this.TimeDatePage = new WarehouseManagement.TimeDate();         //
+            this.panelNhay = new System.Windows.Forms.Panel();
+            this.panelLeft.SuspendLayout();
+            this.panelDisplay.SuspendLayout();
             this.SuspendLayout();
-            
+            // 
+            // panelLeft
+            // 
+            this.panelLeft.BackColor = System.Drawing.Color.White;
+            this.panelLeft.Controls.Add(this.panelNhay);    
+            this.panelLeft.Controls.Add(this.panel1);
+            this.panelLeft.Controls.Add(this.buttonACCOUNT);    //add button vao panel
+            this.panelLeft.Controls.Add(this.buttonSTATISTICS); //
+            this.panelLeft.Controls.Add(this.buttonORDER);      //
+            this.panelLeft.Controls.Add(this.buttonSTOCK);      //
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(158, 549);
+            this.panelLeft.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.BtLogout);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.PanelVertical);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.timeDate1);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.PanelLeft);
-            this.panel1.Controls.Add(this.BtHelp);
-            this.panel1.Controls.Add(this.BtAcc);
-            this.panel1.Controls.Add(this.Copyright);
-            this.panel1.Controls.Add(this.BtSta);
-            this.panel1.Controls.Add(this.BtOder);
-            this.panel1.Controls.Add(this.BtStock);
-            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Location = new System.Drawing.Point(154, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.Size = new System.Drawing.Size(1, 552);
+            this.panel1.TabIndex = 6;
             // 
-            // panel7
+            // buttonACCOUNT
             // 
-            this.panel7.BackColor = System.Drawing.Color.DimGray;
-            this.panel7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            resources.ApplyResources(this.panel7, "panel7");
-            this.panel7.Name = "panel7";
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            this.buttonACCOUNT.BackColor = System.Drawing.Color.Gray;
+            this.buttonACCOUNT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonACCOUNT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonACCOUNT.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonACCOUNT.Location = new System.Drawing.Point(-6, 285);
+            this.buttonACCOUNT.Name = "buttonACCOUNT";
+            this.buttonACCOUNT.Size = new System.Drawing.Size(170, 56);
+            this.buttonACCOUNT.TabIndex = 3;
+            this.buttonACCOUNT.Text = "ACCOUNT";
+            this.buttonACCOUNT.UseVisualStyleBackColor = false;
+            this.buttonACCOUNT.Click += new System.EventHandler(this.buttonACCOUNT_Click);
             // 
-            // PanelVertical
+            // buttonSTATISTICS
             // 
-            this.PanelVertical.BackColor = System.Drawing.Color.DimGray;
-            this.PanelVertical.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            resources.ApplyResources(this.PanelVertical, "PanelVertical");
-            this.PanelVertical.Name = "PanelVertical";
+            this.buttonSTATISTICS.BackColor = System.Drawing.Color.Gray;
+            this.buttonSTATISTICS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSTATISTICS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSTATISTICS.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonSTATISTICS.Location = new System.Drawing.Point(-9, 223);
+            this.buttonSTATISTICS.Name = "buttonSTATISTICS";
+            this.buttonSTATISTICS.Size = new System.Drawing.Size(173, 56);
+            this.buttonSTATISTICS.TabIndex = 2;
+            this.buttonSTATISTICS.Text = "STATISTICS";
+            this.buttonSTATISTICS.UseVisualStyleBackColor = false;
+            this.buttonSTATISTICS.Click += new System.EventHandler(this.buttonSTATISTICS_Click);
             // 
-            // panel6
+            // buttonORDER
             // 
-            this.panel6.BackColor = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.panel6, "panel6");
-            this.panel6.Name = "panel6";
+            this.buttonORDER.BackColor = System.Drawing.Color.Gray;
+            this.buttonORDER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonORDER.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonORDER.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonORDER.Location = new System.Drawing.Point(-9, 161);
+            this.buttonORDER.Name = "buttonORDER";
+            this.buttonORDER.Size = new System.Drawing.Size(173, 56);
+            this.buttonORDER.TabIndex = 1;
+            this.buttonORDER.Text = "ORDER";
+            this.buttonORDER.UseVisualStyleBackColor = false;
+            this.buttonORDER.Click += new System.EventHandler(this.buttonORDER_Click);
             // 
-            // panel5
+            // buttonSTOCK
             // 
-            this.panel5.BackColor = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
+            this.buttonSTOCK.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonSTOCK.BackColor = System.Drawing.Color.Gray;
+            this.buttonSTOCK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSTOCK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSTOCK.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonSTOCK.Location = new System.Drawing.Point(-9, 99);
+            this.buttonSTOCK.Name = "buttonSTOCK";
+            this.buttonSTOCK.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonSTOCK.Size = new System.Drawing.Size(173, 56);
+            this.buttonSTOCK.TabIndex = 0;
+            this.buttonSTOCK.Text = "STOCK";
+            this.buttonSTOCK.UseVisualStyleBackColor = false;
+            this.buttonSTOCK.Click += new System.EventHandler(this.buttonSTOCK_Click);
             // 
-            // timeDate1
+            // panelDisplay
             // 
-            resources.ApplyResources(this.timeDate1, "timeDate1");
-            this.timeDate1.Name = "timeDate1";
-            this.timeDate1.Load += new System.EventHandler(this.timeDate1_Load);
+            this.panelDisplay.Controls.Add(this.groupBox1);             //add user control vao panel
+            this.panelDisplay.Controls.Add(this.AccPage);               //
+            this.panelDisplay.Controls.Add(this.HelpUserPage);          //
+            this.panelDisplay.Controls.Add(this.OrderPage);             //
+            this.panelDisplay.Controls.Add(this.StatisticsPage);        //
+            this.panelDisplay.Controls.Add(this.StockPage);             //
+            this.panelDisplay.Controls.Add(this.UserPage);              //
+            this.panelDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDisplay.Location = new System.Drawing.Point(158, 0);
+            this.panelDisplay.Name = "panelDisplay";
+            this.panelDisplay.Size = new System.Drawing.Size(990, 549);
+            this.panelDisplay.TabIndex = 1;
             // 
-            // panel3
+            // groupBox1
             // 
-            this.panel3.BackColor = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
-            // 
-            // PanelLeft
-            // 
-            this.PanelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.PanelLeft, "PanelLeft");
-            this.PanelLeft.Name = "PanelLeft";
-            this.PanelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // Copyright
-            // 
-            resources.ApplyResources(this.Copyright, "Copyright");
-            this.Copyright.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Copyright.Name = "Copyright";
-            this.Copyright.Click += new System.EventHandler(this.Copyright_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.panel10);
-            this.panel2.Controls.Add(this.panel9);
-            this.panel2.Controls.Add(this.welPage);
-            this.panel2.Controls.Add(this.AccPage);
-            this.panel2.Controls.Add(this.StaPage);
-            this.panel2.Controls.Add(this.OrderPage);
-            this.panel2.Controls.Add(this.HelpPage);
-            this.panel2.Controls.Add(this.StPage);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.DimGray;
-            this.panel10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            resources.ApplyResources(this.panel10, "panel10");
-            this.panel10.Name = "panel10";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.panel9, "panel9");
-            this.panel9.Name = "panel9";
-            // 
-            // welPage
-            // 
-            this.welPage.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.welPage, "welPage");
-            this.welPage.Name = "welPage";
-            this.welPage.Load += new System.EventHandler(this.welPage_Load);
+            this.groupBox1.AutoSize = true;
+            this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(6, 21);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
             // 
             // AccPage
             // 
+            this.AccPage.AutoSize = true;
+            this.AccPage.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.AccPage.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.AccPage, "AccPage");
+            this.AccPage.Location = new System.Drawing.Point(0, -1);
+            this.AccPage.Margin = new System.Windows.Forms.Padding(4);
             this.AccPage.Name = "AccPage";
-            this.AccPage.Load += new System.EventHandler(this.AccPage_Load_1);
+            this.AccPage.Size = new System.Drawing.Size(996, 550);
+            this.AccPage.TabIndex = 0;
             // 
-            // StaPage
+            // HelpUserPage
             // 
-            this.StaPage.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.StaPage, "StaPage");
-            this.StaPage.Name = "StaPage";
+            this.HelpUserPage.BackColor = System.Drawing.SystemColors.Control;
+            this.HelpUserPage.Location = new System.Drawing.Point(0, -1);
+            this.HelpUserPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HelpUserPage.Name = "HelpUserPage";
+            this.HelpUserPage.Size = new System.Drawing.Size(992, 546);
+            this.HelpUserPage.TabIndex = 1;
             // 
             // OrderPage
             // 
             this.OrderPage.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.OrderPage, "OrderPage");
+            this.OrderPage.Location = new System.Drawing.Point(0, -1);
+            this.OrderPage.Margin = new System.Windows.Forms.Padding(4);
             this.OrderPage.Name = "OrderPage";
+            this.OrderPage.Size = new System.Drawing.Size(992, 546);
+            this.OrderPage.TabIndex = 2;
             // 
-            // HelpPage
+            // StatisticsPage
             // 
-            this.HelpPage.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.HelpPage, "HelpPage");
-            this.HelpPage.Name = "HelpPage";
-            this.HelpPage.Load += new System.EventHandler(this.HelpPage_Load);
+            this.StatisticsPage.BackColor = System.Drawing.Color.White;
+            this.StatisticsPage.Location = new System.Drawing.Point(0, 0);
+            this.StatisticsPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StatisticsPage.Name = "StatisticsPage";
+            this.StatisticsPage.Size = new System.Drawing.Size(992, 546);
+            this.StatisticsPage.TabIndex = 3;
             // 
-            // StPage
+            // StockPage
             // 
-            this.StPage.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.StPage, "StPage");
-            this.StPage.Name = "StPage";
+            this.StockPage.AutoSize = true;
+            this.StockPage.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.StockPage.Location = new System.Drawing.Point(0, 0);
+            this.StockPage.Margin = new System.Windows.Forms.Padding(4);
+            this.StockPage.Name = "StockPage";
+            this.StockPage.Size = new System.Drawing.Size(1000, 546);
+            this.StockPage.TabIndex = 4;
             // 
-            // panel8
+            // UserPage
             // 
-            this.panel8.BackColor = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.panel8, "panel8");
-            this.panel8.Name = "panel8";
+            this.UserPage.BackColor = System.Drawing.SystemColors.Control;
+            this.UserPage.Location = new System.Drawing.Point(0, 0);
+            this.UserPage.Margin = new System.Windows.Forms.Padding(4);
+            this.UserPage.Name = "UserPage";
+            this.UserPage.Size = new System.Drawing.Size(992, 546);
+            this.UserPage.TabIndex = 5;
             // 
-            // pictureBox1
+            // TimeDatePage
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::WarehouseManagement.Properties.Resources.Logo;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.TimeDatePage.Location = new System.Drawing.Point(0, 0);
+            this.TimeDatePage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TimeDatePage.Name = "TimeDatePage";
+            this.TimeDatePage.Size = new System.Drawing.Size(260, 74);
+            this.TimeDatePage.TabIndex = 0;
             // 
-            // BtHelp
+            // panelNhay
             // 
-            this.BtHelp.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtHelp.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtHelp, "BtHelp");
-            this.BtHelp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtHelp.Name = "BtHelp";
-            this.BtHelp.UseVisualStyleBackColor = false;
-            this.BtHelp.Click += new System.EventHandler(this.BtHelp_Click);
-            // 
-            // BtAcc
-            // 
-            this.BtAcc.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtAcc.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtAcc, "BtAcc");
-            this.BtAcc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtAcc.Name = "BtAcc";
-            this.BtAcc.UseVisualStyleBackColor = false;
-            this.BtAcc.Click += new System.EventHandler(this.BtAcc_Click);
-            // 
-            // BtSta
-            // 
-            this.BtSta.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtSta.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtSta, "BtSta");
-            this.BtSta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtSta.Name = "BtSta";
-            this.BtSta.UseVisualStyleBackColor = false;
-            this.BtSta.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // BtOder
-            // 
-            this.BtOder.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtOder.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtOder, "BtOder");
-            this.BtOder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtOder.Name = "BtOder";
-            this.BtOder.UseVisualStyleBackColor = false;
-            this.BtOder.Click += new System.EventHandler(this.BtOder_Click);
-            // 
-            // BtStock
-            // 
-            this.BtStock.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtStock.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtStock, "BtStock");
-            this.BtStock.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtStock.Name = "BtStock";
-            this.BtStock.UseVisualStyleBackColor = false;
-            this.BtStock.Click += new System.EventHandler(this.Stock_Click);
-            // 
-            // BtLogout
-            // 
-            this.BtLogout.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtLogout.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtLogout, "BtLogout");
-            this.BtLogout.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtLogout.Image = global::WarehouseManagement.Properties.Resources.logout;
-            this.BtLogout.Name = "BtLogout";
-            this.BtLogout.UseVisualStyleBackColor = false;
+            this.panelNhay.BackColor = System.Drawing.Color.Silver;
+            this.panelNhay.Location = new System.Drawing.Point(148, 102);
+            this.panelNhay.Name = "panelNhay";
+            this.panelNhay.Size = new System.Drawing.Size(10, 49);
+            this.panelNhay.TabIndex = 6;
             // 
             // FMain
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.MaximizeBox = false;
+            this.ClientSize = new System.Drawing.Size(1148, 549);
+            this.Controls.Add(this.panelDisplay);
+            this.Controls.Add(this.panelLeft);
             this.Name = "FMain";
-            this.TransparencyKey = System.Drawing.Color.GhostWhite;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FMain";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.FMain_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelLeft.ResumeLayout(false);
+            this.panelDisplay.ResumeLayout(false);
+            this.panelDisplay.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button BtSta;
-        private System.Windows.Forms.Button BtOder;
-        private System.Windows.Forms.Label Copyright;
-        private System.Windows.Forms.Button BtHelp;
-
-        private System.Windows.Forms.Panel PanelLeft;
-        private System.Windows.Forms.Button BtAcc;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private HelpUser HelpPage;
-        private StatisticsPage StaPage;
-        private OderUser OrderPage;
-        private StockPage StPage;
-        private AccountUser AccPage;
-        private System.Windows.Forms.Button BtStock;
-        private TimeDate timeDate1;
-        private UserWelcome welPage;
-        private System.Windows.Forms.Panel PanelVertical;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button BtLogout;
         #endregion
+
+        private AccountUser AccPage;                //Khoi tao cua cac user control
+        private HelpUser HelpUserPage;              //
+        private OderUser OrderPage;                 //
+        private StatisticsPage StatisticsPage;      //
+        private StockPage StockPage;                //
+        private TimeDate TimeDatePage;              //
+        private UserWelcome UserPage;               //
+        private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.Button buttonSTOCK;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Panel panelDisplay;
+        private System.Windows.Forms.Button buttonORDER;
+        private System.Windows.Forms.Button buttonSTATISTICS;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button buttonACCOUNT;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelNhay;
     }
 }

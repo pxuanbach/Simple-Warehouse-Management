@@ -63,17 +63,17 @@
     <Compile Include="View\FLogin.Designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FMain\HelpUser.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\FMain\HelpUser.Designer.cs">
-      <DependentUpon>HelpUser.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\FMain\FMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FMain\FMain.Designer.cs">
       <DependentUpon>FMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FMain\HelpUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FMain\HelpUser.Designer.cs">
+      <DependentUpon>HelpUser.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FMain\AccountPage.cs">
       <SubType>UserControl</SubType>
@@ -124,6 +124,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FMain\AccountPage.resx">
+      <DependentUpon>AccountPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FMain\FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FMain\OrderPage.resx">
       <DependentUpon>OrderPage.cs</DependentUpon>
