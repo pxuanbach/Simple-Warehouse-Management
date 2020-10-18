@@ -7,15 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WarehouseManagement.Controller;
 
 namespace WarehouseManagement
 {
     public partial class AccountUser : UserControl
     {
-        public AccountUser()
+        public AccountUser(string username)
         {
             InitializeComponent();
+            MyAccount = username;
         }
+        public string MyAccount { get; set; }
+
+        AccountPage_Controller Acc = new AccountPage_Controller();
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -38,12 +43,19 @@ namespace WarehouseManagement
 
         private void AccountUser_Load(object sender, EventArgs e)
         {
-
+            string[] DataAccount = new string[10];
+            DataAccount = Acc.GetDataAcc(MyAccount);
+            labelName.Text = DataAccount[0];
+            textBoxPNumber.Text = DataAccount[1];
+            //comboBoxGTinh.Text = DataAccount[2];
+            //textBoxEmail.Text = DataAccount[3];
+            //labelViTri.Text = DataAccount[4];
+            //dateTimePickerBDay.Value = Acc.BIRTHDAY(MyAccount);
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label8_Click(object sender, EventArgs e)

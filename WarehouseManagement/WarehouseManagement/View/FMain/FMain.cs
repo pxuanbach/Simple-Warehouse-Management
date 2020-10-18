@@ -12,60 +12,45 @@ namespace WarehouseManagement
 {
     public partial class FMain : Form
     {
+        
         public FMain()
         {
             InitializeComponent();
+            
+            
         }
-
-        private void buttonSTOCK_Click(object sender, EventArgs e)
+        public string GetUsername(string username)
         {
-
-
-
+            return username;
         }
+        public string MyUserName { get; set; }
+        //public UserWelcome pgWelcome;
+        //public StockPage pg;
 
-        private void panelDisplay_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
+
 
         private void FMain_Load(object sender, EventArgs e)
         {
-            welPage.Show();
-            PanelLeft.Hide();
-            StPage.Hide();
-            OrderPage.Hide();
-            StaPage.Hide();
-            AccPage.Hide();
-            HelpPage.Hide();
+            UserWelcome pgWelcome = new UserWelcome();
+            this.panel5.Controls.Add(pgWelcome);
+            pgWelcome.Show();
+            if (ckBT == true)
+                pgWelcome.Hide();
         }
 
-        private void buttonORDER_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonSTATISTICS_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonACCOUNT_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        public bool ckBT = false;
         private void BtStock_Click(object sender, EventArgs e)
         {
-            welPage.Hide();
+            ckBT = true;
+            StockPage pg = new StockPage(MyUserName);
+            this.panel5.Controls.Add(pg);
+            pg.BringToFront();
+
             PanelLeft.Show();
             PanelLeft.Height = BtStock.Height;
             PanelLeft.Top = BtStock.Top;
-            StPage.Show();
-            OrderPage.Hide();
-            StaPage.Hide();
-            AccPage.Hide();
-            HelpPage.Hide();
+            
 
         }
 
@@ -76,15 +61,14 @@ namespace WarehouseManagement
 
         private void BtOder_Click(object sender, EventArgs e)
         {
-            welPage.Hide();
+            OderUser pg = new OderUser();
+            this.panel5.Controls.Add(pg);
+            pg.BringToFront();
+
             PanelLeft.Show();
             PanelLeft.Height = BtOder.Height;
             PanelLeft.Top = BtOder.Top;
-            StPage.Hide();
-            OrderPage.Show();
-            StaPage.Hide();
-            AccPage.Hide();
-            HelpPage.Hide();
+            
         }
 
         private void panelL_Paint(object sender, PaintEventArgs e)
@@ -94,41 +78,35 @@ namespace WarehouseManagement
 
         private void BtSta_Click(object sender, EventArgs e)
         {
-            welPage.Hide();
+            StatisticsPage pg = new StatisticsPage();
+            this.panel5.Controls.Add(pg);
+            pg.BringToFront();
+
             PanelLeft.Show();
             PanelLeft.Height = BtSta.Height;
             PanelLeft.Top = BtSta.Top;
-            StPage.Hide();
-            OrderPage.Hide();
-            StaPage.Show();
-            AccPage.Hide();
-            HelpPage.Hide();
         }
 
         private void BtAcc_Click(object sender, EventArgs e)
         {
-            welPage.Hide();
+            AccountUser pg = new AccountUser(MyUserName);
+            this.panel5.Controls.Add(pg);
+            pg.BringToFront();
+
             PanelLeft.Show();
             PanelLeft.Height = BtAcc.Height;
             PanelLeft.Top = BtAcc.Top;
-            StPage.Hide();
-            OrderPage.Hide();
-            StaPage.Hide();
-            AccPage.Show();
-            HelpPage.Hide();
         }
 
         private void BtHelp_Click(object sender, EventArgs e)
         {
-            welPage.Hide();
+            HelpUser pg = new HelpUser();
+            this.panel5.Controls.Add(pg);
+            pg.BringToFront();
+
             PanelLeft.Show();
             PanelLeft.Height = BtAbout.Height;
             PanelLeft.Top = BtAbout.Top;
-            StPage.Hide();
-            OrderPage.Hide();
-            StaPage.Hide();
-            AccPage.Hide();
-            HelpPage.Show();
         }
 
         private void BtLogout_Click(object sender, EventArgs e)

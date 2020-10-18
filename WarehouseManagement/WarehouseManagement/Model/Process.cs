@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Collections.Concurrent;
 
 namespace WarehouseManagement.Model
 {
@@ -52,6 +50,58 @@ namespace WarehouseManagement.Model
             }
             conn.Close();
             return ck;
+        }
+
+        public static string[] ListData(string sql)
+        {
+            string[] list = new string[10];
+            conn = new SqlConnection(connectLink);
+            conn.Open();
+            cmd = new SqlCommand(sql, conn);
+            reader = cmd.ExecuteReader();
+            while (reader.HasRows)
+            {
+                if (reader.Read() == false) break;
+                list[0] = reader[0].ToString();
+                list[1] = reader.GetString(1);
+                //if (reader[2] == null)
+                //    list[2] = "None";
+                //else
+                //{
+                //    list[2] = reader.GetString(2);
+                //}    
+                    
+                //if (reader.GetString(3) == null)
+                //    list[3] = "";
+                //else
+                //    list[3] = reader.GetString(3);
+                //if (reader.GetString(4) == null)
+                //    list[4] = "";
+                //else
+                //    list[4] = reader.GetString(4);
+                //list[4] = reader.GetString(4);
+                //list[5] = reader.GetString(5);
+            }
+            conn.Close();
+            return list;
+        }
+        public static DateTime date(string sql)
+        {
+            DateTime time = new DateTime();
+            conn = new SqlConnection(connectLink);
+            conn.Open();
+            cmd = new SqlCommand(sql, conn);
+            reader = cmd.ExecuteReader();
+            while (reader.HasRows)
+            {
+                if (reader.Read() == false) break;
+                else
+                {
+                    time = reader.GetDateTime(0);
+                }
+            }
+            conn.Close();
+            return time;
         }
     }
 }

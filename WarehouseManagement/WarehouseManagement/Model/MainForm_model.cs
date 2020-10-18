@@ -8,12 +8,12 @@ using System.Data.SqlClient;
 
 namespace WarehouseManagement.Model
 {
-    class MainForm_model
+    class MainForm_Model
     {
-        public DataTable Load_On()
+        public DataTable Load_On(string UName)
         {
             DataTable re;
-            string sql_select = "Select MAHANG,TENHANG,DVT,SOLUONG,DONGIA,NGNHAP,NGSANXUAT,HSD from HANGHOA where UKEY = 19521233";
+            string sql_select = "Select HANGHOA.MAHANG,TENHANG,DVT,SOLUONG,DONGIA,NGNHAP,NGSANXUAT,HSD from HANGHOA inner join USERACC on USERACC.UKEY=HANGHOA.UKEY where USERNAME = '" + UName + "'";
             re = Process.createTable(sql_select);
             return re;
         }

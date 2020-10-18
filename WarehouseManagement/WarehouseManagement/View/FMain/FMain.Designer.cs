@@ -48,12 +48,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.welPage = new WarehouseManagement.UserWelcome();
-            this.StPage = new WarehouseManagement.StockPage();
-            this.StaPage = new WarehouseManagement.StatisticsPage();
-            this.OrderPage = new WarehouseManagement.OderUser();
-            this.HelpPage = new WarehouseManagement.HelpUser();
-            this.AccPage = new WarehouseManagement.AccountUser();
             this.TimeDatePage = new WarehouseManagement.TimeDate();
             this.panelL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,28 +68,30 @@
             this.panelL.Controls.Add(this.BtStock);
             this.panelL.Controls.Add(this.BtSta);
             this.panelL.Controls.Add(this.BtOder);
-            this.panelL.Location = new System.Drawing.Point(2, 2);
-            this.panelL.Margin = new System.Windows.Forms.Padding(2);
+            this.panelL.Location = new System.Drawing.Point(3, 2);
+            this.panelL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelL.Name = "panelL";
-            this.panelL.Size = new System.Drawing.Size(157, 442);
+            this.panelL.Size = new System.Drawing.Size(209, 544);
             this.panelL.TabIndex = 0;
             this.panelL.Paint += new System.Windows.Forms.PaintEventHandler(this.panelL_Paint);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WarehouseManagement.Properties.Resources.Logo2;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(148, 62);
+            this.pictureBox1.Size = new System.Drawing.Size(197, 76);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.DimGray;
-            this.panel7.Location = new System.Drawing.Point(1, 405);
+            this.panel7.Location = new System.Drawing.Point(1, 498);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(156, 2);
+            this.panel7.Size = new System.Drawing.Size(208, 2);
             this.panel7.TabIndex = 22;
             // 
             // Copyright
@@ -103,30 +99,34 @@
             this.Copyright.AutoSize = true;
             this.Copyright.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Copyright.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Copyright.Location = new System.Drawing.Point(6, 410);
+            this.Copyright.Location = new System.Drawing.Point(8, 505);
+            this.Copyright.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Copyright.Name = "Copyright";
-            this.Copyright.Size = new System.Drawing.Size(141, 26);
+            this.Copyright.Size = new System.Drawing.Size(185, 34);
             this.Copyright.TabIndex = 21;
             this.Copyright.Text = "Copyright © 2020-2021 UIT \r\nTeam,Inc ";
             // 
             // timeDate1
             // 
-            this.timeDate1.Location = new System.Drawing.Point(1, 347);
+            this.timeDate1.Location = new System.Drawing.Point(1, 427);
+            this.timeDate1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.timeDate1.Name = "timeDate1";
-            this.timeDate1.Size = new System.Drawing.Size(153, 60);
+            this.timeDate1.Size = new System.Drawing.Size(204, 74);
             this.timeDate1.TabIndex = 20;
             // 
             // BtLogout
             // 
             this.BtLogout.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtLogout.FlatAppearance.BorderSize = 0;
-            this.BtLogout.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.BtLogout.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtLogout.Image = global::WarehouseManagement.Properties.Resources.logout;
             this.BtLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLogout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtLogout.Location = new System.Drawing.Point(9, 289);
+            this.BtLogout.Location = new System.Drawing.Point(12, 356);
+            this.BtLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtLogout.Name = "BtLogout";
-            this.BtLogout.Size = new System.Drawing.Size(94, 26);
+            this.BtLogout.Size = new System.Drawing.Size(125, 32);
             this.BtLogout.TabIndex = 19;
             this.BtLogout.Text = "Logout";
             this.BtLogout.UseVisualStyleBackColor = false;
@@ -135,10 +135,10 @@
             // PanelLeft
             // 
             this.PanelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(207)))), ((int)(((byte)(102)))));
-            this.PanelLeft.Location = new System.Drawing.Point(148, 77);
-            this.PanelLeft.Margin = new System.Windows.Forms.Padding(2);
+            this.PanelLeft.Location = new System.Drawing.Point(197, 95);
+            this.PanelLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelLeft.Name = "PanelLeft";
-            this.PanelLeft.Size = new System.Drawing.Size(10, 34);
+            this.PanelLeft.Size = new System.Drawing.Size(13, 42);
             this.PanelLeft.TabIndex = 6;
             this.PanelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNhay_Paint);
             // 
@@ -152,9 +152,10 @@
             this.BtAbout.Image = global::WarehouseManagement.Properties.Resources.HelpIIC;
             this.BtAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtAbout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtAbout.Location = new System.Drawing.Point(3, 238);
+            this.BtAbout.Location = new System.Drawing.Point(4, 293);
+            this.BtAbout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtAbout.Name = "BtAbout";
-            this.BtAbout.Size = new System.Drawing.Size(153, 33);
+            this.BtAbout.Size = new System.Drawing.Size(204, 41);
             this.BtAbout.TabIndex = 17;
             this.BtAbout.Text = "About";
             this.BtAbout.UseVisualStyleBackColor = false;
@@ -170,9 +171,10 @@
             this.BtAcc.Image = global::WarehouseManagement.Properties.Resources.UserIC3;
             this.BtAcc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtAcc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtAcc.Location = new System.Drawing.Point(3, 199);
+            this.BtAcc.Location = new System.Drawing.Point(4, 245);
+            this.BtAcc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtAcc.Name = "BtAcc";
-            this.BtAcc.Size = new System.Drawing.Size(153, 33);
+            this.BtAcc.Size = new System.Drawing.Size(204, 41);
             this.BtAcc.TabIndex = 16;
             this.BtAcc.Text = "   Account";
             this.BtAcc.UseVisualStyleBackColor = false;
@@ -188,9 +190,10 @@
             this.BtStock.Image = ((System.Drawing.Image)(resources.GetObject("BtStock.Image")));
             this.BtStock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtStock.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtStock.Location = new System.Drawing.Point(3, 77);
+            this.BtStock.Location = new System.Drawing.Point(4, 95);
+            this.BtStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtStock.Name = "BtStock";
-            this.BtStock.Size = new System.Drawing.Size(153, 33);
+            this.BtStock.Size = new System.Drawing.Size(204, 41);
             this.BtStock.TabIndex = 13;
             this.BtStock.Text = "Stock";
             this.BtStock.UseVisualStyleBackColor = false;
@@ -206,9 +209,10 @@
             this.BtSta.Image = ((System.Drawing.Image)(resources.GetObject("BtSta.Image")));
             this.BtSta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtSta.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtSta.Location = new System.Drawing.Point(3, 155);
+            this.BtSta.Location = new System.Drawing.Point(4, 191);
+            this.BtSta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtSta.Name = "BtSta";
-            this.BtSta.Size = new System.Drawing.Size(153, 33);
+            this.BtSta.Size = new System.Drawing.Size(204, 41);
             this.BtSta.TabIndex = 15;
             this.BtSta.Text = "   Statistics";
             this.BtSta.UseVisualStyleBackColor = false;
@@ -224,9 +228,10 @@
             this.BtOder.Image = ((System.Drawing.Image)(resources.GetObject("BtOder.Image")));
             this.BtOder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtOder.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtOder.Location = new System.Drawing.Point(3, 116);
+            this.BtOder.Location = new System.Drawing.Point(4, 143);
+            this.BtOder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtOder.Name = "BtOder";
-            this.BtOder.Size = new System.Drawing.Size(153, 33);
+            this.BtOder.Size = new System.Drawing.Size(204, 41);
             this.BtOder.TabIndex = 14;
             this.BtOder.Text = "Order";
             this.BtOder.UseVisualStyleBackColor = false;
@@ -237,119 +242,70 @@
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2, 448);
+            this.panel1.Size = new System.Drawing.Size(3, 551);
             this.panel1.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(2, 0);
+            this.panel2.Location = new System.Drawing.Point(3, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(908, 2);
+            this.panel2.Size = new System.Drawing.Size(1210, 2);
             this.panel2.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(908, 2);
+            this.panel3.Location = new System.Drawing.Point(1210, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(2, 446);
+            this.panel3.Size = new System.Drawing.Size(3, 549);
             this.panel3.TabIndex = 3;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(2, 446);
+            this.panel4.Location = new System.Drawing.Point(3, 549);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(906, 2);
+            this.panel4.Size = new System.Drawing.Size(1207, 2);
             this.panel4.TabIndex = 4;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.welPage);
-            this.panel5.Controls.Add(this.StPage);
-            this.panel5.Controls.Add(this.StaPage);
-            this.panel5.Controls.Add(this.OrderPage);
-            this.panel5.Controls.Add(this.HelpPage);
-            this.panel5.Controls.Add(this.AccPage);
-            this.panel5.Location = new System.Drawing.Point(164, 2);
+            this.panel5.Location = new System.Drawing.Point(219, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(744, 444);
+            this.panel5.Size = new System.Drawing.Size(992, 546);
             this.panel5.TabIndex = 5;
             // 
             // panel6
             // 
             this.panel6.Location = new System.Drawing.Point(0, -2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1, 740);
+            this.panel6.Size = new System.Drawing.Size(1, 911);
             this.panel6.TabIndex = 6;
-            // 
-            // welPage
-            // 
-            this.welPage.BackColor = System.Drawing.SystemColors.Control;
-            this.welPage.Location = new System.Drawing.Point(0, 0);
-            this.welPage.Name = "welPage";
-            this.welPage.Size = new System.Drawing.Size(744, 444);
-            this.welPage.TabIndex = 5;
-            // 
-            // StPage
-            // 
-            this.StPage.AutoSize = true;
-            this.StPage.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.StPage.Location = new System.Drawing.Point(0, 0);
-            this.StPage.Name = "StPage";
-            this.StPage.Size = new System.Drawing.Size(750, 444);
-            this.StPage.TabIndex = 4;
-            // 
-            // StaPage
-            // 
-            this.StaPage.BackColor = System.Drawing.Color.White;
-            this.StaPage.Location = new System.Drawing.Point(0, 0);
-            this.StaPage.Name = "StaPage";
-            this.StaPage.Size = new System.Drawing.Size(744, 444);
-            this.StaPage.TabIndex = 3;
-            // 
-            // OrderPage
-            // 
-            this.OrderPage.BackColor = System.Drawing.Color.White;
-            this.OrderPage.Location = new System.Drawing.Point(0, 0);
-            this.OrderPage.Name = "OrderPage";
-            this.OrderPage.Size = new System.Drawing.Size(744, 444);
-            this.OrderPage.TabIndex = 2;
-            // 
-            // HelpPage
-            // 
-            this.HelpPage.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.HelpPage.Location = new System.Drawing.Point(0, 0);
-            this.HelpPage.Name = "HelpPage";
-            this.HelpPage.Size = new System.Drawing.Size(744, 444);
-            this.HelpPage.TabIndex = 1;
-            // 
-            // AccPage
-            // 
-            this.AccPage.BackColor = System.Drawing.Color.Goldenrod;
-            this.AccPage.Location = new System.Drawing.Point(0, 0);
-            this.AccPage.Name = "AccPage";
-            this.AccPage.Size = new System.Drawing.Size(744, 444);
-            this.AccPage.TabIndex = 0;
             // 
             // TimeDatePage
             // 
             this.TimeDatePage.Location = new System.Drawing.Point(0, 0);
-            this.TimeDatePage.Margin = new System.Windows.Forms.Padding(4);
+            this.TimeDatePage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TimeDatePage.Name = "TimeDatePage";
             this.TimeDatePage.Size = new System.Drawing.Size(260, 74);
             this.TimeDatePage.TabIndex = 0;
             // 
             // FMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 448);
+            this.ClientSize = new System.Drawing.Size(1213, 551);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -357,7 +313,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelL);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FMain";
@@ -388,12 +344,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private UserWelcome welPage;
-        private StockPage StPage;
-        private StatisticsPage StaPage;
-        private OderUser OrderPage;
-        private HelpUser HelpPage;
-        private AccountUser AccPage;
         private System.Windows.Forms.Button BtLogout;
         private TimeDate timeDate1;
         private System.Windows.Forms.Panel panel7;

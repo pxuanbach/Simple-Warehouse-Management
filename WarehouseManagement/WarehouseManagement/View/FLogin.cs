@@ -18,15 +18,15 @@ namespace WarehouseManagement
         {
             InitializeComponent();
             textBoxUName.ForeColor = Color.LightGray;
-            textBoxUName.Text = "Please Enter Name";
+            textBoxUName.Text = "Enter Username";
             this.textBoxUName.Leave += new System.EventHandler(this.textBoxUName_Leave);
             this.textBoxUName.Enter += new System.EventHandler(this.textBoxUName_Enter);
 
             textBoxUPass.ForeColor = Color.LightGray;
-            textBoxUPass.Text = "Please Enter Address";
+            textBoxUPass.Text = "Enter Password";
             this.textBoxUPass.Leave += new System.EventHandler(this.textBoxUPass_Leave);
             this.textBoxUPass.Enter += new System.EventHandler(this.textBoxUPass_Enter);
-            this.textBoxUPass.PasswordChar = '\u25CF';
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace WarehouseManagement
 
         private void buttonSignIn_Click(object sender, EventArgs e)
         {
-            FMain f = new FMain();
+            
             if (textBoxUPass.Text == "" || textBoxUName.Text == "")
             {
                 MessageBox.Show("Something wrong.");
@@ -51,7 +51,10 @@ namespace WarehouseManagement
                 {
                     if (login.checkUser(textBoxUName.Text, textBoxUPass.Text) == true)
                     {
+                        FMain f = new FMain(); 
                         this.Hide();
+                        //f.MyUserName = textBoxUName.Text;
+                        f.MyUserName = f.GetUsername(textBoxUName.Text);
                         f.ShowDialog();
                         this.Show();
                     }
@@ -64,6 +67,11 @@ namespace WarehouseManagement
             
         }
 
+        public string Username()
+        {
+            return textBoxUName.Text;
+        }
+
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -73,14 +81,14 @@ namespace WarehouseManagement
         {
             if (textBoxUName.Text == "")
             {
-                textBoxUName.Text = "Enter Name";
+                textBoxUName.Text = "Enter Username";
                 textBoxUName.ForeColor = Color.Gray;
             }
         }
 
         private void textBoxUName_Enter(object sender, EventArgs e)
         {
-            if (textBoxUName.Text == "Please Enter Name")
+            if (textBoxUName.Text == "Enter Username")
             {
                 textBoxUName.Text = "";
                 textBoxUName.ForeColor = Color.Black;
@@ -89,10 +97,11 @@ namespace WarehouseManagement
 
         private void textBoxUPass_Enter(object sender, EventArgs e)
         {
-            if (textBoxUPass.Text == "Please Enter Address")
+            if (textBoxUPass.Text == "Enter Password")
             {
                 textBoxUPass.Text = "";
                 textBoxUPass.ForeColor = Color.Black;
+                this.textBoxUPass.PasswordChar = '\u25CF';
             }
         }
 
@@ -100,8 +109,10 @@ namespace WarehouseManagement
         {
             if (textBoxUPass.Text == "")
             {
-                textBoxUPass.Text = "Please Enter Address";
+                this.textBoxUPass.PasswordChar = '\0';
+                textBoxUPass.Text = "Enter Password";
                 textBoxUPass.ForeColor = Color.Gray;
+                
             }
         }
 

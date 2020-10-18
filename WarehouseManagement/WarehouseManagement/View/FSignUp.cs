@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WarehouseManagement.Controller;
 
 namespace WarehouseManagement
 {
     public partial class FSignUp : Form
     {
+        SignUp_Controller signUp = new SignUp_Controller();
         public FSignUp()
         {
             InitializeComponent();
@@ -36,7 +38,7 @@ namespace WarehouseManagement
             this.TbRePass.Enter += new System.EventHandler(this.TbRePass_Enter);
 
             TbUserName.ForeColor = Color.Gray;
-            TbUserName.Text = "Enter User Name";
+            TbUserName.Text = "Enter Username";
             this.TbUserName.Leave += new System.EventHandler(this.TbUserName_Leave);
             this.TbUserName.Enter += new System.EventHandler(this.TbUserName_Enter);
 
@@ -58,9 +60,9 @@ namespace WarehouseManagement
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonCancel_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void TbName_Leave(object sender, EventArgs e)
@@ -85,14 +87,14 @@ namespace WarehouseManagement
         {
             if (TbUserName.Text == "")
             {
-                TbUserName.Text = "Enter User Name";
+                TbUserName.Text = "Enter Username";
                 TbUserName.ForeColor = Color.Gray;
             }
         }
 
         private void TbUserName_Enter(object sender, EventArgs e)
         {
-            if (TbUserName.Text == "Enter User Name")
+            if (TbUserName.Text == "Enter Username")
             {
                 TbUserName.Text = "";
                 TbUserName.ForeColor = Color.Black;
@@ -123,6 +125,7 @@ namespace WarehouseManagement
             {
                 TbPass.Text = "";
                 TbPass.ForeColor = Color.Black;
+                this.TbPass.PasswordChar = '\u25CF';
             }
         }
 
@@ -130,6 +133,7 @@ namespace WarehouseManagement
         {
             if (TbPass.Text == "")
             {
+                this.TbPass.PasswordChar = '\0';
                 TbPass.Text = "Enter Password";
                 TbPass.ForeColor = Color.Gray;
             }
@@ -139,6 +143,7 @@ namespace WarehouseManagement
         {
             if (TbRePass.Text == "")
             {
+                this.TbRePass.PasswordChar = '\0';
                 TbRePass.Text = "Enter Password Again";
                 TbRePass.ForeColor = Color.Gray;
             }
@@ -148,6 +153,7 @@ namespace WarehouseManagement
         {
             if (TbRePass.Text == "Enter Password Again")
             {
+                this.TbRePass.PasswordChar = '\u25CF';               
                 TbRePass.Text = "";
                 TbRePass.ForeColor = Color.Black;
             }
@@ -170,6 +176,56 @@ namespace WarehouseManagement
                 TbKey.Text = "";
                 TbKey.ForeColor = Color.Black;
             }
+        }
+
+        public bool checkNull(string TEN, string SDT, string USERNAME, string PASS, string RE_PASS, string UKEY)
+        {
+            bool ck = true;
+            if (TEN == "" || SDT == "" || USERNAME == "" || PASS == "" || RE_PASS == "" || UKEY == "")
+            {
+                ck = false;
+            }
+            else if (TEN == "Enter Name" || SDT == "Enter Your Phone Number" 
+                || USERNAME == "Enter Username" || PASS == "Enter Password" 
+                || RE_PASS == "Enter Password Again" || UKEY == "Enter License Key")
+            {
+                ck = false;
+            }
+            return ck;
+        }
+
+        private void buttonSignUp_Click(object sender, EventArgs e)
+        {
+            if (checkNull(TbName.Text, TbPhone.Text,TbUserName.Text, TbPass.Text, TbRePass.Text, TbKey.Text) == false)
+            {
+                MessageBox.Show("Something wrong.");
+            }    
+            else
+            {
+                if (signUp.CheckUserExist(TbUserName.Text) == true)
+                {
+                    MessageBox.Show("Username was existed. Please try another one!");
+                }   
+                else
+                { 
+                    if (signUp.CheckRePassword(TbPass.Text, TbRePass.Text) == false)
+                    {
+                        MessageBox.Show("Re-password is incorrect.");
+                    }    
+                    else
+                    {
+                        if (signUp.SignUpAccount(TbName.Text, TbPhone.Text, TbUserName.Text, TbPass.Text, Convert.ToInt32(TbKey.Text)) == true)
+                        {
+                            MessageBox.Show("Account created successfully!");
+                            this.Close(); // Xóa form sau khi add dữ liệu vào
+                        }
+                        else
+                        {
+                            MessageBox.Show("Something wrong.");
+                        }    
+                    }    
+                }    
+            }    
         }
     }
 

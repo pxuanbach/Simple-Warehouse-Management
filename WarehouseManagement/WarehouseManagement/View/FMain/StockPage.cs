@@ -8,14 +8,34 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.AccessControl;
+using WarehouseManagement.Controller;
 
 namespace WarehouseManagement
 {
     public partial class StockPage : UserControl
     {
-        public StockPage()
+        MainForm_Controller controller = new MainForm_Controller();
+        public string UserName;
+        public StockPage(string Username)
         {
             InitializeComponent();
+            UserName = Username;
+        }
+        
+        public void set_AccessButtonEdit()
+        {
+            btAdd.Enabled = false;
+            btDel.Enabled = false;
+            btEdit.Enabled = false;
+            btPrint.Enabled = false;
+        }
+
+        public void set_AccessButtonCancel()
+        {
+            btAdd.Enabled = true;
+            btDel.Enabled = true;
+            btEdit.Enabled = true;
+            btPrint.Enabled = true;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -45,7 +65,7 @@ namespace WarehouseManagement
 
         private void StockUser_Load(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = controller.Load_On(UserName);
         }
 
         private void BtAdd_Click(object sender, EventArgs e)
@@ -55,6 +75,16 @@ namespace WarehouseManagement
             //f.ShowDialog();
             //this.Show();
 
+        }
+
+        private void btEdit_Click(object sender, EventArgs e)
+        {
+            set_AccessButtonEdit();
+        }
+
+        private void btCancel_Click(object sender, EventArgs e)
+        {
+            set_AccessButtonCancel();
         }
     }
 }
