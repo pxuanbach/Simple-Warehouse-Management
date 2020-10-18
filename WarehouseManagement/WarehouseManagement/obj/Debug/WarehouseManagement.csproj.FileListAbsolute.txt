@@ -31,3 +31,4 @@ C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\WarehouseManagement\
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\WarehouseManagement\WarehouseManagement\bin\Debug\WarehouseManagement.exe.config
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\WarehouseManagement\WarehouseManagement\bin\Debug\WarehouseManagement.exe
 C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\WarehouseManagement\WarehouseManagement\bin\Debug\WarehouseManagement.pdb
+C:\Users\James\Documents\GitHub\Simple-Warehouse-Management\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.TimeDate.resources

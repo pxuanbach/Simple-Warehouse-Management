@@ -46,14 +46,15 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ItemHeight = 16;
             this.comboBox1.Items.AddRange(new object[] {
             "Name\t",
             "Goods ID",
             "Date"});
-            this.comboBox1.Location = new System.Drawing.Point(45, 353);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox1.Location = new System.Drawing.Point(34, 287);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(220, 28);
+            this.comboBox1.Size = new System.Drawing.Size(166, 24);
             this.comboBox1.TabIndex = 11;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -62,21 +63,19 @@
             this.Search.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Search.Location = new System.Drawing.Point(275, 348);
-            this.Search.Margin = new System.Windows.Forms.Padding(4);
+            this.Search.Location = new System.Drawing.Point(206, 283);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(517, 34);
-            this.Search.TabIndex = 10;
+            this.Search.Size = new System.Drawing.Size(388, 28);
+            this.Search.TabIndex = 2;
             this.Search.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(996, 322);
+            this.dataGridView1.Size = new System.Drawing.Size(747, 240);
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -87,23 +86,21 @@
             this.panel2.Controls.Add(this.BtDel);
             this.panel2.Controls.Add(this.BtAdd);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 406);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(0, 330);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1000, 140);
+            this.panel2.Size = new System.Drawing.Size(750, 114);
             this.panel2.TabIndex = 9;
             // 
             // btEdit
             // 
             this.btEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEdit.Image = global::WarehouseManagement.Properties.Resources.edit__1_;
+            this.btEdit.Image = global::WarehouseManagement.Properties.Resources.ICEdit;
             this.btEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btEdit.Location = new System.Drawing.Point(269, 41);
-            this.btEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btEdit.Location = new System.Drawing.Point(202, 33);
             this.btEdit.Name = "btEdit";
-            this.btEdit.Size = new System.Drawing.Size(187, 70);
-            this.btEdit.TabIndex = 4;
+            this.btEdit.Size = new System.Drawing.Size(140, 57);
+            this.btEdit.TabIndex = 5;
             this.btEdit.Text = "EDIT";
             this.btEdit.UseMnemonic = false;
             this.btEdit.UseVisualStyleBackColor = true;
@@ -112,13 +109,12 @@
             // 
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::WarehouseManagement.Properties.Resources.PrinIC;
+            this.button3.Image = global::WarehouseManagement.Properties.Resources.ICprin;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(753, 41);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(565, 33);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(187, 70);
-            this.button3.TabIndex = 3;
+            this.button3.Size = new System.Drawing.Size(140, 57);
+            this.button3.TabIndex = 7;
             this.button3.Text = "PRINT";
             this.button3.UseMnemonic = false;
             this.button3.UseVisualStyleBackColor = true;
@@ -127,13 +123,12 @@
             // 
             this.BtDel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtDel.Image = global::WarehouseManagement.Properties.Resources.deleteIC;
+            this.BtDel.Image = global::WarehouseManagement.Properties.Resources.ICDel;
             this.BtDel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtDel.Location = new System.Drawing.Point(505, 41);
-            this.BtDel.Margin = new System.Windows.Forms.Padding(4);
+            this.BtDel.Location = new System.Drawing.Point(379, 33);
             this.BtDel.Name = "BtDel";
-            this.BtDel.Size = new System.Drawing.Size(187, 70);
-            this.BtDel.TabIndex = 2;
+            this.BtDel.Size = new System.Drawing.Size(140, 57);
+            this.BtDel.TabIndex = 6;
             this.BtDel.Text = "DELETE";
             this.BtDel.UseMnemonic = false;
             this.BtDel.UseVisualStyleBackColor = true;
@@ -142,13 +137,12 @@
             // 
             this.BtAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtAdd.Image = global::WarehouseManagement.Properties.Resources.addIC;
+            this.BtAdd.Image = global::WarehouseManagement.Properties.Resources.ICAdd;
             this.BtAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtAdd.Location = new System.Drawing.Point(45, 41);
-            this.BtAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.BtAdd.Location = new System.Drawing.Point(34, 33);
             this.BtAdd.Name = "BtAdd";
-            this.BtAdd.Size = new System.Drawing.Size(187, 70);
-            this.BtAdd.TabIndex = 1;
+            this.BtAdd.Size = new System.Drawing.Size(140, 57);
+            this.BtAdd.TabIndex = 4;
             this.BtAdd.Text = "ADD";
             this.BtAdd.UseMnemonic = false;
             this.BtAdd.UseVisualStyleBackColor = true;
@@ -157,10 +151,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel1.Location = new System.Drawing.Point(267, 382);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(200, 310);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(528, 1);
+            this.panel1.Size = new System.Drawing.Size(396, 1);
             this.panel1.TabIndex = 12;
             // 
             // button4
@@ -169,21 +162,20 @@
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::WarehouseManagement.Properties.Resources.statistics;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(792, 346);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Image = global::WarehouseManagement.Properties.Resources.IcSearch1;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Location = new System.Drawing.Point(593, 282);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 38);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Search";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.Size = new System.Drawing.Size(93, 30);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "  Search";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // StockPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -193,9 +185,8 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StockPage";
-            this.Size = new System.Drawing.Size(992, 546);
+            this.Size = new System.Drawing.Size(750, 444);
             this.Load += new System.EventHandler(this.StockUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
