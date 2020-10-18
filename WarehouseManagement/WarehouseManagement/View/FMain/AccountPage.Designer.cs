@@ -30,12 +30,16 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBoxConfPass = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBoxNewPass = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBoxCurPass = new System.Windows.Forms.TextBox();
+            this.TbOldPass = new System.Windows.Forms.TextBox();
+            this.BtSavePass = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.TbNewPass = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.TbRePass = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -49,10 +53,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtSaveInfor = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,86 +76,114 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.textBoxConfPass);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBoxNewPass);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBoxCurPass);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.groupBox2.Location = new System.Drawing.Point(440, 38);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Controls.Add(this.TbOldPass);
+            this.groupBox2.Controls.Add(this.BtSavePass);
+            this.groupBox2.Controls.Add(this.panel2);
+            this.groupBox2.Controls.Add(this.TbNewPass);
+            this.groupBox2.Controls.Add(this.pictureBox1);
+            this.groupBox2.Controls.Add(this.pictureBox3);
+            this.groupBox2.Controls.Add(this.pictureBox2);
+            this.groupBox2.Controls.Add(this.panel5);
+            this.groupBox2.Controls.Add(this.TbRePass);
+            this.groupBox2.Controls.Add(this.panel3);
+            this.groupBox2.Location = new System.Drawing.Point(471, 38);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(291, 254);
-            this.groupBox2.TabIndex = 28;
+            this.groupBox2.Size = new System.Drawing.Size(203, 174);
+            this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Change Password";
             // 
-            // textBoxConfPass
+            // TbOldPass
             // 
-            this.textBoxConfPass.Font = new System.Drawing.Font("Arial", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxConfPass.Location = new System.Drawing.Point(44, 151);
-            this.textBoxConfPass.Name = "textBoxConfPass";
-            this.textBoxConfPass.Size = new System.Drawing.Size(176, 23);
-            this.textBoxConfPass.TabIndex = 19;
+            this.TbOldPass.BackColor = System.Drawing.Color.White;
+            this.TbOldPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TbOldPass.Location = new System.Drawing.Point(31, 34);
+            this.TbOldPass.Name = "TbOldPass";
+            this.TbOldPass.Size = new System.Drawing.Size(149, 13);
+            this.TbOldPass.TabIndex = 34;
+            this.TbOldPass.Text = "Old-Password";
             // 
-            // label12
+            // BtSavePass
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(19, 128);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(159, 16);
-            this.label12.TabIndex = 18;
-            this.label12.Text = "Confirm New Password:";
+            this.BtSavePass.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtSavePass.Location = new System.Drawing.Point(93, 138);
+            this.BtSavePass.Name = "BtSavePass";
+            this.BtSavePass.Size = new System.Drawing.Size(87, 23);
+            this.BtSavePass.TabIndex = 43;
+            this.BtSavePass.Text = "Save Change";
+            this.BtSavePass.UseVisualStyleBackColor = false;
             // 
-            // textBoxNewPass
+            // panel2
             // 
-            this.textBoxNewPass.Font = new System.Drawing.Font("Arial", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNewPass.Location = new System.Drawing.Point(44, 100);
-            this.textBoxNewPass.Name = "textBoxNewPass";
-            this.textBoxNewPass.Size = new System.Drawing.Size(176, 23);
-            this.textBoxNewPass.TabIndex = 17;
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel2.Location = new System.Drawing.Point(12, 89);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(168, 1);
+            this.panel2.TabIndex = 39;
             // 
-            // label11
+            // TbNewPass
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(19, 78);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(105, 16);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "New Password:";
+            this.TbNewPass.BackColor = System.Drawing.Color.White;
+            this.TbNewPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TbNewPass.Location = new System.Drawing.Point(31, 74);
+            this.TbNewPass.Name = "TbNewPass";
+            this.TbNewPass.Size = new System.Drawing.Size(149, 13);
+            this.TbNewPass.TabIndex = 35;
+            this.TbNewPass.Text = "New Password";
             // 
-            // label10
+            // pictureBox1
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(19, 28);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(124, 16);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Current Password:";
+            this.pictureBox1.Location = new System.Drawing.Point(12, 108);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(18, 15);
+            this.pictureBox1.TabIndex = 42;
+            this.pictureBox1.TabStop = false;
             // 
-            // textBoxCurPass
+            // pictureBox3
             // 
-            this.textBoxCurPass.Font = new System.Drawing.Font("Arial", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCurPass.Location = new System.Drawing.Point(44, 47);
-            this.textBoxCurPass.Name = "textBoxCurPass";
-            this.textBoxCurPass.Size = new System.Drawing.Size(176, 23);
-            this.textBoxCurPass.TabIndex = 3;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 72);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(18, 15);
+            this.pictureBox3.TabIndex = 40;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(12, 32);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(18, 15);
+            this.pictureBox2.TabIndex = 38;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel5.Location = new System.Drawing.Point(12, 125);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(168, 1);
+            this.panel5.TabIndex = 41;
+            // 
+            // TbRePass
+            // 
+            this.TbRePass.BackColor = System.Drawing.Color.White;
+            this.TbRePass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TbRePass.Location = new System.Drawing.Point(31, 110);
+            this.TbRePass.Name = "TbRePass";
+            this.TbRePass.Size = new System.Drawing.Size(149, 13);
+            this.TbRePass.TabIndex = 36;
+            this.TbRePass.Text = "Re-Password";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel3.Location = new System.Drawing.Point(12, 49);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(168, 1);
+            this.panel3.TabIndex = 37;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.BtSaveInfor);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label4);
@@ -238,16 +272,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(139, 198);
+            this.textBox1.Location = new System.Drawing.Point(91, 198);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 20);
+            this.textBox1.Size = new System.Drawing.Size(240, 20);
             this.textBox1.TabIndex = 5;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(139, 124);
+            this.dateTimePicker1.Location = new System.Drawing.Point(131, 124);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(192, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 3;
             // 
             // comboBox1
@@ -257,9 +291,9 @@
             "Male",
             "Female",
             "Non"});
-            this.comboBox1.Location = new System.Drawing.Point(139, 162);
+            this.comboBox1.Location = new System.Drawing.Point(91, 162);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(192, 21);
+            this.comboBox1.Size = new System.Drawing.Size(240, 21);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -268,7 +302,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(136, 238);
+            this.label5.Location = new System.Drawing.Point(101, 238);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 16);
             this.label5.TabIndex = 18;
@@ -298,29 +332,15 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Gender :";
             // 
-            // button2
+            // BtSaveInfor
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(44, 198);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 35);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Change Password";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(94, 287);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(178, 35);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtSaveInfor.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtSaveInfor.Location = new System.Drawing.Point(262, 328);
+            this.BtSaveInfor.Name = "BtSaveInfor";
+            this.BtSaveInfor.Size = new System.Drawing.Size(87, 23);
+            this.BtSaveInfor.TabIndex = 44;
+            this.BtSaveInfor.Text = "Save";
+            this.BtSaveInfor.UseVisualStyleBackColor = false;
             // 
             // AccountUser
             // 
@@ -334,6 +354,9 @@
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -357,13 +380,16 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBoxConfPass;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBoxNewPass;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBoxCurPass;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox TbOldPass;
+        private System.Windows.Forms.Button BtSavePass;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox TbNewPass;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox TbRePass;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button BtSaveInfor;
     }
 }

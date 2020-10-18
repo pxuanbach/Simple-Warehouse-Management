@@ -265,7 +265,6 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::WarehouseManagement.Properties.Resources.keys;
             this.pictureBox6.Location = new System.Drawing.Point(26, 204);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(18, 15);
@@ -274,7 +273,6 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::WarehouseManagement.Properties.Resources.user_profile;
             this.pictureBox5.Location = new System.Drawing.Point(26, 29);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(18, 15);
@@ -283,7 +281,6 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::WarehouseManagement.Properties.Resources.phone_numbers_call;
             this.pictureBox4.Location = new System.Drawing.Point(26, 65);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(18, 15);
@@ -292,7 +289,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::WarehouseManagement.Properties.Resources.Username;
             this.pictureBox3.Location = new System.Drawing.Point(26, 106);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(18, 15);
@@ -301,7 +297,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::WarehouseManagement.Properties.Resources.Option;
             this.pictureBox2.Location = new System.Drawing.Point(26, 136);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(18, 15);
@@ -310,7 +305,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WarehouseManagement.Properties.Resources.Option;
             this.pictureBox1.Location = new System.Drawing.Point(26, 167);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(18, 15);

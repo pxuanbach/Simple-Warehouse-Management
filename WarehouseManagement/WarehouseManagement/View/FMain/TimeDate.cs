@@ -29,10 +29,5 @@ namespace WarehouseManagement
             label1.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

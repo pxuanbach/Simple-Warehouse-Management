@@ -131,6 +131,9 @@
     <EmbeddedResource Include="View\FMain\FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FMain\HelpUser.resx">
+      <DependentUpon>HelpUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FMain\OrderPage.resx">
       <DependentUpon>OrderPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,25 +277,59 @@
     <None Include="Properties\Writer\mess.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\Pictures\about %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Pictures\about.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Pictures\about2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Pictures\box-outline-filled.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Pictures\stock.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Pictures\box-outline-filled01.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Pictures\AccIC2.png" />
+    <Content Include="Icon\Acc.png" />
+    <Content Include="Icon\AccIC.png" />
+    <Content Include="Icon\AccIC2.png" />
+    <Content Include="Icon\addIC.png" />
+    <Content Include="Icon\Capture.PNG" />
+    <Content Include="Icon\character.png" />
+    <Content Include="Icon\delete.png" />
+    <Content Include="Icon\deleteIC.png" />
+    <Content Include="Icon\edit %281%29.png" />
+    <Content Include="Icon\edit.png" />
+    <Content Include="Icon\Graphicloads-Flat-Finance-Dollar-stats.ico" />
+    <Content Include="Icon\Help.png" />
+    <Content Include="Icon\HelpIc.png" />
+    <None Include="Icon\IcSearch1.png" />
+    <None Include="Icon\IcSearch.png" />
+    <None Include="Icon\ICprin.png" />
+    <None Include="Icon\ICPrinter.png" />
+    <None Include="Icon\ICAdd.png" />
+    <None Include="Icon\ICDel.png" />
+    <None Include="Icon\ICEdit.png" />
+    <None Include="Icon\log-out2.png" />
+    <None Include="Icon\HelpIIC.png" />
+    <None Include="Icon\helpICC.png" />
+    <Content Include="Icon\key.png" />
+    <Content Include="Icon\keys.png" />
+    <Content Include="Icon\Logo.PNG" />
+    <Content Include="Icon\logout.png" />
+    <Content Include="Icon\OderIC.png" />
+    <Content Include="Icon\Option.png" />
+    <Content Include="Icon\orderIC.png" />
+    <Content Include="Icon\orderIC2.png" />
+    <Content Include="Icon\passIC.png" />
+    <Content Include="Icon\PassIC2.png" />
+    <Content Include="Icon\passwordIC.png" />
+    <Content Include="Icon\personal-information.png" />
+    <Content Include="Icon\phone-numbers-call.png" />
+    <Content Include="Icon\PrinIC.png" />
+    <Content Include="Icon\printer.png" />
+    <Content Include="Icon\printIc.png" />
+    <Content Include="Icon\profit.ico" />
+    <Content Include="Icon\staIC.png" />
+    <Content Include="Icon\statistics.png" />
+    <Content Include="Icon\StatisticsIC.png" />
+    <Content Include="Icon\StockIC %282%29.png" />
+    <Content Include="Icon\StockIc.png" />
+    <Content Include="Icon\stocks.png" />
+    <Content Include="Icon\Temp.png" />
+    <Content Include="Icon\user-profile.png" />
+    <Content Include="Icon\UserIC.png" />
+    <Content Include="Icon\userIC2.png" />
+    <None Include="Icon\UserIC3.png" />
+    <Content Include="Icon\Username.png" />
+    <Content Include="Icon\usIC.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
