@@ -48,14 +48,68 @@
   <ItemGroup>
     <Compile Include="Controller\Login_Controller.cs" />
     <Compile Include="Model\Login_Model.cs" />
+    <Compile Include="Model\MainForm_model.cs" />
     <Compile Include="Model\Process.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="View\FLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FLogin.Designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FMain\FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FMain\FMain.Designer.cs">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FMain\HelpUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FMain\HelpUser.Designer.cs">
+      <DependentUpon>HelpUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FMain\AccountPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FMain\AccountPage.Designer.cs">
+      <DependentUpon>AccountPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FMain\OrderPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FMain\OrderPage.Designer.cs">
+      <DependentUpon>OrderPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FMain\StatisticsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FMain\StatisticsPage.Designer.cs">
+      <DependentUpon>StatisticsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FMain\StockPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FMain\StockPage.Designer.cs">
+      <DependentUpon>StockPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FMain\TimeDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FMain\TimeDate.Designer.cs">
+      <DependentUpon>TimeDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FMain\UserPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FMain\UserPage.Designer.cs">
+      <DependentUpon>UserPage.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FSignUp.cs">
       <SubType>Form</SubType>
@@ -65,15 +119,29 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="View\FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FMain\AccountPage.resx">
+      <DependentUpon>AccountPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FMain\FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FMain\OrderPage.resx">
+      <DependentUpon>OrderPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FMain\StockPage.resx">
+      <DependentUpon>StockPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FMain\TimeDate.resx">
+      <DependentUpon>TimeDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FMain\UserPage.resx">
+      <DependentUpon>UserPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FSignUp.resx">
       <DependentUpon>FSignUp.cs</DependentUpon>
@@ -91,6 +159,140 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Properties\Iconv2\PassIC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Iconv2\userIC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Iconv2\phone-numbers-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Iconv2\keys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Iconv2\Username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Iconv2\passwordIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Iconv2\user-profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Iconv2\Option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\Logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\OderIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\staIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\statistics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\StatisticsIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\StockIc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Iconv2\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\Temp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\Acc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\AccIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\addIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\character.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\deleteIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\edit %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\edit-file %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\edit-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\HelpIc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\log-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\orderIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\orderIC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\personal-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\PrinIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\printIc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Writer\mess.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\about %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\about2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\box-outline-filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\box-outline-filled01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\AccIC2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
