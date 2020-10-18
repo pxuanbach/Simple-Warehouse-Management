@@ -28,244 +28,319 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonACCOUNT = new System.Windows.Forms.Button();
-            this.buttonSTATISTICS = new System.Windows.Forms.Button();
-            this.buttonORDER = new System.Windows.Forms.Button();
-            this.buttonSTOCK = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.panelDisplay = new System.Windows.Forms.Panel();           //cap phat bo nho cho user control
-            this.groupBox1 = new System.Windows.Forms.GroupBox();           //
-            this.AccPage = new WarehouseManagement.AccountUser();           //
-            this.HelpUserPage = new WarehouseManagement.HelpUser();         //
-            this.OrderPage = new WarehouseManagement.OderUser();            //
-            this.StatisticsPage = new WarehouseManagement.StatisticsPage(); //
-            this.StockPage = new WarehouseManagement.StockPage();           //
-            this.UserPage = new WarehouseManagement.UserWelcome();          //
-            this.TimeDatePage = new WarehouseManagement.TimeDate();         //
+            this.BtLogout = new System.Windows.Forms.Button();
             this.panelNhay = new System.Windows.Forms.Panel();
+            this.BtHelp = new System.Windows.Forms.Button();
+            this.BtAcc = new System.Windows.Forms.Button();
+            this.BtStock = new System.Windows.Forms.Button();
+            this.BtSta = new System.Windows.Forms.Button();
+            this.BtOder = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.TimeDatePage = new WarehouseManagement.TimeDate();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.WelPage = new WarehouseManagement.UserWelcome();
+            this.StockPage = new WarehouseManagement.StockPage();
+            this.StatisticsPage = new WarehouseManagement.StatisticsPage();
+            this.OrderPage = new WarehouseManagement.OderUser();
+            this.AboutPage = new WarehouseManagement.HelpUser();
+            this.AccPage = new WarehouseManagement.AccountUser();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panelLeft.SuspendLayout();
-            this.panelDisplay.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.White;
-            this.panelLeft.Controls.Add(this.panelNhay);    
-            this.panelLeft.Controls.Add(this.panel1);
-            this.panelLeft.Controls.Add(this.buttonACCOUNT);    //add button vao panel
-            this.panelLeft.Controls.Add(this.buttonSTATISTICS); //
-            this.panelLeft.Controls.Add(this.buttonORDER);      //
-            this.panelLeft.Controls.Add(this.buttonSTOCK);      //
-            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Controls.Add(this.BtLogout);
+            this.panelLeft.Controls.Add(this.panelNhay);
+            this.panelLeft.Controls.Add(this.BtHelp);
+            this.panelLeft.Controls.Add(this.BtAcc);
+            this.panelLeft.Controls.Add(this.BtStock);
+            this.panelLeft.Controls.Add(this.BtSta);
+            this.panelLeft.Controls.Add(this.BtOder);
+            this.panelLeft.Location = new System.Drawing.Point(2, 2);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(2);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(158, 549);
+            this.panelLeft.Size = new System.Drawing.Size(157, 442);
             this.panelLeft.TabIndex = 0;
+            // 
+            // BtLogout
+            // 
+            this.BtLogout.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtLogout.FlatAppearance.BorderSize = 0;
+            this.BtLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtLogout.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.BtLogout.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtLogout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtLogout.Location = new System.Drawing.Point(3, 454);
+            this.BtLogout.Name = "BtLogout";
+            this.BtLogout.Size = new System.Drawing.Size(94, 26);
+            this.BtLogout.TabIndex = 18;
+            this.BtLogout.Text = "Logout";
+            this.BtLogout.UseVisualStyleBackColor = false;
+            // 
+            // panelNhay
+            // 
+            this.panelNhay.BackColor = System.Drawing.Color.Silver;
+            this.panelNhay.Location = new System.Drawing.Point(146, 121);
+            this.panelNhay.Margin = new System.Windows.Forms.Padding(2);
+            this.panelNhay.Name = "panelNhay";
+            this.panelNhay.Size = new System.Drawing.Size(10, 34);
+            this.panelNhay.TabIndex = 6;
+            // 
+            // BtHelp
+            // 
+            this.BtHelp.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtHelp.FlatAppearance.BorderSize = 0;
+            this.BtHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtHelp.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Bold);
+            this.BtHelp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtHelp.Image = ((System.Drawing.Image)(resources.GetObject("BtHelp.Image")));
+            this.BtHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtHelp.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtHelp.Location = new System.Drawing.Point(3, 282);
+            this.BtHelp.Name = "BtHelp";
+            this.BtHelp.Size = new System.Drawing.Size(153, 33);
+            this.BtHelp.TabIndex = 17;
+            this.BtHelp.Text = "Help";
+            this.BtHelp.UseVisualStyleBackColor = false;
+            // 
+            // BtAcc
+            // 
+            this.BtAcc.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtAcc.FlatAppearance.BorderSize = 0;
+            this.BtAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtAcc.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Bold);
+            this.BtAcc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtAcc.Image = ((System.Drawing.Image)(resources.GetObject("BtAcc.Image")));
+            this.BtAcc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtAcc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtAcc.Location = new System.Drawing.Point(3, 243);
+            this.BtAcc.Name = "BtAcc";
+            this.BtAcc.Size = new System.Drawing.Size(153, 33);
+            this.BtAcc.TabIndex = 16;
+            this.BtAcc.Text = "   Account";
+            this.BtAcc.UseVisualStyleBackColor = false;
+            // 
+            // BtStock
+            // 
+            this.BtStock.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtStock.FlatAppearance.BorderSize = 0;
+            this.BtStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtStock.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Bold);
+            this.BtStock.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtStock.Image = ((System.Drawing.Image)(resources.GetObject("BtStock.Image")));
+            this.BtStock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtStock.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtStock.Location = new System.Drawing.Point(3, 121);
+            this.BtStock.Name = "BtStock";
+            this.BtStock.Size = new System.Drawing.Size(153, 33);
+            this.BtStock.TabIndex = 13;
+            this.BtStock.Text = "Stock";
+            this.BtStock.UseVisualStyleBackColor = false;
+            this.BtStock.Click += new System.EventHandler(this.BtStock_Click);
+            // 
+            // BtSta
+            // 
+            this.BtSta.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtSta.FlatAppearance.BorderSize = 0;
+            this.BtSta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtSta.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Bold);
+            this.BtSta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtSta.Image = ((System.Drawing.Image)(resources.GetObject("BtSta.Image")));
+            this.BtSta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtSta.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtSta.Location = new System.Drawing.Point(3, 199);
+            this.BtSta.Name = "BtSta";
+            this.BtSta.Size = new System.Drawing.Size(153, 33);
+            this.BtSta.TabIndex = 15;
+            this.BtSta.Text = "   Statistics";
+            this.BtSta.UseVisualStyleBackColor = false;
+            // 
+            // BtOder
+            // 
+            this.BtOder.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtOder.FlatAppearance.BorderSize = 0;
+            this.BtOder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtOder.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Bold);
+            this.BtOder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtOder.Image = ((System.Drawing.Image)(resources.GetObject("BtOder.Image")));
+            this.BtOder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtOder.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtOder.Location = new System.Drawing.Point(3, 160);
+            this.BtOder.Name = "BtOder";
+            this.BtOder.Size = new System.Drawing.Size(153, 33);
+            this.BtOder.TabIndex = 14;
+            this.BtOder.Text = "Order";
+            this.BtOder.UseVisualStyleBackColor = false;
+            // 
+            // TimeDatePage
+            // 
+            this.TimeDatePage.Location = new System.Drawing.Point(0, 0);
+            this.TimeDatePage.Margin = new System.Windows.Forms.Padding(4);
+            this.TimeDatePage.Name = "TimeDatePage";
+            this.TimeDatePage.Size = new System.Drawing.Size(260, 74);
+            this.TimeDatePage.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(154, 0);
+            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1, 552);
-            this.panel1.TabIndex = 6;
+            this.panel1.Size = new System.Drawing.Size(2, 448);
+            this.panel1.TabIndex = 1;
             // 
-            // buttonACCOUNT
+            // panel2
             // 
-            this.buttonACCOUNT.BackColor = System.Drawing.Color.Gray;
-            this.buttonACCOUNT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonACCOUNT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonACCOUNT.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonACCOUNT.Location = new System.Drawing.Point(-6, 285);
-            this.buttonACCOUNT.Name = "buttonACCOUNT";
-            this.buttonACCOUNT.Size = new System.Drawing.Size(170, 56);
-            this.buttonACCOUNT.TabIndex = 3;
-            this.buttonACCOUNT.Text = "ACCOUNT";
-            this.buttonACCOUNT.UseVisualStyleBackColor = false;
-            this.buttonACCOUNT.Click += new System.EventHandler(this.buttonACCOUNT_Click);
+            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(2, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(908, 2);
+            this.panel2.TabIndex = 2;
             // 
-            // buttonSTATISTICS
+            // panel3
             // 
-            this.buttonSTATISTICS.BackColor = System.Drawing.Color.Gray;
-            this.buttonSTATISTICS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSTATISTICS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSTATISTICS.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonSTATISTICS.Location = new System.Drawing.Point(-9, 223);
-            this.buttonSTATISTICS.Name = "buttonSTATISTICS";
-            this.buttonSTATISTICS.Size = new System.Drawing.Size(173, 56);
-            this.buttonSTATISTICS.TabIndex = 2;
-            this.buttonSTATISTICS.Text = "STATISTICS";
-            this.buttonSTATISTICS.UseVisualStyleBackColor = false;
-            this.buttonSTATISTICS.Click += new System.EventHandler(this.buttonSTATISTICS_Click);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(908, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(2, 446);
+            this.panel3.TabIndex = 3;
             // 
-            // buttonORDER
+            // panel4
             // 
-            this.buttonORDER.BackColor = System.Drawing.Color.Gray;
-            this.buttonORDER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonORDER.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonORDER.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonORDER.Location = new System.Drawing.Point(-9, 161);
-            this.buttonORDER.Name = "buttonORDER";
-            this.buttonORDER.Size = new System.Drawing.Size(173, 56);
-            this.buttonORDER.TabIndex = 1;
-            this.buttonORDER.Text = "ORDER";
-            this.buttonORDER.UseVisualStyleBackColor = false;
-            this.buttonORDER.Click += new System.EventHandler(this.buttonORDER_Click);
+            this.panel4.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(2, 446);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(906, 2);
+            this.panel4.TabIndex = 4;
             // 
-            // buttonSTOCK
+            // panel5
             // 
-            this.buttonSTOCK.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonSTOCK.BackColor = System.Drawing.Color.Gray;
-            this.buttonSTOCK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSTOCK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSTOCK.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonSTOCK.Location = new System.Drawing.Point(-9, 99);
-            this.buttonSTOCK.Name = "buttonSTOCK";
-            this.buttonSTOCK.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonSTOCK.Size = new System.Drawing.Size(173, 56);
-            this.buttonSTOCK.TabIndex = 0;
-            this.buttonSTOCK.Text = "STOCK";
-            this.buttonSTOCK.UseVisualStyleBackColor = false;
-            this.buttonSTOCK.Click += new System.EventHandler(this.buttonSTOCK_Click);
+            this.panel5.Controls.Add(this.WelPage);
+            this.panel5.Controls.Add(this.StockPage);
+            this.panel5.Controls.Add(this.StatisticsPage);
+            this.panel5.Controls.Add(this.OrderPage);
+            this.panel5.Controls.Add(this.AboutPage);
+            this.panel5.Controls.Add(this.AccPage);
+            this.panel5.Location = new System.Drawing.Point(164, 2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(744, 444);
+            this.panel5.TabIndex = 5;
             // 
-            // panelDisplay
+            // WelPage
             // 
-            this.panelDisplay.Controls.Add(this.groupBox1);             //add user control vao panel
-            this.panelDisplay.Controls.Add(this.AccPage);               //
-            this.panelDisplay.Controls.Add(this.HelpUserPage);          //
-            this.panelDisplay.Controls.Add(this.OrderPage);             //
-            this.panelDisplay.Controls.Add(this.StatisticsPage);        //
-            this.panelDisplay.Controls.Add(this.StockPage);             //
-            this.panelDisplay.Controls.Add(this.UserPage);              //
-            this.panelDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDisplay.Location = new System.Drawing.Point(158, 0);
-            this.panelDisplay.Name = "panelDisplay";
-            this.panelDisplay.Size = new System.Drawing.Size(990, 549);
-            this.panelDisplay.TabIndex = 1;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.AutoSize = true;
-            this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(6, 21);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            // 
-            // AccPage
-            // 
-            this.AccPage.AutoSize = true;
-            this.AccPage.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.AccPage.BackColor = System.Drawing.Color.White;
-            this.AccPage.Location = new System.Drawing.Point(0, -1);
-            this.AccPage.Margin = new System.Windows.Forms.Padding(4);
-            this.AccPage.Name = "AccPage";
-            this.AccPage.Size = new System.Drawing.Size(996, 550);
-            this.AccPage.TabIndex = 0;
-            // 
-            // HelpUserPage
-            // 
-            this.HelpUserPage.BackColor = System.Drawing.SystemColors.Control;
-            this.HelpUserPage.Location = new System.Drawing.Point(0, -1);
-            this.HelpUserPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.HelpUserPage.Name = "HelpUserPage";
-            this.HelpUserPage.Size = new System.Drawing.Size(992, 546);
-            this.HelpUserPage.TabIndex = 1;
-            // 
-            // OrderPage
-            // 
-            this.OrderPage.BackColor = System.Drawing.Color.White;
-            this.OrderPage.Location = new System.Drawing.Point(0, -1);
-            this.OrderPage.Margin = new System.Windows.Forms.Padding(4);
-            this.OrderPage.Name = "OrderPage";
-            this.OrderPage.Size = new System.Drawing.Size(992, 546);
-            this.OrderPage.TabIndex = 2;
-            // 
-            // StatisticsPage
-            // 
-            this.StatisticsPage.BackColor = System.Drawing.Color.White;
-            this.StatisticsPage.Location = new System.Drawing.Point(0, 0);
-            this.StatisticsPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.StatisticsPage.Name = "StatisticsPage";
-            this.StatisticsPage.Size = new System.Drawing.Size(992, 546);
-            this.StatisticsPage.TabIndex = 3;
+            this.WelPage.BackColor = System.Drawing.SystemColors.Control;
+            this.WelPage.Location = new System.Drawing.Point(0, 0);
+            this.WelPage.Name = "WelPage";
+            this.WelPage.Size = new System.Drawing.Size(744, 444);
+            this.WelPage.TabIndex = 5;
             // 
             // StockPage
             // 
             this.StockPage.AutoSize = true;
             this.StockPage.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.StockPage.Location = new System.Drawing.Point(0, 0);
-            this.StockPage.Margin = new System.Windows.Forms.Padding(4);
             this.StockPage.Name = "StockPage";
-            this.StockPage.Size = new System.Drawing.Size(1000, 546);
+            this.StockPage.Size = new System.Drawing.Size(750, 315);
             this.StockPage.TabIndex = 4;
             // 
-            // UserPage
+            // StatisticsPage
             // 
-            this.UserPage.BackColor = System.Drawing.SystemColors.Control;
-            this.UserPage.Location = new System.Drawing.Point(0, 0);
-            this.UserPage.Margin = new System.Windows.Forms.Padding(4);
-            this.UserPage.Name = "UserPage";
-            this.UserPage.Size = new System.Drawing.Size(992, 546);
-            this.UserPage.TabIndex = 5;
+            this.StatisticsPage.BackColor = System.Drawing.Color.White;
+            this.StatisticsPage.Location = new System.Drawing.Point(0, 0);
+            this.StatisticsPage.Name = "StatisticsPage";
+            this.StatisticsPage.Size = new System.Drawing.Size(744, 444);
+            this.StatisticsPage.TabIndex = 3;
             // 
-            // TimeDatePage
+            // OrderPage
             // 
-            this.TimeDatePage.Location = new System.Drawing.Point(0, 0);
-            this.TimeDatePage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TimeDatePage.Name = "TimeDatePage";
-            this.TimeDatePage.Size = new System.Drawing.Size(260, 74);
-            this.TimeDatePage.TabIndex = 0;
+            this.OrderPage.BackColor = System.Drawing.Color.White;
+            this.OrderPage.Location = new System.Drawing.Point(0, 0);
+            this.OrderPage.Name = "OrderPage";
+            this.OrderPage.Size = new System.Drawing.Size(744, 444);
+            this.OrderPage.TabIndex = 2;
             // 
-            // panelNhay
+            // AboutPage
             // 
-            this.panelNhay.BackColor = System.Drawing.Color.Silver;
-            this.panelNhay.Location = new System.Drawing.Point(148, 102);
-            this.panelNhay.Name = "panelNhay";
-            this.panelNhay.Size = new System.Drawing.Size(10, 49);
-            this.panelNhay.TabIndex = 6;
+            this.AboutPage.BackColor = System.Drawing.SystemColors.Control;
+            this.AboutPage.Location = new System.Drawing.Point(0, 0);
+            this.AboutPage.Name = "AboutPage";
+            this.AboutPage.Size = new System.Drawing.Size(744, 444);
+            this.AboutPage.TabIndex = 1;
+            // 
+            // AccPage
+            // 
+            this.AccPage.BackColor = System.Drawing.Color.Goldenrod;
+            this.AccPage.Location = new System.Drawing.Point(0, 0);
+            this.AccPage.Name = "AccPage";
+            this.AccPage.Size = new System.Drawing.Size(744, 444);
+            this.AccPage.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(164, 8);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1, 740);
+            this.panel6.TabIndex = 6;
             // 
             // FMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1148, 549);
-            this.Controls.Add(this.panelDisplay);
+            this.ClientSize = new System.Drawing.Size(910, 448);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelLeft);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FMain";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.FMain_Load);
             this.panelLeft.ResumeLayout(false);
-            this.panelDisplay.ResumeLayout(false);
-            this.panelDisplay.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private AccountUser AccPage;                //Khoi tao cua cac user control
-        private HelpUser HelpUserPage;              //
-        private OderUser OrderPage;                 //
-        private StatisticsPage StatisticsPage;      //
-        private StockPage StockPage;                //
         private TimeDate TimeDatePage;              //
-        private UserWelcome UserPage;               //
         private System.Windows.Forms.Panel panelLeft;
-        private System.Windows.Forms.Button buttonSTOCK;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Panel panelDisplay;
-        private System.Windows.Forms.Button buttonORDER;
-        private System.Windows.Forms.Button buttonSTATISTICS;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button buttonACCOUNT;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelNhay;
+        private System.Windows.Forms.Button BtLogout;
+        private System.Windows.Forms.Button BtHelp;
+        private System.Windows.Forms.Button BtAcc;
+        private System.Windows.Forms.Button BtStock;
+        private System.Windows.Forms.Button BtSta;
+        private System.Windows.Forms.Button BtOder;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private UserWelcome WelPage;
+        private StockPage StockPage;
+        private StatisticsPage StatisticsPage;
+        private OderUser OrderPage;
+        private HelpUser AboutPage;
+        private AccountUser AccPage;
     }
 }

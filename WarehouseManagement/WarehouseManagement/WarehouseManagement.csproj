@@ -131,6 +131,9 @@
     <EmbeddedResource Include="View\FMain\FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FMain\HelpUser.resx">
+      <DependentUpon>HelpUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FMain\OrderPage.resx">
       <DependentUpon>OrderPage.cs</DependentUpon>
     </EmbeddedResource>
