@@ -54,7 +54,6 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.ItemHeight = 20;
@@ -62,32 +61,27 @@
             "Name\t",
             "Goods ID",
             "Date"});
-            this.comboBox1.Location = new System.Drawing.Point(45, 357);
+            this.comboBox1.Location = new System.Drawing.Point(45, 353);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(224, 28);
-            this.comboBox1.TabIndex = 0;
+            this.comboBox1.Size = new System.Drawing.Size(220, 28);
+            this.comboBox1.TabIndex = 11;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Search
             // 
-            this.Search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Search.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Search.Location = new System.Drawing.Point(275, 352);
+            this.Search.Location = new System.Drawing.Point(275, 348);
             this.Search.Margin = new System.Windows.Forms.Padding(4);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(521, 34);
-            this.Search.TabIndex = 1;
+            this.Search.Size = new System.Drawing.Size(517, 34);
+            this.Search.TabIndex = 2;
             this.Search.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -103,8 +97,8 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1000, 324);
-            this.dataGridView1.TabIndex = 20;
+            this.dataGridView1.Size = new System.Drawing.Size(996, 295);
+            this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // MAHANG
@@ -165,14 +159,13 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.btCancel);
             this.panel2.Controls.Add(this.btSave);
             this.panel2.Controls.Add(this.btEdit);
             this.panel2.Controls.Add(this.btPrint);
             this.panel2.Controls.Add(this.btDel);
             this.panel2.Controls.Add(this.btAdd);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 406);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
@@ -181,26 +174,24 @@
             // 
             // btCancel
             // 
-            this.btCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCancel.Image = global::WarehouseManagement.Properties.Resources.cancel__2_;
+            this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCancel.Image = global::WarehouseManagement.Properties.Resources.cancel;
             this.btCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btCancel.Location = new System.Drawing.Point(486, 44);
             this.btCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(153, 67);
+            this.btCancel.Size = new System.Drawing.Size(149, 67);
             this.btCancel.TabIndex = 9;
-            this.btCancel.Text = "      CANCEL";
+            this.btCancel.Text = "    CANCEL";
             this.btCancel.UseMnemonic = false;
             this.btCancel.UseVisualStyleBackColor = true;
             this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // btSave
             // 
-            this.btSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSave.Image = global::WarehouseManagement.Properties.Resources.save;
             this.btSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btSave.Location = new System.Drawing.Point(329, 44);
@@ -214,96 +205,88 @@
             // 
             // btEdit
             // 
-            this.btEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEdit.Image = global::WarehouseManagement.Properties.Resources.ICEdit;
             this.btEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btEdit.Location = new System.Drawing.Point(172, 44);
             this.btEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btEdit.Name = "btEdit";
             this.btEdit.Size = new System.Drawing.Size(149, 67);
-            this.btEdit.TabIndex = 4;
-            this.btEdit.Text = "   EDIT";
+            this.btEdit.TabIndex = 5;
+            this.btEdit.Text = "  EDIT";
             this.btEdit.UseMnemonic = false;
             this.btEdit.UseVisualStyleBackColor = true;
             this.btEdit.Click += new System.EventHandler(this.btEdit_Click);
             // 
             // btPrint
             // 
-            this.btPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btPrint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btPrint.Image = global::WarehouseManagement.Properties.Resources.ICprin;
             this.btPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btPrint.Location = new System.Drawing.Point(835, 44);
+            this.btPrint.Location = new System.Drawing.Point(825, 44);
             this.btPrint.Margin = new System.Windows.Forms.Padding(4);
             this.btPrint.Name = "btPrint";
             this.btPrint.Size = new System.Drawing.Size(149, 67);
-            this.btPrint.TabIndex = 6;
-            this.btPrint.Text = "     PRINT";
+            this.btPrint.TabIndex = 7;
+            this.btPrint.Text = "   PRINT";
             this.btPrint.UseMnemonic = false;
             this.btPrint.UseVisualStyleBackColor = true;
             // 
             // btDel
             // 
-            this.btDel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btDel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDel.Image = global::WarehouseManagement.Properties.Resources.ICDel;
             this.btDel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btDel.Location = new System.Drawing.Point(678, 44);
+            this.btDel.Location = new System.Drawing.Point(668, 44);
             this.btDel.Margin = new System.Windows.Forms.Padding(4);
             this.btDel.Name = "btDel";
             this.btDel.Size = new System.Drawing.Size(149, 67);
-            this.btDel.TabIndex = 5;
-            this.btDel.Text = "    DELETE";
+            this.btDel.TabIndex = 6;
+            this.btDel.Text = "   DELETE";
             this.btDel.UseMnemonic = false;
             this.btDel.UseVisualStyleBackColor = true;
-            this.btDel.Click += new System.EventHandler(this.btDel_Click);
             // 
             // btAdd
             // 
-            this.btAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btAdd.Image = global::WarehouseManagement.Properties.Resources.ICAdd;
             this.btAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btAdd.Location = new System.Drawing.Point(15, 44);
             this.btAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btAdd.Name = "btAdd";
             this.btAdd.Size = new System.Drawing.Size(149, 67);
-            this.btAdd.TabIndex = 3;
-            this.btAdd.Text = "   ADD";
+            this.btAdd.TabIndex = 4;
+            this.btAdd.Text = "  ADD";
             this.btAdd.UseMnemonic = false;
             this.btAdd.UseVisualStyleBackColor = true;
             this.btAdd.Click += new System.EventHandler(this.BtAdd_Click);
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel1.Location = new System.Drawing.Point(267, 386);
+            this.panel1.Location = new System.Drawing.Point(267, 382);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(532, 1);
+            this.panel1.Size = new System.Drawing.Size(528, 1);
             this.panel1.TabIndex = 12;
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.SystemColors.HighlightText;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::WarehouseManagement.Properties.Resources.IcSearch1;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(804, 352);
+            this.button4.Location = new System.Drawing.Point(791, 347);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(128, 37);
-            this.button4.TabIndex = 2;
+            this.button4.Size = new System.Drawing.Size(124, 37);
+            this.button4.TabIndex = 3;
             this.button4.Text = "  Search";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
@@ -323,7 +306,7 @@
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StockPage";
-            this.Size = new System.Drawing.Size(1004, 550);
+            this.Size = new System.Drawing.Size(1000, 546);
             this.Load += new System.EventHandler(this.StockUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);

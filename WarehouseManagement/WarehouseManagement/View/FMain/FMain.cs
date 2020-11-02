@@ -7,13 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WarehouseManagement.Controller;
 
 namespace WarehouseManagement
 {
     public partial class FMain : Form
     {
-        MainForm_Controller main = new MainForm_Controller();
+        
         public FMain()
         {
             InitializeComponent();
@@ -25,7 +24,6 @@ namespace WarehouseManagement
             return username;
         }
         public string MyUserName { get; set; }
-        //public int MyUkey { get; set; }
         //public UserWelcome pgWelcome;
         //public StockPage pg;
 
@@ -45,10 +43,9 @@ namespace WarehouseManagement
         private void BtStock_Click(object sender, EventArgs e)
         {
             ckBT = true;
-            StockPage pg = new StockPage(MyUserName, main.GetUkey(MyUserName));
+            StockPage pg = new StockPage(MyUserName);
             this.panel5.Controls.Add(pg);
             pg.BringToFront();
-            pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
 
             PanelLeft.Show();
             PanelLeft.Height = BtStock.Height;
@@ -67,7 +64,7 @@ namespace WarehouseManagement
             OderUser pg = new OderUser();
             this.panel5.Controls.Add(pg);
             pg.BringToFront();
-            pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+
             PanelLeft.Show();
             PanelLeft.Height = BtOder.Height;
             PanelLeft.Top = BtOder.Top;
@@ -84,7 +81,7 @@ namespace WarehouseManagement
             StatisticsPage pg = new StatisticsPage();
             this.panel5.Controls.Add(pg);
             pg.BringToFront();
-            pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+
             PanelLeft.Show();
             PanelLeft.Height = BtSta.Height;
             PanelLeft.Top = BtSta.Top;
@@ -95,7 +92,7 @@ namespace WarehouseManagement
             AccountUser pg = new AccountUser(MyUserName);
             this.panel5.Controls.Add(pg);
             pg.BringToFront();
-            pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+
             PanelLeft.Show();
             PanelLeft.Height = BtAcc.Height;
             PanelLeft.Top = BtAcc.Top;
@@ -106,7 +103,7 @@ namespace WarehouseManagement
             HelpUser pg = new HelpUser();
             this.panel5.Controls.Add(pg);
             pg.BringToFront();
-            pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+
             PanelLeft.Show();
             PanelLeft.Height = BtAbout.Height;
             PanelLeft.Top = BtAbout.Top;
@@ -114,7 +111,7 @@ namespace WarehouseManagement
 
         private void BtLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
     }
 }   

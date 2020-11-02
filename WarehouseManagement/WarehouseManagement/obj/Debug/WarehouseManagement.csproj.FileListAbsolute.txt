@@ -68,4 +68,3 @@ C:\Users\AN515-54\Desktop\WarehouseManagement\WarehouseManagement\obj\Debug\Ware
 C:\Users\AN515-54\Desktop\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.CoreCompileInputs.cache
 C:\Users\AN515-54\Desktop\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.exe
 C:\Users\AN515-54\Desktop\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.pdb
-C:\Users\AN515-54\Desktop\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.FAdd.resources

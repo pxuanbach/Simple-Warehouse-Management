@@ -52,21 +52,6 @@ namespace WarehouseManagement.Model
             return ck;
         }
 
-        public static int GetUkey(string sql)
-        {
-            int i = 0;
-            conn = new SqlConnection(connectLink);
-            conn.Open();
-            cmd = new SqlCommand(sql, conn);
-            reader = cmd.ExecuteReader();
-            while (reader.HasRows)
-            {
-                if (reader.Read() == false) break;
-                i = reader.GetInt32(0);
-            }
-            return i;
-        }
-
         public static string[] ListData(string sql)
         {
             string[] list = new string[10];

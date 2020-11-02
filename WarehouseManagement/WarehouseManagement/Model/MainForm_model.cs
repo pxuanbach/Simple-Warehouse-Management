@@ -10,13 +10,14 @@ namespace WarehouseManagement.Model
 {
     class MainForm_Model
     {
-        public int GetUkey(string username)
+        public DataTable Load_On(string UName)
         {
-            string sql_sel = "Select UKEY From USERACC Where USERNAME = '" + username + "'";
-            return Process.GetUkey(sql_sel);
+            DataTable re;
+            string sql_select = "Select HANGHOA.MAHANG,TENHANG,DVT,SOLUONG,DONGIA,NGNHAP,NGSANXUAT,HSD from HANGHOA inner join USERACC on USERACC.UKEY=HANGHOA.UKEY where USERNAME = '" + UName + "'";
+            re = Process.createTable(sql_select);
+            return re;
         }
 
-        /*
         public bool Sua_HangHoa(string MAHANG, string TENHANG, string DVT, int SOLUONG, int DONGIA, DateTime NGNHAP, DateTime NGSANXUAT, DateTime HSD, int UKEY)
         {
             string sql_update = "update HANGHOA set MAHANG='" + MAHANG + "', TENHANG='" + TENHANG + "', DVT ='" + DVT + "', SOLUONG ='" + SOLUONG + "',DONGIA='" + DONGIA + "',NGNHAP='" + NGNHAP + "',NGSANXUAT='" + NGSANXUAT + "',HSD='" + HSD + "',UKEY='" + UKEY + "'";
@@ -38,6 +39,5 @@ namespace WarehouseManagement.Model
             }
             return re;
         }
-        */
     }
 }

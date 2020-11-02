@@ -10,11 +10,10 @@ namespace WarehouseManagement.Controller
 {
     class MainForm_Controller
     {
-        MainForm_Model main = new MainForm_Model();
-        public int GetUkey(string username)
+        MainForm_Model stock = new MainForm_Model();
+        public DataTable Load_On(string UserName )
         {
-            return main.GetUkey(username);
+            return stock.Load_On(UserName);
         }
-
     }
 }

@@ -69,7 +69,7 @@
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Font = new System.Drawing.Font("Arial", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(992, 546);
             this.panel1.TabIndex = 0;
@@ -88,9 +88,9 @@
             this.groupBox2.Controls.Add(this.TbRePass);
             this.groupBox2.Controls.Add(this.panel3);
             this.groupBox2.Location = new System.Drawing.Point(628, 47);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Size = new System.Drawing.Size(271, 214);
             this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
@@ -101,7 +101,7 @@
             this.TbOldPass.BackColor = System.Drawing.Color.White;
             this.TbOldPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TbOldPass.Location = new System.Drawing.Point(41, 42);
-            this.TbOldPass.Margin = new System.Windows.Forms.Padding(4);
+            this.TbOldPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TbOldPass.Name = "TbOldPass";
             this.TbOldPass.Size = new System.Drawing.Size(199, 16);
             this.TbOldPass.TabIndex = 34;
@@ -111,7 +111,7 @@
             // 
             this.BtSavePass.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtSavePass.Location = new System.Drawing.Point(124, 170);
-            this.BtSavePass.Margin = new System.Windows.Forms.Padding(4);
+            this.BtSavePass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtSavePass.Name = "BtSavePass";
             this.BtSavePass.Size = new System.Drawing.Size(116, 28);
             this.BtSavePass.TabIndex = 43;
@@ -122,7 +122,7 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel2.Location = new System.Drawing.Point(16, 110);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(224, 1);
             this.panel2.TabIndex = 39;
@@ -132,7 +132,7 @@
             this.TbNewPass.BackColor = System.Drawing.Color.White;
             this.TbNewPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TbNewPass.Location = new System.Drawing.Point(41, 91);
-            this.TbNewPass.Margin = new System.Windows.Forms.Padding(4);
+            this.TbNewPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TbNewPass.Name = "TbNewPass";
             this.TbNewPass.Size = new System.Drawing.Size(199, 16);
             this.TbNewPass.TabIndex = 35;
@@ -140,9 +140,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WarehouseManagement.Properties.Resources.Option1;
             this.pictureBox1.Location = new System.Drawing.Point(16, 133);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 18);
             this.pictureBox1.TabIndex = 42;
@@ -150,9 +149,8 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::WarehouseManagement.Properties.Resources.Option1;
             this.pictureBox3.Location = new System.Drawing.Point(16, 89);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 18);
             this.pictureBox3.TabIndex = 40;
@@ -160,10 +158,8 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::WarehouseManagement.Properties.Resources.Option1;
-            this.pictureBox2.InitialImage = global::WarehouseManagement.Properties.Resources.Option1;
             this.pictureBox2.Location = new System.Drawing.Point(16, 39);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 18);
             this.pictureBox2.TabIndex = 38;
@@ -173,7 +169,7 @@
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel5.Location = new System.Drawing.Point(16, 154);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(224, 1);
             this.panel5.TabIndex = 41;
@@ -183,7 +179,7 @@
             this.TbRePass.BackColor = System.Drawing.Color.White;
             this.TbRePass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TbRePass.Location = new System.Drawing.Point(41, 135);
-            this.TbRePass.Margin = new System.Windows.Forms.Padding(4);
+            this.TbRePass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TbRePass.Name = "TbRePass";
             this.TbRePass.Size = new System.Drawing.Size(199, 16);
             this.TbRePass.TabIndex = 36;
@@ -193,7 +189,7 @@
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel3.Location = new System.Drawing.Point(16, 60);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(224, 1);
             this.panel3.TabIndex = 37;
@@ -214,9 +210,9 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Location = new System.Drawing.Point(51, 47);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Size = new System.Drawing.Size(517, 459);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
@@ -227,7 +223,7 @@
             // 
             this.BtSaveInfor.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtSaveInfor.Location = new System.Drawing.Point(349, 404);
-            this.BtSaveInfor.Margin = new System.Windows.Forms.Padding(4);
+            this.BtSaveInfor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtSaveInfor.Name = "BtSaveInfor";
             this.BtSaveInfor.Size = new System.Drawing.Size(116, 28);
             this.BtSaveInfor.TabIndex = 44;
@@ -237,7 +233,7 @@
             // textBoxPNumber
             // 
             this.textBoxPNumber.Location = new System.Drawing.Point(185, 111);
-            this.textBoxPNumber.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPNumber.Name = "textBoxPNumber";
             this.textBoxPNumber.Size = new System.Drawing.Size(255, 23);
             this.textBoxPNumber.TabIndex = 2;
@@ -309,7 +305,7 @@
             // textBoxEmail
             // 
             this.textBoxEmail.Location = new System.Drawing.Point(121, 244);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(319, 23);
             this.textBoxEmail.TabIndex = 5;
@@ -317,7 +313,7 @@
             // dateTimePickerBDay
             // 
             this.dateTimePickerBDay.Location = new System.Drawing.Point(175, 153);
-            this.dateTimePickerBDay.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerBDay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePickerBDay.Name = "dateTimePickerBDay";
             this.dateTimePickerBDay.Size = new System.Drawing.Size(265, 23);
             this.dateTimePickerBDay.TabIndex = 3;
@@ -330,7 +326,7 @@
             "Female",
             "Non"});
             this.comboBoxGTinh.Location = new System.Drawing.Point(121, 199);
-            this.comboBoxGTinh.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxGTinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxGTinh.Name = "comboBoxGTinh";
             this.comboBoxGTinh.Size = new System.Drawing.Size(319, 24);
             this.comboBoxGTinh.TabIndex = 4;
@@ -380,7 +376,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AccountUser";
             this.Size = new System.Drawing.Size(992, 546);
             this.Load += new System.EventHandler(this.AccountUser_Load);
