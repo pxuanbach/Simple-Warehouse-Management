@@ -50,13 +50,19 @@
     <Compile Include="Controller\Login_Controller.cs" />
     <Compile Include="Controller\MainForm_Controller.cs" />
     <Compile Include="Controller\SignUp_Controller.cs" />
+<<<<<<< HEAD
     <Compile Include="Controller\StockPage_Controller.cs" />
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
     <Compile Include="Model\AccountPage_Model.cs" />
     <Compile Include="Model\Login_Model.cs" />
     <Compile Include="Model\MainForm_Model.cs" />
     <Compile Include="Model\Process.cs" />
     <Compile Include="Model\SignUp_Model.cs" />
+<<<<<<< HEAD
     <Compile Include="Model\StockPage_Model.cs" />
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -70,12 +76,15 @@
     <Compile Include="View\FLogin.Designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="View\FMain\FAdd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FMain\FAdd.Designer.cs">
       <DependentUpon>FAdd.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
     <Compile Include="View\FMain\FMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,9 +150,12 @@
     <EmbeddedResource Include="View\FMain\AccountPage.resx">
       <DependentUpon>AccountPage.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="View\FMain\FAdd.resx">
       <DependentUpon>FAdd.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
     <EmbeddedResource Include="View\FMain\FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -306,10 +318,13 @@
     <Content Include="Icon\Graphicloads-Flat-Finance-Dollar-stats.ico" />
     <Content Include="Icon\Help.png" />
     <Content Include="Icon\HelpIc.png" />
+<<<<<<< HEAD
     <None Include="Properties\Pictures\cancel %282%29.png" />
     <None Include="Properties\Pictures\cancel %281%29.png" />
     <None Include="Properties\Pictures\add %281%29.png" />
     <None Include="Properties\Pictures\add.png" />
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
     <None Include="Properties\Pictures\save.png" />
     <None Include="Properties\Pictures\cancel.png" />
     <None Include="Icon\IcSearch1.png" />

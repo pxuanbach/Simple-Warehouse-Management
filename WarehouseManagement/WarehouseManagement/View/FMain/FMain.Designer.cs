@@ -33,6 +33,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.Copyright = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+=======
+            this.timeDate1 = new WarehouseManagement.TimeDate();
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.BtLogout = new System.Windows.Forms.Button();
             this.PanelLeft = new System.Windows.Forms.Panel();
             this.BtAbout = new System.Windows.Forms.Button();
@@ -47,7 +51,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.timeDate1 = new WarehouseManagement.TimeDate();
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.TimeDatePage = new WarehouseManagement.TimeDate();
             this.panelL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,8 +63,11 @@
             // 
             // panelL
             // 
+<<<<<<< HEAD
             this.panelL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.panelL.BackColor = System.Drawing.Color.White;
             this.panelL.Controls.Add(this.pictureBox1);
             this.panelL.Controls.Add(this.panel7);
@@ -73,7 +83,11 @@
             this.panelL.Location = new System.Drawing.Point(3, 2);
             this.panelL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelL.Name = "panelL";
+<<<<<<< HEAD
             this.panelL.Size = new System.Drawing.Size(209, 552);
+=======
+            this.panelL.Size = new System.Drawing.Size(209, 544);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.panelL.TabIndex = 0;
             this.panelL.Paint += new System.Windows.Forms.PaintEventHandler(this.panelL_Paint);
             // 
@@ -81,7 +95,11 @@
             // 
             this.pictureBox1.Image = global::WarehouseManagement.Properties.Resources.Logo2;
             this.pictureBox1.Location = new System.Drawing.Point(8, 4);
+<<<<<<< HEAD
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(197, 76);
             this.pictureBox1.TabIndex = 23;
@@ -89,27 +107,51 @@
             // 
             // panel7
             // 
+<<<<<<< HEAD
             this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel7.BackColor = System.Drawing.Color.DimGray;
             this.panel7.Location = new System.Drawing.Point(1, 506);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.panel7.BackColor = System.Drawing.Color.DimGray;
+            this.panel7.Location = new System.Drawing.Point(1, 498);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(208, 2);
             this.panel7.TabIndex = 22;
             // 
             // Copyright
             // 
+<<<<<<< HEAD
             this.Copyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Copyright.AutoSize = true;
             this.Copyright.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Copyright.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Copyright.Location = new System.Drawing.Point(8, 513);
+=======
+            this.Copyright.AutoSize = true;
+            this.Copyright.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Copyright.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Copyright.Location = new System.Drawing.Point(8, 505);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.Copyright.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Copyright.Name = "Copyright";
             this.Copyright.Size = new System.Drawing.Size(185, 34);
             this.Copyright.TabIndex = 21;
             this.Copyright.Text = "Copyright © 2020-2021 UIT \r\nTeam,Inc ";
             // 
+<<<<<<< HEAD
+=======
+            // timeDate1
+            // 
+            this.timeDate1.Location = new System.Drawing.Point(1, 427);
+            this.timeDate1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.timeDate1.Name = "timeDate1";
+            this.timeDate1.Size = new System.Drawing.Size(204, 74);
+            this.timeDate1.TabIndex = 20;
+            // 
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             // BtLogout
             // 
             this.BtLogout.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -120,7 +162,11 @@
             this.BtLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLogout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BtLogout.Location = new System.Drawing.Point(12, 356);
+<<<<<<< HEAD
             this.BtLogout.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.BtLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.BtLogout.Name = "BtLogout";
             this.BtLogout.Size = new System.Drawing.Size(125, 32);
             this.BtLogout.TabIndex = 19;
@@ -149,7 +195,11 @@
             this.BtAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtAbout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BtAbout.Location = new System.Drawing.Point(4, 293);
+<<<<<<< HEAD
             this.BtAbout.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.BtAbout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.BtAbout.Name = "BtAbout";
             this.BtAbout.Size = new System.Drawing.Size(204, 41);
             this.BtAbout.TabIndex = 17;
@@ -168,7 +218,11 @@
             this.BtAcc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtAcc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BtAcc.Location = new System.Drawing.Point(4, 245);
+<<<<<<< HEAD
             this.BtAcc.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.BtAcc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.BtAcc.Name = "BtAcc";
             this.BtAcc.Size = new System.Drawing.Size(204, 41);
             this.BtAcc.TabIndex = 16;
@@ -187,7 +241,11 @@
             this.BtStock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtStock.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BtStock.Location = new System.Drawing.Point(4, 95);
+<<<<<<< HEAD
             this.BtStock.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.BtStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.BtStock.Name = "BtStock";
             this.BtStock.Size = new System.Drawing.Size(204, 41);
             this.BtStock.TabIndex = 13;
@@ -206,7 +264,11 @@
             this.BtSta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtSta.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BtSta.Location = new System.Drawing.Point(4, 191);
+<<<<<<< HEAD
             this.BtSta.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.BtSta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.BtSta.Name = "BtSta";
             this.BtSta.Size = new System.Drawing.Size(204, 41);
             this.BtSta.TabIndex = 15;
@@ -225,7 +287,11 @@
             this.BtOder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtOder.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BtOder.Location = new System.Drawing.Point(4, 143);
+<<<<<<< HEAD
             this.BtOder.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.BtOder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.BtOder.Name = "BtOder";
             this.BtOder.Size = new System.Drawing.Size(204, 41);
             this.BtOder.TabIndex = 14;
@@ -238,9 +304,15 @@
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+<<<<<<< HEAD
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(3, 559);
+=======
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(3, 551);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -248,7 +320,11 @@
             this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 0);
+<<<<<<< HEAD
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1210, 2);
             this.panel2.TabIndex = 2;
@@ -257,23 +333,35 @@
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(1210, 2);
+<<<<<<< HEAD
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(3, 557);
+=======
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(3, 549);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.panel3.TabIndex = 3;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+<<<<<<< HEAD
             this.panel4.Location = new System.Drawing.Point(3, 557);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.panel4.Location = new System.Drawing.Point(3, 549);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1207, 2);
             this.panel4.TabIndex = 4;
             // 
             // panel5
             // 
+<<<<<<< HEAD
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -282,16 +370,28 @@
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(992, 554);
+=======
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Location = new System.Drawing.Point(219, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(992, 546);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.panel5.TabIndex = 5;
             // 
             // panel6
             // 
             this.panel6.Location = new System.Drawing.Point(0, -2);
+<<<<<<< HEAD
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1, 911);
             this.panel6.TabIndex = 6;
             // 
+<<<<<<< HEAD
             // timeDate1
             // 
             this.timeDate1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -301,6 +401,8 @@
             this.timeDate1.Size = new System.Drawing.Size(204, 74);
             this.timeDate1.TabIndex = 20;
             // 
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             // TimeDatePage
             // 
             this.TimeDatePage.Location = new System.Drawing.Point(0, 0);
@@ -313,24 +415,40 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1213, 559);
+=======
+            this.ClientSize = new System.Drawing.Size(1213, 551);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelL);
+<<<<<<< HEAD
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+<<<<<<< HEAD
             this.Text = "Goods Management";
+=======
+            this.Text = "FMain";
+            this.TopMost = true;
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.Load += new System.EventHandler(this.FMain_Load);
             this.panelL.ResumeLayout(false);
             this.panelL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
+<<<<<<< HEAD
+=======
+            this.panel5.PerformLayout();
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             this.ResumeLayout(false);
 
         }

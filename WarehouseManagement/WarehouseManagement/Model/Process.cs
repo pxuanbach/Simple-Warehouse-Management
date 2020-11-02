@@ -52,6 +52,7 @@ namespace WarehouseManagement.Model
             return ck;
         }
 
+<<<<<<< HEAD
         public static int GetUkey(string sql)
         {
             int i = 0;
@@ -67,6 +68,8 @@ namespace WarehouseManagement.Model
             return i;
         }
 
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
         public static string[] ListData(string sql)
         {
             string[] list = new string[10];

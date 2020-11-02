@@ -7,13 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using WarehouseManagement.Controller;
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
 
 namespace WarehouseManagement
 {
     public partial class FMain : Form
     {
+<<<<<<< HEAD
         MainForm_Controller main = new MainForm_Controller();
+=======
+        
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
         public FMain()
         {
             InitializeComponent();
@@ -25,7 +32,10 @@ namespace WarehouseManagement
             return username;
         }
         public string MyUserName { get; set; }
+<<<<<<< HEAD
         //public int MyUkey { get; set; }
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
         //public UserWelcome pgWelcome;
         //public StockPage pg;
 
@@ -45,10 +55,16 @@ namespace WarehouseManagement
         private void BtStock_Click(object sender, EventArgs e)
         {
             ckBT = true;
+<<<<<<< HEAD
             StockPage pg = new StockPage(MyUserName, main.GetUkey(MyUserName));
             this.panel5.Controls.Add(pg);
             pg.BringToFront();
             pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+=======
+            StockPage pg = new StockPage(MyUserName);
+            this.panel5.Controls.Add(pg);
+            pg.BringToFront();
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
 
             PanelLeft.Show();
             PanelLeft.Height = BtStock.Height;
@@ -67,7 +83,11 @@ namespace WarehouseManagement
             OderUser pg = new OderUser();
             this.panel5.Controls.Add(pg);
             pg.BringToFront();
+<<<<<<< HEAD
             pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+=======
+
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             PanelLeft.Show();
             PanelLeft.Height = BtOder.Height;
             PanelLeft.Top = BtOder.Top;
@@ -84,7 +104,11 @@ namespace WarehouseManagement
             StatisticsPage pg = new StatisticsPage();
             this.panel5.Controls.Add(pg);
             pg.BringToFront();
+<<<<<<< HEAD
             pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+=======
+
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             PanelLeft.Show();
             PanelLeft.Height = BtSta.Height;
             PanelLeft.Top = BtSta.Top;
@@ -95,7 +119,11 @@ namespace WarehouseManagement
             AccountUser pg = new AccountUser(MyUserName);
             this.panel5.Controls.Add(pg);
             pg.BringToFront();
+<<<<<<< HEAD
             pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+=======
+
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             PanelLeft.Show();
             PanelLeft.Height = BtAcc.Height;
             PanelLeft.Top = BtAcc.Top;
@@ -106,7 +134,11 @@ namespace WarehouseManagement
             HelpUser pg = new HelpUser();
             this.panel5.Controls.Add(pg);
             pg.BringToFront();
+<<<<<<< HEAD
             pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+=======
+
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
             PanelLeft.Show();
             PanelLeft.Height = BtAbout.Height;
             PanelLeft.Top = BtAbout.Top;
@@ -114,7 +146,11 @@ namespace WarehouseManagement
 
         private void BtLogout_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             this.Close();
+=======
+
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
         }
     }
 }   

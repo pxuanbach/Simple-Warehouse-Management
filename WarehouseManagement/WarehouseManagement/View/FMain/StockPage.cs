@@ -14,6 +14,7 @@ namespace WarehouseManagement
 {
     public partial class StockPage : UserControl
     {
+<<<<<<< HEAD
         StockPage_Controller stock = new StockPage_Controller();
         public string UserName;
         public int UKey;
@@ -23,6 +24,14 @@ namespace WarehouseManagement
             UserName = Username;
             UKey = Ukey;
             set_AccessButtonCancel();
+=======
+        MainForm_Controller controller = new MainForm_Controller();
+        public string UserName;
+        public StockPage(string Username)
+        {
+            InitializeComponent();
+            UserName = Username;
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
         }
         
         public void set_AccessButtonEdit()
@@ -31,8 +40,11 @@ namespace WarehouseManagement
             btDel.Enabled = false;
             btEdit.Enabled = false;
             btPrint.Enabled = false;
+<<<<<<< HEAD
             btCancel.Enabled = true;
             btSave.Enabled = true;
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
         }
 
         public void set_AccessButtonCancel()
@@ -41,8 +53,11 @@ namespace WarehouseManagement
             btDel.Enabled = true;
             btEdit.Enabled = true;
             btPrint.Enabled = true;
+<<<<<<< HEAD
             btCancel.Enabled = false;
             btSave.Enabled = false;
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -52,10 +67,14 @@ namespace WarehouseManagement
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+<<<<<<< HEAD
             
             //dataGridView1.SelectedRows[e.RowIndex].Selected = true;
             //dataGridView1.SelectedCells
             //MessageBox.Show(i.ToString());
+=======
+
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -75,18 +94,30 @@ namespace WarehouseManagement
 
         private void StockUser_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             dataGridView1.DataSource = stock.Load_On(UserName);
             dataGridView1.SelectionMode =
                     DataGridViewSelectionMode.FullRowSelect;
+=======
+            dataGridView1.DataSource = controller.Load_On(UserName);
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
         }
 
         private void BtAdd_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             FAdd f = new FAdd(UserName, UKey);
             //this.Hide();
             f.ShowDialog();
             this.Show();
             dataGridView1.DataSource = stock.Load_On(UserName);
+=======
+            //FAddStock f = new FAddStock();
+            //this.Hide();
+            //f.ShowDialog();
+            //this.Show();
+
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
         }
 
         private void btEdit_Click(object sender, EventArgs e)
@@ -98,6 +129,7 @@ namespace WarehouseManagement
         {
             set_AccessButtonCancel();
         }
+<<<<<<< HEAD
 
         private void btDel_Click(object sender, EventArgs e)
         {
@@ -109,5 +141,7 @@ namespace WarehouseManagement
                 dataGridView1.DataSource = stock.Load_On(UserName);
             }
         }
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
     }
 }

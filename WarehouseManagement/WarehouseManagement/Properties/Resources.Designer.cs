@@ -113,6 +113,7 @@ namespace WarehouseManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
@@ -143,6 +144,8 @@ namespace WarehouseManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
         internal static System.Drawing.Bitmap addIC {
             get {
                 object obj = ResourceManager.GetObject("addIC", resourceCulture);
@@ -173,6 +176,7 @@ namespace WarehouseManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap cancel__1_ {
             get {
                 object obj = ResourceManager.GetObject("cancel__1_", resourceCulture);
@@ -193,6 +197,8 @@ namespace WarehouseManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+=======
+>>>>>>> 61490cb407cfa930126de606ff9f6f69b19bc86e
         internal static System.Drawing.Bitmap Capture {
             get {
                 object obj = ResourceManager.GetObject("Capture", resourceCulture);
