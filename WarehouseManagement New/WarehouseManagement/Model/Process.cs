@@ -14,7 +14,7 @@ namespace WarehouseManagement.Model
         public static DataTable data;
         public static SqlDataReader reader;
         //Link SQL Server
-        public static string connectLink = @"Server=LAPTOP-MSFEGU0S\SQLEXPRESS01;Database=WarehouseManagement;User Id=sa;Password=19521334;";
+        public static string connectLink = @"Server=JAMES-LAPTOP\SQLEXPRES;Database=WarehouseManagement;User Id=sa;Password=19521334;";
 
         //Function lấy data từ SQL Server load vào DataTable
         public static DataTable createTable(string sql)
