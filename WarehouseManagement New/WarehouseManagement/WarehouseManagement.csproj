@@ -71,6 +71,9 @@
     <Compile Include="View\FMain\AccountPage.designer.cs">
       <DependentUpon>AccountPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FMain\Button_WOC.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="View\FMain\FAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +237,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Source\Username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-plus %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

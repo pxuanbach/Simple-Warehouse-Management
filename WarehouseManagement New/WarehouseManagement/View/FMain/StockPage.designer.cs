@@ -47,7 +47,9 @@
             this.btDel = new System.Windows.Forms.Button();
             this.btAdd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonSeach = new System.Windows.Forms.Button();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.button_WOC1 = new ePOSOne.btnProduct.Button_WOC();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -57,15 +59,15 @@
             this.comboBoxSeach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.comboBoxSeach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxSeach.FormattingEnabled = true;
-            this.comboBoxSeach.ItemHeight = 20;
+            this.comboBoxSeach.ItemHeight = 16;
             this.comboBoxSeach.Items.AddRange(new object[] {
             "Mã hàng",
             "Tên hàng",
             "Ngày nhập"});
-            this.comboBoxSeach.Location = new System.Drawing.Point(45, 353);
-            this.comboBoxSeach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxSeach.Location = new System.Drawing.Point(34, 287);
+            this.comboBoxSeach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxSeach.Name = "comboBoxSeach";
-            this.comboBoxSeach.Size = new System.Drawing.Size(220, 28);
+            this.comboBoxSeach.Size = new System.Drawing.Size(166, 24);
             this.comboBoxSeach.TabIndex = 11;
             this.comboBoxSeach.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -76,10 +78,9 @@
             this.Search.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Search.Location = new System.Drawing.Point(275, 348);
-            this.Search.Margin = new System.Windows.Forms.Padding(4);
+            this.Search.Location = new System.Drawing.Point(206, 283);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(517, 34);
+            this.Search.Size = new System.Drawing.Size(388, 28);
             this.Search.TabIndex = 2;
             this.Search.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -100,10 +101,9 @@
             this.NSX,
             this.HSD});
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(996, 295);
+            this.dataGridView1.Size = new System.Drawing.Size(747, 240);
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -172,10 +172,9 @@
             this.panel2.Controls.Add(this.btDel);
             this.panel2.Controls.Add(this.btAdd);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 406);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(0, 432);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1000, 140);
+            this.panel2.Size = new System.Drawing.Size(1000, 114);
             this.panel2.TabIndex = 9;
             // 
             // btCancel
@@ -183,10 +182,9 @@
             this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCancel.Image = global::WarehouseManagement.Properties.Resources.ICcancel;
             this.btCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btCancel.Location = new System.Drawing.Point(643, 44);
-            this.btCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btCancel.Location = new System.Drawing.Point(482, 36);
             this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(149, 67);
+            this.btCancel.Size = new System.Drawing.Size(112, 54);
             this.btCancel.TabIndex = 9;
             this.btCancel.Text = "      CANCEL";
             this.btCancel.UseMnemonic = false;
@@ -200,10 +198,9 @@
             this.btSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSave.Image = global::WarehouseManagement.Properties.Resources.ICsave;
             this.btSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSave.Location = new System.Drawing.Point(486, 44);
-            this.btSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btSave.Location = new System.Drawing.Point(364, 36);
             this.btSave.Name = "btSave";
-            this.btSave.Size = new System.Drawing.Size(149, 67);
+            this.btSave.Size = new System.Drawing.Size(112, 54);
             this.btSave.TabIndex = 8;
             this.btSave.Text = "    SAVE";
             this.btSave.UseMnemonic = false;
@@ -217,10 +214,9 @@
             this.btEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEdit.Image = global::WarehouseManagement.Properties.Resources.ICEdit;
             this.btEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btEdit.Location = new System.Drawing.Point(329, 44);
-            this.btEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btEdit.Location = new System.Drawing.Point(247, 36);
             this.btEdit.Name = "btEdit";
-            this.btEdit.Size = new System.Drawing.Size(149, 67);
+            this.btEdit.Size = new System.Drawing.Size(112, 54);
             this.btEdit.TabIndex = 5;
             this.btEdit.Text = "  EDIT";
             this.btEdit.UseMnemonic = false;
@@ -234,10 +230,9 @@
             this.btPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btPrint.Image = global::WarehouseManagement.Properties.Resources.ICprint;
             this.btPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btPrint.Location = new System.Drawing.Point(825, 44);
-            this.btPrint.Margin = new System.Windows.Forms.Padding(4);
+            this.btPrint.Location = new System.Drawing.Point(869, 36);
             this.btPrint.Name = "btPrint";
-            this.btPrint.Size = new System.Drawing.Size(149, 67);
+            this.btPrint.Size = new System.Drawing.Size(112, 54);
             this.btPrint.TabIndex = 7;
             this.btPrint.Text = "    PRINT";
             this.btPrint.UseMnemonic = false;
@@ -250,10 +245,9 @@
             this.btDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDel.Image = global::WarehouseManagement.Properties.Resources.ICDel;
             this.btDel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btDel.Location = new System.Drawing.Point(172, 44);
-            this.btDel.Margin = new System.Windows.Forms.Padding(4);
+            this.btDel.Location = new System.Drawing.Point(379, 36);
             this.btDel.Name = "btDel";
-            this.btDel.Size = new System.Drawing.Size(149, 67);
+            this.btDel.Size = new System.Drawing.Size(112, 54);
             this.btDel.TabIndex = 6;
             this.btDel.Text = "     DELETE";
             this.btDel.UseMnemonic = false;
@@ -267,10 +261,9 @@
             this.btAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btAdd.Image = global::WarehouseManagement.Properties.Resources.ICAdd;
             this.btAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btAdd.Location = new System.Drawing.Point(15, 44);
-            this.btAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btAdd.Location = new System.Drawing.Point(11, 36);
             this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(149, 67);
+            this.btAdd.Size = new System.Drawing.Size(112, 54);
             this.btAdd.TabIndex = 4;
             this.btAdd.Text = "  ADD";
             this.btAdd.UseMnemonic = false;
@@ -282,44 +275,69 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel1.Location = new System.Drawing.Point(267, 382);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(200, 310);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(528, 1);
+            this.panel1.Size = new System.Drawing.Size(396, 1);
             this.panel1.TabIndex = 12;
             // 
-            // buttonSeach
+            // buttonSearch
             // 
-            this.buttonSeach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSeach.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.buttonSeach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSeach.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSeach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSeach.Image = global::WarehouseManagement.Properties.Resources.ICsearch;
-            this.buttonSeach.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonSeach.Location = new System.Drawing.Point(791, 347);
-            this.buttonSeach.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonSeach.Name = "buttonSeach";
-            this.buttonSeach.Size = new System.Drawing.Size(124, 37);
-            this.buttonSeach.TabIndex = 3;
-            this.buttonSeach.Text = "  Search";
-            this.buttonSeach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSeach.UseVisualStyleBackColor = false;
-            this.buttonSeach.Click += new System.EventHandler(this.buttonSeach_Click);
+            this.buttonSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSearch.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.buttonSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSearch.Image = global::WarehouseManagement.Properties.Resources.ICsearch;
+            this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonSearch.Location = new System.Drawing.Point(501, 354);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(93, 30);
+            this.buttonSearch.TabIndex = 3;
+            this.buttonSearch.Text = "  Search";
+            this.buttonSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSearch.UseVisualStyleBackColor = false;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSeach_Click);
+            // 
+            // button_WOC1
+            // 
+            this.button_WOC1.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.button_WOC1.ButtonColor = System.Drawing.Color.WhiteSmoke;
+            this.button_WOC1.FlatAppearance.BorderSize = 0;
+            this.button_WOC1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_WOC1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_WOC1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button_WOC1.Location = new System.Drawing.Point(599, 283);
+            this.button_WOC1.Name = "button_WOC1";
+            this.button_WOC1.OnHoverBorderColor = System.Drawing.Color.Gray;
+            this.button_WOC1.OnHoverButtonColor = System.Drawing.Color.Yellow;
+            this.button_WOC1.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.button_WOC1.Size = new System.Drawing.Size(75, 30);
+            this.button_WOC1.TabIndex = 13;
+            this.button_WOC1.Text = "button_WOC1";
+            this.button_WOC1.TextColor = System.Drawing.Color.DimGray;
+            this.button_WOC1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(112, 369);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(168, 20);
+            this.textBox1.TabIndex = 14;
             // 
             // StockPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button_WOC1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBoxSeach);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.buttonSeach);
+            this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StockPage";
             this.Size = new System.Drawing.Size(1000, 546);
             this.Load += new System.EventHandler(this.StockUser_Load);
@@ -333,7 +351,7 @@
         #endregion
         private System.Windows.Forms.ComboBox comboBoxSeach;
         private System.Windows.Forms.TextBox Search;
-        private System.Windows.Forms.Button buttonSeach;
+        private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btEdit;
@@ -351,5 +369,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HSD;
         private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.Button btSave;
+        private ePOSOne.btnProduct.Button_WOC button_WOC1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
