@@ -46,23 +46,33 @@ create table HANGHOA
 )
 --MAHANG,TENHANG,DVT,SOLUONG,DONGIA,NGNHAP,NGSANXUAT,HSD
 
-create table ORDERS
+create table HOADON
 (
-	MAHOADON nvarchar(20) primary key,
-	NGXUAT smalldatetime,
+	MAHOADON int IDENTITY(1,1) primary key,
+	TENDOITAC nvarchar(100) not null,
+	THOIGIAN smalldatetime,
+	TRIGIA money,
+)
+
+create table CTHD
+(
+	MAHOADON int foreign key references HOADON(MAHOADON),
 	MAHANG varchar(20),
 	UKEY int,
 )
 
 ---------------------------------------------
-ALTER TABLE ORDERS
+ALTER TABLE CTHD
    ADD CONSTRAINT FK_MAHANG_UKEY
    FOREIGN KEY(MAHANG, UKEY)
    REFERENCES HANGHOA(MAHANG, UKEY)
 ---------------------------------------------
+insert HOADON values
+(N'Công ty Thực phẩm', '2020/02/20', 50000000),
+(N'Công ty Tài nguyên Môi trường', '2020/02/20', 20000000)
 
-
-
+insert CTHD values
+(3,'BB004', 19521334)
 
 insert USERACC values
 (19521334,'dat09','0','Nguyễn Đức Chí Đạt','0123456789','Nam','nguyenducchidat@gmail.com','2020/01/29','Sinh viên')
@@ -99,3 +109,14 @@ WHERE MAHANG = 'AA011'
 Select * 
 From HANGHOA
 Where CHARINDEX('vo',HANGHOA.TENHANG) != 0
+
+Select *
+From USERACC
+
+UPDATE USERACC
+SET HOTEN = N'Nguyễn Đức Chí Đạt'
+WHERE UKEY = 19521334
+
+UPDATE USERACC
+SET HOTEN = N'Phạm Xuân Bách'
+WHERE UKEY = 19521233
