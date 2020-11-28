@@ -25,14 +25,15 @@ namespace WarehouseManagement
         public bool isSearched = false;
 
         //Khởi tạo user control với đầu vào là Username và Ukey
-        public StockPage(string Username, int Ukey)
+        public StockPage(string Username, int Ukey, Size t)
         {
             InitializeComponent();
             comboBoxSeach.SelectedIndex = 0;
             UserName = Username;
             UKey = Ukey;
             set_AccessButtonCancel();
-            
+            panelButton.ClientSize = t;
+
             dataGridView1.CellEndEdit += DataGridView1_CellEndEdit;     //sự kiện ô đã sửa xong
             dataGridView1.CellBeginEdit += DataGridView1_CellBeginEdit;
             dataGridView1.CellValueChanged += DataGridView1_CellValueChanged;   //sự kiện giá trị của ô có sự thay đổi

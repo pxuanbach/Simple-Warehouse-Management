@@ -49,11 +49,14 @@
     <Compile Include="Controller\AccountPage_Controller.cs" />
     <Compile Include="Controller\Login_Controller.cs" />
     <Compile Include="Controller\MainForm_Controller.cs" />
+    <Compile Include="Controller\OrderPage_Controller.cs" />
     <Compile Include="Controller\SignUp_Controller.cs" />
     <Compile Include="Controller\StockPage_Controller.cs" />
+    <Compile Include="Model\Account.cs" />
     <Compile Include="Model\AccountPage_Model.cs" />
     <Compile Include="Model\Login_Model.cs" />
     <Compile Include="Model\MainForm_Model.cs" />
+    <Compile Include="Model\OrderPage_Model.cs" />
     <Compile Include="Model\Process.cs" />
     <Compile Include="Model\SignUp_Model.cs" />
     <Compile Include="Model\Stock.cs" />
@@ -93,7 +96,7 @@
     <Compile Include="View\FMain\OrderPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\FMain\OrderPage.designer.cs">
+    <Compile Include="View\FMain\OrderPage.Designer.cs">
       <DependentUpon>OrderPage.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FMain\StatisticsPage.cs">
@@ -153,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FMain\OrderPage.resx">
       <DependentUpon>OrderPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FMain\StatisticsPage.resx">
+      <DependentUpon>StatisticsPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FMain\StockPage.resx">
       <DependentUpon>StockPage.cs</DependentUpon>
@@ -235,6 +241,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Source\Username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Source\cargo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Source\1322149.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Source\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Source\settings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

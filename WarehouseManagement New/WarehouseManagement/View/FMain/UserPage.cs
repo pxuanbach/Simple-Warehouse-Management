@@ -24,7 +24,7 @@ namespace WarehouseManagement
             label4.Text = DateTime.Now.ToLongDateString();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e) // hàm này ko bị gọi,.
         {
             label3.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
@@ -33,6 +33,12 @@ namespace WarehouseManagement
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            label3.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
         }
     }
 }

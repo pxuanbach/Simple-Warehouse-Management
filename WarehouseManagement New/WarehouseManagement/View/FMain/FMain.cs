@@ -25,6 +25,12 @@ namespace WarehouseManagement
             InitializeComponent();
             MyUserName = Username;
             UKey = main.GetUkey(Username);  //Hàm GetUkey từ username
+            this.FormClosed += FMain_FormClosed;
+        }
+
+        private void FMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
 
         public bool ckBT = false;
@@ -33,7 +39,7 @@ namespace WarehouseManagement
         private void FMain_Load(object sender, EventArgs e)
         {
             UserWelcome pgWelcome = new UserWelcome();
-            this.panel5.Controls.Add(pgWelcome);
+            this.panelMain.Controls.Add(pgWelcome);
             pgWelcome.Show();
             if (ckBT == true)
                 pgWelcome.Hide();
@@ -43,8 +49,9 @@ namespace WarehouseManagement
         private void BtStock_Click(object sender, EventArgs e)
         {
             ckBT = true;
-            StockPage pg = new StockPage(MyUserName, UKey);
-            this.panel5.Controls.Add(pg);
+            StockPage pg = new StockPage(MyUserName, UKey, panelMain.ClientSize);
+            this.panelMain.Controls.Add(pg);
+            pg.ClientSize = panelMain.ClientSize;
             pg.BringToFront();
             pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
 
@@ -53,16 +60,12 @@ namespace WarehouseManagement
             PanelLeft.Top = BtStock.Top;
         }
 
-        private void panelNhay_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         //Click vào button Order sẽ load page OderUser 
         private void BtOder_Click(object sender, EventArgs e)
         {
-            OderUser pg = new OderUser();
-            this.panel5.Controls.Add(pg);
+            OderUser pg = new OderUser(UKey);
+            this.panelMain.Controls.Add(pg);
+            pg.ClientSize = panelMain.ClientSize;
             pg.BringToFront();
             pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
 
@@ -81,7 +84,8 @@ namespace WarehouseManagement
         private void BtSta_Click(object sender, EventArgs e)
         {
             StatisticsPage pg = new StatisticsPage();
-            this.panel5.Controls.Add(pg);
+            this.panelMain.Controls.Add(pg);
+            pg.ClientSize = panelMain.ClientSize;
             pg.BringToFront();
             pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
 
@@ -94,7 +98,8 @@ namespace WarehouseManagement
         private void BtHelp_Click(object sender, EventArgs e)
         {
             HelpUser pg = new HelpUser();
-            this.panel5.Controls.Add(pg);
+            this.panelMain.Controls.Add(pg);
+            pg.ClientSize = panelMain.ClientSize;
             pg.BringToFront();
             pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
 
@@ -106,8 +111,9 @@ namespace WarehouseManagement
         //Click vào button Account sẽ load page AccountUser 
         private void BtAcc_Click(object sender, EventArgs e)
         {
-            AccountUser pg = new AccountUser(MyUserName);
-            this.panel5.Controls.Add(pg);
+            AccountUser pg = new AccountUser(MyUserName, panelMain.ClientSize);
+            this.panelMain.Controls.Add(pg);
+            pg.ClientSize = panelMain.ClientSize;
             pg.BringToFront();
             pg.Anchor = (AnchorStyles)(AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
 

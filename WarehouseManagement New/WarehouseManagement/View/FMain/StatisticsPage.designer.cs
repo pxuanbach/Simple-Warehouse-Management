@@ -31,7 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.GbRevenue = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.GbChart = new System.Windows.Forms.GroupBox();
             this.TabChart = new System.Windows.Forms.TabControl();
             this.ChartMonth = new System.Windows.Forms.TabPage();
@@ -43,12 +42,15 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 7);
+            this.label1.Location = new System.Drawing.Point(9, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 30);
+            this.label1.Size = new System.Drawing.Size(305, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Statistics  Analysis";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -58,17 +60,22 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(247, 26);
+            this.panel1.Location = new System.Drawing.Point(329, 32);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 44);
+            this.panel1.Size = new System.Drawing.Size(332, 54);
             this.panel1.TabIndex = 1;
             // 
             // GbRevenue
             // 
+            this.GbRevenue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GbRevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbRevenue.Location = new System.Drawing.Point(429, 105);
+            this.GbRevenue.Location = new System.Drawing.Point(572, 129);
+            this.GbRevenue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GbRevenue.Name = "GbRevenue";
-            this.GbRevenue.Size = new System.Drawing.Size(279, 321);
+            this.GbRevenue.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GbRevenue.Size = new System.Drawing.Size(372, 395);
             this.GbRevenue.TabIndex = 2;
             this.GbRevenue.TabStop = false;
             this.GbRevenue.Text = "Revenue(DoanhThu)";
@@ -77,9 +84,11 @@
             // 
             this.GbChart.Controls.Add(this.TabChart);
             this.GbChart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbChart.Location = new System.Drawing.Point(43, 105);
+            this.GbChart.Location = new System.Drawing.Point(57, 129);
+            this.GbChart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GbChart.Name = "GbChart";
-            this.GbChart.Size = new System.Drawing.Size(337, 321);
+            this.GbChart.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GbChart.Size = new System.Drawing.Size(449, 395);
             this.GbChart.TabIndex = 3;
             this.GbChart.TabStop = false;
             this.GbChart.Text = "Chart(BieuDo)";
@@ -89,43 +98,47 @@
             this.TabChart.Controls.Add(this.ChartMonth);
             this.TabChart.Controls.Add(this.ChartYear);
             this.TabChart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TabChart.Location = new System.Drawing.Point(6, 19);
+            this.TabChart.Location = new System.Drawing.Point(8, 23);
+            this.TabChart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TabChart.Name = "TabChart";
             this.TabChart.SelectedIndex = 0;
-            this.TabChart.Size = new System.Drawing.Size(325, 296);
+            this.TabChart.Size = new System.Drawing.Size(433, 364);
             this.TabChart.TabIndex = 0;
             // 
             // ChartMonth
             // 
             this.ChartMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChartMonth.Location = new System.Drawing.Point(4, 22);
+            this.ChartMonth.Location = new System.Drawing.Point(4, 26);
+            this.ChartMonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ChartMonth.Name = "ChartMonth";
-            this.ChartMonth.Padding = new System.Windows.Forms.Padding(3);
-            this.ChartMonth.Size = new System.Drawing.Size(317, 270);
+            this.ChartMonth.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChartMonth.Size = new System.Drawing.Size(425, 334);
             this.ChartMonth.TabIndex = 0;
             this.ChartMonth.Text = "Month";
             this.ChartMonth.UseVisualStyleBackColor = true;
             // 
             // ChartYear
             // 
-            this.ChartYear.Location = new System.Drawing.Point(4, 22);
+            this.ChartYear.Location = new System.Drawing.Point(4, 26);
+            this.ChartYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ChartYear.Name = "ChartYear";
-            this.ChartYear.Padding = new System.Windows.Forms.Padding(3);
-            this.ChartYear.Size = new System.Drawing.Size(317, 270);
+            this.ChartYear.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChartYear.Size = new System.Drawing.Size(425, 334);
             this.ChartYear.TabIndex = 1;
             this.ChartYear.Text = "Year";
             this.ChartYear.UseVisualStyleBackColor = true;
             // 
-            // StatisticsUser
+            // StatisticsPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.GbChart);
             this.Controls.Add(this.GbRevenue);
             this.Controls.Add(this.panel1);
-            this.Name = "StatisticsUser";
-            this.Size = new System.Drawing.Size(744, 444);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "StatisticsPage";
+            this.Size = new System.Drawing.Size(992, 546);
             this.Load += new System.EventHandler(this.StatisticsUser_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -140,7 +153,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox GbRevenue;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox GbChart;
         private System.Windows.Forms.TabControl TabChart;
         private System.Windows.Forms.TabPage ChartMonth;

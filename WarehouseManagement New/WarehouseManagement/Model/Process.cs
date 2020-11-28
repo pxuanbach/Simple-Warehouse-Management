@@ -13,7 +13,7 @@ namespace WarehouseManagement.Model
         public static SqlCommand cmd;
         public static DataTable data;
         public static SqlDataReader reader;
-        //Link SQL Server
+        //Link SQL Server nhớ vào AccountPage đổi nữa ..(`~.`)~
         public static string connectLink = @"Server=LAPTOP-ADHV1Q9P\SQLEXPRESS;Database=WarehouseManagement;User Id=sa;Password=1;";
 
         //Function lấy data từ SQL Server load vào DataTable
@@ -73,6 +73,26 @@ namespace WarehouseManagement.Model
             return i;       //trả về Ukey
         }
 
+        public static Account getInfo(string sql)
+        {
+            Account acc = new Account();
+            conn = new SqlConnection(connectLink);
+            conn.Open();
+            cmd = new SqlCommand(sql, conn);
+            reader = cmd.ExecuteReader();
+            while (reader.HasRows)
+            {
+                if (reader.Read() == false) break;
+                acc.Name1 = reader.GetValue(0).ToString();
+                acc.Phone1 = reader.GetValue(1).ToString();
+                acc.Birthday1 = reader.GetDateTime(2);
+                acc.Gender1 = reader.GetValue(3).ToString();
+                acc.Email1 = reader.GetValue(4).ToString();
+                acc.Position1 = reader.GetValue(5).ToString();
+
+            }
+            return acc;
+        }
 
         ///////////////////////////// chưa làm ////////////////////////////////
         //public static string[] ListData(string sql)
@@ -109,23 +129,23 @@ namespace WarehouseManagement.Model
         //    return list;
         //}
 
-        public static DateTime date(string sql)
-        {
-            DateTime time = new DateTime();
-            conn = new SqlConnection(connectLink);
-            conn.Open();
-            cmd = new SqlCommand(sql, conn);
-            reader = cmd.ExecuteReader();
-            while (reader.HasRows)
-            {
-                if (reader.Read() == false) break;
-                else
-                {
-                    time = reader.GetDateTime(0);
-                }
-            }
-            conn.Close();
-            return time;
-        }
+        //public static DateTime date(string sql)
+        //{
+        //    DateTime time = new DateTime();
+        //    conn = new SqlConnection(connectLink);
+        //    conn.Open();
+        //    cmd = new SqlCommand(sql, conn);
+        //    reader = cmd.ExecuteReader();
+        //    while (reader.HasRows)
+        //    {
+        //        if (reader.Read() == false) break;
+        //        else
+        //        {
+        //            time = reader.GetDateTime(0);
+        //        }
+        //    }
+        //    conn.Close();
+        //    return time;
+        //}
     }
 }

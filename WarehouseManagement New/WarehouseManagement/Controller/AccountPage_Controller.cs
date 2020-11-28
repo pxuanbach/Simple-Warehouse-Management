@@ -11,13 +11,15 @@ namespace WarehouseManagement.Controller
     class AccountPage_Controller
     {
         AccountPage_Model UAcc = new AccountPage_Model();
-        public string[] GetDataAcc(string username)
+
+        public Account getInformation(string username)
         {
-            return UAcc.getDataUserAcc(username);
+            return UAcc.getInformation(username);
         }
-        public DateTime BIRTHDAY (string username)
+
+        public bool changeUserPass(string oldpass, string newpass, string account)
         {
-            return UAcc.birthday(username);
+            return UAcc.changeUserPass(oldpass, newpass, account);
         }
     }
 }

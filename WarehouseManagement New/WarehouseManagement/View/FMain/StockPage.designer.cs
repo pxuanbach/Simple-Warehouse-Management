@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.comboBoxSeach = new System.Windows.Forms.ComboBox();
             this.tBSearch = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -39,7 +41,7 @@
             this.NGNHAP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HSD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelButton = new System.Windows.Forms.Panel();
             this.btCancel = new System.Windows.Forms.Button();
             this.btSave = new System.Windows.Forms.Button();
             this.btEdit = new System.Windows.Forms.Button();
@@ -48,7 +50,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonSeach = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.panelButton.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBoxSeach
@@ -88,6 +90,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MAHANG,
@@ -98,6 +108,14 @@
             this.NGNHAP,
             this.NSX,
             this.HSD});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
@@ -163,26 +181,27 @@
             this.HSD.MinimumWidth = 6;
             this.HSD.Name = "HSD";
             // 
-            // panel2
+            // panelButton
             // 
-            this.panel2.Controls.Add(this.btCancel);
-            this.panel2.Controls.Add(this.btSave);
-            this.panel2.Controls.Add(this.btEdit);
-            this.panel2.Controls.Add(this.btDel);
-            this.panel2.Controls.Add(this.btAdd);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 416);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1000, 140);
-            this.panel2.TabIndex = 9;
+            this.panelButton.Controls.Add(this.btCancel);
+            this.panelButton.Controls.Add(this.btSave);
+            this.panelButton.Controls.Add(this.btEdit);
+            this.panelButton.Controls.Add(this.btDel);
+            this.panelButton.Controls.Add(this.btAdd);
+            this.panelButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelButton.Location = new System.Drawing.Point(0, 416);
+            this.panelButton.Margin = new System.Windows.Forms.Padding(4);
+            this.panelButton.Name = "panelButton";
+            this.panelButton.Size = new System.Drawing.Size(1000, 140);
+            this.panelButton.TabIndex = 9;
             // 
             // btCancel
             // 
+            this.btCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCancel.Image = global::WarehouseManagement.Properties.Resources.ICcancel;
             this.btCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btCancel.Location = new System.Drawing.Point(719, 44);
+            this.btCancel.Location = new System.Drawing.Point(731, 44);
             this.btCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(149, 67);
@@ -194,12 +213,12 @@
             // 
             // btSave
             // 
-            this.btSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSave.Image = global::WarehouseManagement.Properties.Resources.ICsave;
             this.btSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSave.Location = new System.Drawing.Point(562, 44);
+            this.btSave.Location = new System.Drawing.Point(574, 44);
             this.btSave.Margin = new System.Windows.Forms.Padding(4);
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(149, 67);
@@ -301,13 +320,13 @@
             this.Controls.Add(this.tBSearch);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonSeach);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelButton);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StockPage";
             this.Size = new System.Drawing.Size(1000, 556);
             this.Load += new System.EventHandler(this.StockUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.panelButton.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,7 +337,7 @@
         private System.Windows.Forms.TextBox tBSearch;
         private System.Windows.Forms.Button buttonSeach;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelButton;
         private System.Windows.Forms.Button btEdit;
         private System.Windows.Forms.Button btDel;
         private System.Windows.Forms.Button btAdd;

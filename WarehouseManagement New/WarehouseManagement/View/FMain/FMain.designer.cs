@@ -46,12 +46,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.TimeDatePage = new WarehouseManagement.TimeDate();
             this.panelL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.panelMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelL
@@ -73,7 +73,7 @@
             this.panelL.Location = new System.Drawing.Point(3, 2);
             this.panelL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelL.Name = "panelL";
-            this.panelL.Size = new System.Drawing.Size(209, 544);
+            this.panelL.Size = new System.Drawing.Size(209, 718);
             this.panelL.TabIndex = 0;
             this.panelL.Paint += new System.Windows.Forms.PaintEventHandler(this.panelL_Paint);
             // 
@@ -91,7 +91,7 @@
             // 
             this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel7.BackColor = System.Drawing.Color.DimGray;
-            this.panel7.Location = new System.Drawing.Point(1, 498);
+            this.panel7.Location = new System.Drawing.Point(1, 672);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(208, 2);
@@ -103,7 +103,7 @@
             this.Copyright.AutoSize = true;
             this.Copyright.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Copyright.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Copyright.Location = new System.Drawing.Point(8, 505);
+            this.Copyright.Location = new System.Drawing.Point(8, 679);
             this.Copyright.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Copyright.Name = "Copyright";
             this.Copyright.Size = new System.Drawing.Size(185, 34);
@@ -113,7 +113,7 @@
             // timeDate1
             // 
             this.timeDate1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.timeDate1.Location = new System.Drawing.Point(1, 435);
+            this.timeDate1.Location = new System.Drawing.Point(1, 609);
             this.timeDate1.Margin = new System.Windows.Forms.Padding(5);
             this.timeDate1.Name = "timeDate1";
             this.timeDate1.Size = new System.Drawing.Size(204, 74);
@@ -145,7 +145,6 @@
             this.PanelLeft.Name = "PanelLeft";
             this.PanelLeft.Size = new System.Drawing.Size(13, 42);
             this.PanelLeft.TabIndex = 6;
-            this.PanelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNhay_Paint);
             // 
             // BtAbout
             // 
@@ -249,7 +248,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(3, 551);
+            this.panel1.Size = new System.Drawing.Size(3, 725);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -259,39 +258,39 @@
             this.panel2.Location = new System.Drawing.Point(3, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1210, 2);
+            this.panel2.Size = new System.Drawing.Size(1489, 2);
             this.panel2.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1210, 2);
+            this.panel3.Location = new System.Drawing.Point(1489, 2);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(3, 549);
+            this.panel3.Size = new System.Drawing.Size(3, 723);
             this.panel3.TabIndex = 3;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(3, 549);
+            this.panel4.Location = new System.Drawing.Point(3, 723);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1207, 2);
+            this.panel4.Size = new System.Drawing.Size(1486, 2);
             this.panel4.TabIndex = 4;
             // 
-            // panel5
+            // panelMain
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(219, 2);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(992, 546);
-            this.panel5.TabIndex = 5;
+            this.panelMain.Controls.Add(this.panel6);
+            this.panelMain.Location = new System.Drawing.Point(219, 2);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1271, 720);
+            this.panelMain.TabIndex = 5;
             // 
             // panel6
             // 
@@ -313,8 +312,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 551);
-            this.Controls.Add(this.panel5);
+            this.ClientSize = new System.Drawing.Size(1492, 725);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -322,6 +321,7 @@
             this.Controls.Add(this.panelL);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1231, 598);
             this.Name = "FMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FMain";
@@ -329,7 +329,7 @@
             this.panelL.ResumeLayout(false);
             this.panelL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel5.ResumeLayout(false);
+            this.panelMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -348,7 +348,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button BtLogout;
         private TimeDate timeDate1;
