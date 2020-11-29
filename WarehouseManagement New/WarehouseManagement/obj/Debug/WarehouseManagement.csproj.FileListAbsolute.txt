@@ -1,0 +1,116 @@
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.csprojAssemblyReference.cache
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.Properties.Resources.resources
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.FLogin.resources
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.AccountUser.resources
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.FAdd.resources
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.FMain.resources
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.HelpUser.resources
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.OderUser.resources
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.StockPage.resources
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.TimeDate.resources
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.UserWelcome.resources
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.FSignUp.resources
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.GenerateResource.cache
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.CoreCompileInputs.cache
+D:\WarehouseManagement\WarehouseManagement\bin\Debug\WarehouseManagement.exe.config
+D:\WarehouseManagement\WarehouseManagement\bin\Debug\WarehouseManagement.exe
+D:\WarehouseManagement\WarehouseManagement\bin\Debug\WarehouseManagement.pdb
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.exe
+D:\WarehouseManagement\WarehouseManagement\obj\Debug\WarehouseManagement.pdb
+D:\WarehouseManagement (2)\WarehouseManagement\bin\Debug\WarehouseManagement.exe.config
+D:\WarehouseManagement (2)\WarehouseManagement\bin\Debug\WarehouseManagement.exe
+D:\WarehouseManagement (2)\WarehouseManagement\bin\Debug\WarehouseManagement.pdb
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.csprojAssemblyReference.cache
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.Properties.Resources.resources
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.FLogin.resources
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.AccountUser.resources
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.FAdd.resources
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.FMain.resources
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.HelpUser.resources
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.OderUser.resources
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.StockPage.resources
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.TimeDate.resources
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.UserWelcome.resources
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.FSignUp.resources
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.GenerateResource.cache
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.CoreCompileInputs.cache
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.exe
+D:\WarehouseManagement (2)\WarehouseManagement\obj\Debug\WarehouseManagement.pdb
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\bin\Debug\WarehouseManagement.exe.config
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\bin\Debug\WarehouseManagement.exe
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\bin\Debug\WarehouseManagement.pdb
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FLogin.resources
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.AccountUser.resources
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FAdd.resources
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FMain.resources
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.HelpUser.resources
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.OderUser.resources
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.StockPage.resources
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.TimeDate.resources
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.UserWelcome.resources
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FSignUp.resources
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.exe
+C:\Users\ADMIN\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.pdb
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\bin\Debug\WarehouseManagement.exe.config
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\bin\Debug\WarehouseManagement.exe
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\bin\Debug\WarehouseManagement.pdb
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.csprojAssemblyReference.cache
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.Properties.Resources.resources
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FLogin.resources
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.AccountUser.resources
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FAdd.resources
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FMain.resources
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.HelpUser.resources
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.OderUser.resources
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.StockPage.resources
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.TimeDate.resources
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.UserWelcome.resources
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FSignUp.resources
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.GenerateResource.cache
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.CoreCompileInputs.cache
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.exe
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.pdb
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.csprojAssemblyReference.cache
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.Properties.Resources.resources
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FLogin.resources
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.AccountUser.resources
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FAdd.resources
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FMain.resources
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.HelpUser.resources
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.StockPage.resources
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.TimeDate.resources
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.UserWelcome.resources
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FSignUp.resources
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.GenerateResource.cache
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.CoreCompileInputs.cache
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.exe
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.pdb
+D:\WarehouseManagement New\WarehouseManagement\bin\Debug\WarehouseManagement.exe.config
+D:\WarehouseManagement New\WarehouseManagement\bin\Debug\WarehouseManagement.exe
+D:\WarehouseManagement New\WarehouseManagement\bin\Debug\WarehouseManagement.pdb
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\bin\Debug\WarehouseManagement.exe.config
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\bin\Debug\WarehouseManagement.exe
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\bin\Debug\WarehouseManagement.pdb
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FLogin.resources
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.AccountUser.resources
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FAdd.resources
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FMain.resources
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.HelpUser.resources
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.OderUser.resources
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.StockPage.resources
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.TimeDate.resources
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.UserWelcome.resources
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.FSignUp.resources
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.exe
+C:\Users\ADMIN\Desktop\hahh\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.pdb
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.StatisticsPage.resources
+D:\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.OderUser.resources
+C:\Users\AN515-54\Desktop\WarehouseManagement New\WarehouseManagement\obj\Debug\WarehouseManagement.StatisticsPage.resources
