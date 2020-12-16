@@ -4,15 +4,9 @@ go
 use WarehouseManagement
 go
 
-create table ADMINACC
-(
-	ADNAME varchar(30) primary key,
-	ADPASS varchar(30),
-)
-
 create table USERACC
 (
-	UKEY int primary key,
+	UKEY int IDENTITY(1000, 1) primary key,
 	USERNAME varchar(30),
 	USERPASS varchar(30),
 	HOTEN nvarchar(100),
@@ -21,19 +15,13 @@ create table USERACC
 	EMAIL varchar(100),
 	BIRTHDAY smalldatetime,
 	POSITION nvarchar(50),
+	STATUSACC int, 
 )
 --USERNAME,USERPASS,HOTEN,SDT,GIOITINH,EMAIL,BIRTHDAY,POSITION
 
-create table ADKEY
-(
-	ADNAME varchar(30),
-	ADKEY int,
-	Constraint PK_ADKEY primary key (ADNAME, ADKEY),
-)
-
 create table HANGHOA
 (
-	MAHANG varchar(20),					--Ma hang	
+	MAHANG int IDENTITY(100000, 1),		--Ma hang	
 	TENHANG nvarchar(100),				--Ten hang
 	DVT nvarchar(10),					--Don vi
 	SOLUONG int,						--So luong
@@ -58,11 +46,16 @@ create table HOADON
 create table CTHD
 (
 	MAHOADON int foreign key references HOADON(MAHOADON),
-	MAHANG varchar(20),
+	MAHANG int,
 	SOLUONG int,
-	DONGIA money,
 	UKEY int,
 )
+---------------------------------------------
+ALTER TABLE HANGHOA ADD CONSTRAINT FK_UKEY 
+FOREIGN KEY(UKEY) REFERENCES USERACC(UKEY)
+---------------------------------------------
+ALTER TABLE CTHD ADD CONSTRAINT FK_MAHANG_UKEY 
+FOREIGN KEY(MAHANG, UKEY) REFERENCES HANGHOA(MAHANG, UKEY)
 ---------------------------------------------
 CREATE TRIGGER TRG_CK_TRIGIA_HOADON ON CTHD
 FOR INSERT, UPDATE, DELETE
@@ -87,7 +80,6 @@ BEGIN
 END
 ----------------------------------------------------------------------------
 
-
 insert HOADON values
 (N'Công ty Thực phẩm', '2020/02/20', 50000000),
 (N'Công ty Tài nguyên Môi trường', '2020/02/20', 20000000)
@@ -96,17 +88,17 @@ insert CTHD values
 (3,'BB004', 19521334)
 
 insert USERACC values
-(19521334,'dat09','0','Nguyễn Đức Chí Đạt','0123456789','Nam','nguyenducchidat@gmail.com','2020/01/29','Sinh viên')
+('admin','admin',N'Nguyễn Đức Chí Đạt',0123456789,'Nam','nguyenducchidat@gmail.com','2020/01/29',N'Chủ tịch', 0)
 
 insert HANGHOA values
-('AA001',N'Vở',N'quyển',100,5000,'2020/01/02',null,null, 1952),
-('BB003',N'Notebook',N'quyển',20,25000,'2020/01/30',null,null, 1952),
-('BB002',N'Sách giáo khoa',N'quyển',10,55000,'2020/01/30',null,null, 19521334),
-('CC002',N'Kẹo cao su',N'hộp',20,20000,'2020/01/25',null,null, 19521334)
+(N'Vở',N'quyển',100,5000,'2020/01/02',null,null, 1000),
+(N'Notebook',N'quyển',20,25000,'2020/01/30',null,null, 1000),
+(N'Sách giáo khoa',N'quyển',10,55000,'2020/01/30',null,null, 1000),
+(N'Kẹo cao su',N'hộp',20,20000,'2020/01/25',null,null, 1000)
 
 --delete from HANGHOA where MAHANG='C0022';
 
-insert USERACC values (19521233, 'bach', '1', 'Phạm Xuân Bách', '0372363285','Nam','phamxuanbach@gmail.com','2001/03/30','Sinh viên')
+insert USERACC values ('bach', '1', N'Phạm Xuân Bách', '0372363285','Nam','phamxuanbach@gmail.com','2001/03/30', N'Sinh viên', 0)
 
 Select HANGHOA.MAHANG,TENHANG,DVT,SOLUONG,DONGIA,NGNHAP,NGSANXUAT,HSD from HANGHOA inner join USERACC on USERACC.UKEY=HANGHOA.UKEY where USERNAME ='dat09'
 
@@ -135,7 +127,7 @@ Select *
 From USERACC
 
 UPDATE USERACC
-SET HOTEN = N'Nguyễn Đức Chí Đạt'
+SET USERNAME,USERPASS,HOTEN,SDT,GIOITINH,EMAIL,BIRTHDAY,POSITION
 WHERE UKEY = 19521334
 
 UPDATE USERACC
@@ -148,9 +140,8 @@ where UKEY = 19521334 and MAHANG = 'CC001'
 	and TENHANG = N'Kéo siêu bền'
 	and DONGIA = 25000
 
-Select * From HANGHOA Where UKEY = 19521334
-                and MAHANG = 'CC001' and TENHANG = N'Kéo siêu bền'
-                and DONGIA = 25000
+Select SOLUONG From HANGHOA Where UKEY = 19521334
+               
 
 UPDATE HANGHOA 
 SET SOLUONG = 0
@@ -160,11 +151,8 @@ delete from CTHD where MAHOADON = 3;
 
 DELETE FROM HOADON;
 
-insert CTHD values
-(40,'AA003', 10, 10000, 19521334)
-
 insert HOADON(TENDOITAC, THOIGIAN, UKEY) values
-(N'Công ty Thực phẩm', '2020/02/20', 19521334)
+(N'Công ty Thực phẩm', '2020/02/20', 1000)
 
 DELETE FROM CTHD
 Where MAHOADON = 25
@@ -185,3 +173,29 @@ Where UKEY = 1952
 Delete From HANGHOA Where MAHANG = 'DD001' and UKEY = 19521334
 
 Delete From HOADON
+
+insert USERACC(UKEY) values (1)
+
+UPDATE USERACC
+SET HOTEN = N'Phạm Xuân Bách'
+WHERE UKEY = 1
+
+Select USERACC.UKEY, HOTEN, HANGHOA.MAHANG,TENHANG,NGNHAP 
+From HANGHOA inner join USERACC on HANGHOA.UKEY = USERACC.UKEY
+Where HANGHOA.UKEY = 1000
+
+Select MAHANG,TENHANG,DVT,SOLUONG,DONGIA,NGNHAP,NGSANXUAT,HSD 
+from HANGHOA where CHARINDEX('5', MAHANG) != 0 AND UKEY = 1000
+
+Select USERACC.UKEY, HOTEN, HANGHOA.MAHANG,TENHANG,NGNHAP 
+From HANGHOA inner join USERACC on HANGHOA.UKEY = USERACC.UKEY 
+Where HANGHOA.UKEY = 1000 and Day(HANGHOA.NGNHAP) = 10
+and Year(HANGHOA.NGNHAP) = 2020 and Month(HANGHOA.NGNHAP) = 12
+
+Select HOADON.MAHOADON, TENDOITAC, TRIGIA, USERACC.UKEY, HOTEN
+From HOADON inner join USERACC on HOADON.UKEY = USERACC.UKEY
+Where DAY(HOADON.THOIGIAN)
+
+update HOADON set TRIGIA = 100000 where MAHOADON = 3
+
+Select CTHD.MAHANG, CTHD.SOLUONG, HANGHOA.DONGIA From CTHD inner join HANGHOA on CTHD.MAHANG = HANGHOA.MAHANG Where CTHD.MAHOADON = 5 and CTHD.UKEY = 1000
